@@ -1,0 +1,90 @@
+{
+  "results": {
+    "T0": {
+      "delta": 0.0,
+      "eps": 0.0,
+      "oracle_mse": 0.3104851572387714,
+      "gn_coverage": 1.0,
+      "gn_mse_covered": 0.3104851572387714,
+      "gn_unique_tuples": 29,
+      "gn_unique_value_sets": 1,
+      "rand_coverage": 0.99,
+      "rand_mse_covered": 0.3126449160264919,
+      "rand_unique_tuples": 39,
+      "rand_unique_value_sets": 1
+    },
+    "R1": {
+      "delta": 0.5,
+      "eps": 0.1,
+      "oracle_mse": 0.3075093616308524,
+      "gn_coverage": 1.0,
+      "gn_mse_covered": 0.3075093616308523,
+      "gn_unique_tuples": 30,
+      "gn_unique_value_sets": 1,
+      "rand_coverage": 0.975,
+      "rand_mse_covered": 0.31472863382139865,
+      "rand_unique_tuples": 39,
+      "rand_unique_value_sets": 1
+    },
+    "R2": {
+      "delta": 0.5,
+      "eps": 0.1,
+      "oracle_mse": 0.31058898710058097,
+      "gn_coverage": 1.0,
+      "gn_mse_covered": 0.3105889871005811,
+      "gn_unique_tuples": 29,
+      "gn_unique_value_sets": 1,
+      "rand_coverage": 0.965,
+      "rand_mse_covered": 0.3169866097739115,
+      "rand_unique_tuples": 41,
+      "rand_unique_value_sets": 1
+    },
+    "R3": {
+      "delta": 0.5,
+      "eps": 0.1,
+      "oracle_mse": 0.3398208242871169,
+      "gn_coverage": 0.99,
+      "gn_mse_covered": 0.3420786622242502,
+      "gn_unique_tuples": 28,
+      "gn_unique_value_sets": 1,
+      "rand_coverage": 0.995,
+      "rand_mse_covered": 0.33959182402750426,
+      "rand_unique_tuples": 43,
+      "rand_unique_value_sets": 1
+    },
+    "R4": {
+      "delta": 0.5,
+      "eps": 0.1,
+      "oracle_mse": 0.47323810490710455,
+      "gn_coverage": 0.985,
+      "gn_mse_covered": 0.4748844963560021,
+      "gn_unique_tuples": 28,
+      "gn_unique_value_sets": 1,
+      "rand_coverage": 0.99,
+      "rand_mse_covered": 0.47698062343304953,
+      "rand_unique_tuples": 43,
+      "rand_unique_value_sets": 1
+    },
+    "D": {
+      "delta": 4.0,
+      "eps": 1.0,
+      "oracle_mse": 9.903357567873767,
+      "gn_coverage": 1.0,
+      "gn_mse_covered": 9.903357567873778,
+      "gn_unique_tuples": 22,
+      "gn_unique_value_sets": 1,
+      "rand_coverage": 1.0,
+      "rand_mse_covered": 9.90335756787377,
+      "rand_unique_tuples": 12,
+      "rand_unique_value_sets": 1
+    }
+  },
+  "accum": {
+    "diverged": null,
+    "records_added": 0,
+    "mean_cands_per_param": 19.466666666666665,
+    "unique_value_sets": 81,
+    "T0_mse_after": 0.3558682153716499
+  },
+  "seconds": 10.01282276799975
+}

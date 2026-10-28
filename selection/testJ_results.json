@@ -1,0 +1,5397 @@
+{
+  "R1_separated": {
+    "storage_reflex": 38784,
+    "storage_eff_cache": 7680,
+    "skipped_diverged": 0,
+    "j0_cfg": [
+      1.0,
+      0.0
+    ],
+    "j1_cfgs": {
+      "1": [
+        0.1,
+        0.0
+      ],
+      "2": [
+        1.0,
+        0.0
+      ],
+      "4": [
+        2.0,
+        0.25
+      ],
+      "8": [
+        2.0,
+        0.25
+      ],
+      "16": [
+        2.0,
+        0.25
+      ],
+      "32": [
+        2.0,
+        0.1
+      ],
+      "64": [
+        2.0,
+        0.25
+      ]
+    },
+    "j2_cfgs": {
+      "1": [
+        0.5,
+        0.0
+      ],
+      "2": [
+        0.5,
+        0.0
+      ],
+      "4": [
+        2.0,
+        0.0
+      ],
+      "8": [
+        2.0,
+        0.0
+      ],
+      "16": [
+        2.0,
+        0.0
+      ],
+      "32": [
+        2.0,
+        0.0
+      ],
+      "64": [
+        2.0,
+        0.0
+      ]
+    },
+    "J0_accept_all": {
+      "ident_familiar": 0.6819999999999999,
+      "far": 0.99
+    },
+    "J0": {
+      "SEL": 0.7728571428571429,
+      "FAR": 0.0,
+      "FRR": 0.0,
+      "IDENT": 0.6819999999999999,
+      "MSE": 4.324275832884967,
+      "oracle": 1.0582844092280352
+    },
+    "J1_k1": {
+      "SEL": 0.2857142857142857,
+      "FAR": 0.0,
+      "FRR": 1.0,
+      "IDENT": 0.0,
+      "MSE": null,
+      "oracle": 1.0582844092280352
+    },
+    "J1_k2": {
+      "SEL": 0.31,
+      "FAR": 0.06,
+      "FRR": 0.6060000000000001,
+      "IDENT": 0.08450909745991712,
+      "MSE": 5.4994985913923005,
+      "oracle": 1.0582844092280352
+    },
+    "J1_k4": {
+      "SEL": 0.3814285714285714,
+      "FAR": 0.27,
+      "FRR": 0.682,
+      "IDENT": 0.6861163639748031,
+      "MSE": 1.620563914748584,
+      "oracle": 1.0582844092280352
+    },
+    "J1_k8": {
+      "SEL": 0.7128571428571429,
+      "FAR": 0.03500000000000003,
+      "FRR": 0.382,
+      "IDENT": 0.9907096171802054,
+      "MSE": 1.116454244776855,
+      "oracle": 1.0582844092280352
+    },
+    "J1_k16": {
+      "SEL": 0.85,
+      "FAR": 0.0,
+      "FRR": 0.21000000000000002,
+      "IDENT": 0.8,
+      "MSE": 0.9707282533599133,
+      "oracle": 1.0582844092280352
+    },
+    "J1_k32": {
+      "SEL": 0.8571428571428571,
+      "FAR": 0.0,
+      "FRR": 0.2,
+      "IDENT": 0.8,
+      "MSE": 0.969974634317712,
+      "oracle": 1.0582844092280352
+    },
+    "J1_k64": {
+      "SEL": 0.8571428571428571,
+      "FAR": 0.0,
+      "FRR": 0.2,
+      "IDENT": 0.8,
+      "MSE": 0.969974634317712,
+      "oracle": 1.0582844092280352
+    },
+    "J2_k1": {
+      "SEL": 0.32285714285714284,
+      "FAR": 0.355,
+      "FRR": 0.084,
+      "IDENT": 0.21934388725239445,
+      "MSE": 6.014554976220758,
+      "oracle": 1.0582844092280352
+    },
+    "J2_k2": {
+      "SEL": 0.4328571428571429,
+      "FAR": 0.13499999999999995,
+      "FRR": 0.382,
+      "IDENT": 0.463407208999384,
+      "MSE": 3.4817969597013496,
+      "oracle": 1.0582844092280352
+    },
+    "J2_k4": {
+      "SEL": 0.6485714285714286,
+      "FAR": 0.39499999999999996,
+      "FRR": 0.05800000000000001,
+      "IDENT": 0.716266210492017,
+      "MSE": 1.7521917121054833,
+      "oracle": 1.0582844092280352
+    },
+    "J2_k8": {
+      "SEL": 0.7942857142857144,
+      "FAR": 0.15500000000000003,
+      "FRR": 0.05800000000000001,
+      "IDENT": 0.8289819924860733,
+      "MSE": 1.1781707343206413,
+      "oracle": 1.0582844092280352
+    },
+    "J2_k16": {
+      "SEL": 0.8728571428571428,
+      "FAR": 0.04500000000000004,
+      "FRR": 0.016,
+      "IDENT": 0.8560000000000001,
+      "MSE": 1.0565602503996923,
+      "oracle": 1.0582844092280352
+    },
+    "J2_k32": {
+      "SEL": 0.8985714285714286,
+      "FAR": 0.0050000000000000044,
+      "FRR": 0.002,
+      "IDENT": 0.8620000000000001,
+      "MSE": 1.047851175147822,
+      "oracle": 1.0582844092280352
+    },
+    "J2_k64": {
+      "SEL": 0.8857142857142858,
+      "FAR": 0.0,
+      "FRR": 0.0,
+      "IDENT": 0.8400000000000001,
+      "MSE": 1.0357808233495804,
+      "oracle": 1.0582844092280352
+    },
+    "SYS1_k1": {
+      "SEL": 0.7728571428571429,
+      "FAR": 0.0,
+      "FRR": 0.0,
+      "IDENT": 0.6819999999999999,
+      "MSE": 4.324275832884967,
+      "oracle": 1.0582844092280352
+    },
+    "SYS1_k2": {
+      "SEL": 0.5399999999999999,
+      "FAR": 0.06,
+      "FRR": 0.0,
+      "IDENT": 0.38,
+      "MSE": 4.674769905191457,
+      "oracle": 1.0582844092280352
+    },
+    "SYS1_k4": {
+      "SEL": 0.7300000000000001,
+      "FAR": 0.27,
+      "FRR": 0.0,
+      "IDENT": 0.7300000000000001,
+      "MSE": 3.151418901281675,
+      "oracle": 1.0582844092280352
+    },
+    "SYS1_k8": {
+      "SEL": 0.9400000000000001,
+      "FAR": 0.03500000000000003,
+      "FRR": 0.0,
+      "IDENT": 0.93,
+      "MSE": 1.554687307382133,
+      "oracle": 1.0582844092280352
+    },
+    "SYS1_k16": {
+      "SEL": 0.9757142857142858,
+      "FAR": 0.0,
+      "FRR": 0.0,
+      "IDENT": 0.966,
+      "MSE": 1.224085261930632,
+      "oracle": 1.0582844092280352
+    },
+    "SYS1_k32": {
+      "SEL": 0.9757142857142858,
+      "FAR": 0.0,
+      "FRR": 0.0,
+      "IDENT": 0.966,
+      "MSE": 1.224085261930632,
+      "oracle": 1.0582844092280352
+    },
+    "SYS1_k64": {
+      "SEL": 0.9757142857142858,
+      "FAR": 0.0,
+      "FRR": 0.0,
+      "IDENT": 0.966,
+      "MSE": 1.224085261930632,
+      "oracle": 1.0582844092280352
+    },
+    "SYS2_k1": {
+      "SEL": 0.3457142857142857,
+      "FAR": 0.355,
+      "FRR": 0.0,
+      "IDENT": 0.22600000000000003,
+      "MSE": 6.046083348918894,
+      "oracle": 1.0582844092280352
+    },
+    "SYS2_k2": {
+      "SEL": 0.59,
+      "FAR": 0.13499999999999995,
+      "FRR": 0.0,
+      "IDENT": 0.48,
+      "MSE": 4.2566447364450255,
+      "oracle": 1.0582844092280352
+    },
+    "SYS2_k4": {
+      "SEL": 0.6685714285714285,
+      "FAR": 0.39499999999999996,
+      "FRR": 0.0,
+      "IDENT": 0.694,
+      "MSE": 2.0363254074736994,
+      "oracle": 1.0582844092280352
+    },
+    "SYS2_k8": {
+      "SEL": 0.8200000000000002,
+      "FAR": 0.15500000000000003,
+      "FRR": 0.0,
+      "IDENT": 0.8100000000000002,
+      "MSE": 1.4319310167195891,
+      "oracle": 1.0582844092280352
+    },
+    "SYS2_k16": {
+      "SEL": 0.8814285714285715,
+      "FAR": 0.04500000000000004,
+      "FRR": 0.0,
+      "IDENT": 0.852,
+      "MSE": 1.1160139104887958,
+      "oracle": 1.0582844092280352
+    },
+    "SYS2_k32": {
+      "SEL": 0.9000000000000001,
+      "FAR": 0.0050000000000000044,
+      "FRR": 0.0,
+      "IDENT": 0.8620000000000001,
+      "MSE": 1.0470688374109245,
+      "oracle": 1.0582844092280352
+    },
+    "SYS2_k64": {
+      "SEL": 0.8857142857142858,
+      "FAR": 0.0,
+      "FRR": 0.0,
+      "IDENT": 0.8400000000000001,
+      "MSE": 1.0357808233495804,
+      "oracle": 1.0582844092280352
+    },
+    "J1_examples_to_target": null,
+    "J2_examples_to_target": null,
+    "transitions_k64": {
+      "j1": {
+        "n_phase1_correct": 341,
+        "n_phase1_wrong": 159,
+        "n_corrupted": 83,
+        "n_rescued": 142,
+        "corrupt_rate": 0.2434017595307918,
+        "rescue_rate": 0.8930817610062893
+      },
+      "j2": {
+        "n_phase1_correct": 341,
+        "n_phase1_wrong": 159,
+        "n_corrupted": 67,
+        "n_rescued": 146,
+        "corrupt_rate": 0.19648093841642228,
+        "rescue_rate": 0.9182389937106918
+      }
+    },
+    "first_correct": {
+      "J1": {
+        "median": 8.0,
+        "frac_never": 0.172
+      },
+      "J2": {
+        "median": 4.0,
+        "frac_never": 0.074
+      }
+    },
+    "lat_us": {
+      "J0": 14.381872999820189,
+      "J1_k64": 59.83749999813881,
+      "J2_k64": 799.7368699989238
+    },
+    "probes": {
+      "variant_S0": {
+        "type": "variant",
+        "truth": 0,
+        "oracle_mse": 1.2844119881271965,
+        "J0": {
+          "success": 0.99,
+          "incorrect": 0.01,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.3398155733427861
+        },
+        "J1_k1": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k1": {
+          "success": 0.19,
+          "incorrect": 0.72,
+          "rejection": 0.09,
+          "n_decisions": 100,
+          "mse": 6.175372103212079
+        },
+        "SYS1_k1": {
+          "success": 0.99,
+          "incorrect": 0.01,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.3398155733427861
+        },
+        "SYS2_k1": {
+          "success": 0.27,
+          "incorrect": 0.73,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.792702812336339
+        },
+        "J1_k2": {
+          "success": 0.0,
+          "incorrect": 0.22,
+          "rejection": 0.78,
+          "n_decisions": 100,
+          "mse": 4.397749782101765
+        },
+        "J2_k2": {
+          "success": 0.2,
+          "incorrect": 0.27,
+          "rejection": 0.53,
+          "n_decisions": 100,
+          "mse": 3.9037388381632976
+        },
+        "SYS1_k2": {
+          "success": 0.77,
+          "incorrect": 0.23,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 2.020227582926857
+        },
+        "SYS2_k2": {
+          "success": 0.72,
+          "incorrect": 0.28,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 2.559033887444742
+        },
+        "J1_k4": {
+          "success": 0.17,
+          "incorrect": 0.12,
+          "rejection": 0.71,
+          "n_decisions": 100,
+          "mse": 2.6452076359673566
+        },
+        "J2_k4": {
+          "success": 0.69,
+          "incorrect": 0.19,
+          "rejection": 0.12,
+          "n_decisions": 100,
+          "mse": 2.4064539154649065
+        },
+        "SYS1_k4": {
+          "success": 0.87,
+          "incorrect": 0.13,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.7399039737870665
+        },
+        "SYS2_k4": {
+          "success": 0.81,
+          "incorrect": 0.19,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 2.263405572936062
+        },
+        "J1_k8": {
+          "success": 0.61,
+          "incorrect": 0.02,
+          "rejection": 0.37,
+          "n_decisions": 100,
+          "mse": 1.3713056978251184
+        },
+        "J2_k8": {
+          "success": 0.76,
+          "incorrect": 0.07,
+          "rejection": 0.17,
+          "n_decisions": 100,
+          "mse": 1.6371526960756897
+        },
+        "SYS1_k8": {
+          "success": 0.97,
+          "incorrect": 0.03,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.3975891806565812
+        },
+        "SYS2_k8": {
+          "success": 0.93,
+          "incorrect": 0.07,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.5766789984541314
+        },
+        "J1_k16": {
+          "success": 0.98,
+          "incorrect": 0.0,
+          "rejection": 0.02,
+          "n_decisions": 100,
+          "mse": 1.2882325383967381
+        },
+        "J2_k16": {
+          "success": 0.94,
+          "incorrect": 0.0,
+          "rejection": 0.06,
+          "n_decisions": 100,
+          "mse": 1.2872808002912477
+        },
+        "SYS1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.2844119881271965
+        },
+        "SYS2_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.2844119881271965
+        },
+        "J1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.2844119881271965
+        },
+        "J2_k32": {
+          "success": 0.99,
+          "incorrect": 0.0,
+          "rejection": 0.01,
+          "n_decisions": 100,
+          "mse": 1.288323676811683
+        },
+        "SYS1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.2844119881271965
+        },
+        "SYS2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.2844119881271965
+        },
+        "J1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.2844119881271965
+        },
+        "J2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.2844119881271965
+        },
+        "SYS1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.2844119881271965
+        },
+        "SYS2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.2844119881271965
+        }
+      },
+      "variant_S2": {
+        "type": "variant",
+        "truth": 2,
+        "oracle_mse": 1.4115235088693276,
+        "J0": {
+          "success": 0.83,
+          "incorrect": 0.17,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 2.240527772382313
+        },
+        "J1_k1": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k1": {
+          "success": 0.08,
+          "incorrect": 0.92,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 4.613178318641893
+        },
+        "SYS1_k1": {
+          "success": 0.83,
+          "incorrect": 0.17,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 2.240527772382313
+        },
+        "SYS2_k1": {
+          "success": 0.08,
+          "incorrect": 0.92,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 4.613178318641893
+        },
+        "J1_k2": {
+          "success": 0.12,
+          "incorrect": 0.49,
+          "rejection": 0.39,
+          "n_decisions": 100,
+          "mse": 2.114992836381774
+        },
+        "J2_k2": {
+          "success": 0.09,
+          "incorrect": 0.71,
+          "rejection": 0.2,
+          "n_decisions": 100,
+          "mse": 3.847227848729008
+        },
+        "SYS1_k2": {
+          "success": 0.41,
+          "incorrect": 0.59,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 2.303897224404316
+        },
+        "SYS2_k2": {
+          "success": 0.26,
+          "incorrect": 0.74,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 3.497237447557724
+        },
+        "J1_k4": {
+          "success": 0.04,
+          "incorrect": 0.09,
+          "rejection": 0.87,
+          "n_decisions": 100,
+          "mse": 1.8939263774565889
+        },
+        "J2_k4": {
+          "success": 0.19,
+          "incorrect": 0.81,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 2.4370430929872864
+        },
+        "SYS1_k4": {
+          "success": 0.76,
+          "incorrect": 0.24,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 2.1844765957115437
+        },
+        "SYS2_k4": {
+          "success": 0.19,
+          "incorrect": 0.81,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 2.4370430929872864
+        },
+        "J1_k8": {
+          "success": 0.01,
+          "incorrect": 0.0,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 1.6034532423685164
+        },
+        "J2_k8": {
+          "success": 0.27,
+          "incorrect": 0.73,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.5909552616023064
+        },
+        "SYS1_k8": {
+          "success": 0.83,
+          "incorrect": 0.17,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 2.240527772382313
+        },
+        "SYS2_k8": {
+          "success": 0.27,
+          "incorrect": 0.73,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.5909552616023064
+        },
+        "J1_k16": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k16": {
+          "success": 0.28,
+          "incorrect": 0.72,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.4015320426750304
+        },
+        "SYS1_k16": {
+          "success": 0.83,
+          "incorrect": 0.17,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 2.240527772382313
+        },
+        "SYS2_k16": {
+          "success": 0.28,
+          "incorrect": 0.72,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.4015320426750304
+        },
+        "J1_k32": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k32": {
+          "success": 0.31,
+          "incorrect": 0.69,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.3554456497837748
+        },
+        "SYS1_k32": {
+          "success": 0.83,
+          "incorrect": 0.17,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 2.240527772382313
+        },
+        "SYS2_k32": {
+          "success": 0.31,
+          "incorrect": 0.69,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.3554456497837748
+        },
+        "J1_k64": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k64": {
+          "success": 0.2,
+          "incorrect": 0.8,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.299005579477054
+        },
+        "SYS1_k64": {
+          "success": 0.83,
+          "incorrect": 0.17,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 2.240527772382313
+        },
+        "SYS2_k64": {
+          "success": 0.2,
+          "incorrect": 0.8,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.299005579477054
+        }
+      },
+      "variant_S4": {
+        "type": "variant",
+        "truth": 4,
+        "oracle_mse": 0.988721048328418,
+        "J0": {
+          "success": 0.54,
+          "incorrect": 0.46,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.7194026285646915
+        },
+        "J1_k1": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k1": {
+          "success": 0.24,
+          "incorrect": 0.65,
+          "rejection": 0.11,
+          "n_decisions": 100,
+          "mse": 7.280041642191472
+        },
+        "SYS1_k1": {
+          "success": 0.54,
+          "incorrect": 0.46,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.7194026285646915
+        },
+        "SYS2_k1": {
+          "success": 0.3,
+          "incorrect": 0.7,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 7.106576002516683
+        },
+        "J1_k2": {
+          "success": 0.01,
+          "incorrect": 0.19,
+          "rejection": 0.8,
+          "n_decisions": 100,
+          "mse": 4.624478457324446
+        },
+        "J2_k2": {
+          "success": 0.26,
+          "incorrect": 0.23,
+          "rejection": 0.51,
+          "n_decisions": 100,
+          "mse": 4.635905096372656
+        },
+        "SYS1_k2": {
+          "success": 0.43,
+          "incorrect": 0.57,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.712973338431733
+        },
+        "SYS2_k2": {
+          "success": 0.52,
+          "incorrect": 0.48,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.416378402622291
+        },
+        "J1_k4": {
+          "success": 0.29,
+          "incorrect": 0.04,
+          "rejection": 0.67,
+          "n_decisions": 100,
+          "mse": 1.551197260922405
+        },
+        "J2_k4": {
+          "success": 0.79,
+          "incorrect": 0.14,
+          "rejection": 0.07,
+          "n_decisions": 100,
+          "mse": 1.7094340393352165
+        },
+        "SYS1_k4": {
+          "success": 0.66,
+          "incorrect": 0.34,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 4.35435339385032
+        },
+        "SYS2_k4": {
+          "success": 0.81,
+          "incorrect": 0.19,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 2.2004331326443713
+        },
+        "J1_k8": {
+          "success": 0.83,
+          "incorrect": 0.0,
+          "rejection": 0.17,
+          "n_decisions": 100,
+          "mse": 0.987926417237157
+        },
+        "J2_k8": {
+          "success": 0.92,
+          "incorrect": 0.01,
+          "rejection": 0.07,
+          "n_decisions": 100,
+          "mse": 1.0228397920516876
+        },
+        "SYS1_k8": {
+          "success": 0.92,
+          "incorrect": 0.08,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.7967586770617958
+        },
+        "SYS2_k8": {
+          "success": 0.93,
+          "incorrect": 0.07,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.65169735105375
+        },
+        "J1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.988721048328418
+        },
+        "J2_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.988721048328418
+        },
+        "SYS1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.988721048328418
+        },
+        "SYS2_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.988721048328418
+        },
+        "J1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.988721048328418
+        },
+        "J2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.988721048328418
+        },
+        "SYS1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.988721048328418
+        },
+        "SYS2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.988721048328418
+        },
+        "J1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.988721048328418
+        },
+        "J2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.988721048328418
+        },
+        "SYS1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.988721048328418
+        },
+        "SYS2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.988721048328418
+        }
+      },
+      "rel_S1": {
+        "type": "related",
+        "truth": 1,
+        "oracle_mse": 0.525097303585498,
+        "J0": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.5250973035854981
+        },
+        "J1_k1": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k1": {
+          "success": 0.16,
+          "incorrect": 0.82,
+          "rejection": 0.02,
+          "n_decisions": 100,
+          "mse": 4.406019541109591
+        },
+        "SYS1_k1": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.5250973035854981
+        },
+        "SYS2_k1": {
+          "success": 0.18,
+          "incorrect": 0.82,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 4.328118316994689
+        },
+        "J1_k2": {
+          "success": 0.16,
+          "incorrect": 0.75,
+          "rejection": 0.09,
+          "n_decisions": 100,
+          "mse": 1.372829949250367
+        },
+        "J2_k2": {
+          "success": 0.36,
+          "incorrect": 0.5,
+          "rejection": 0.14,
+          "n_decisions": 100,
+          "mse": 2.339083241240359
+        },
+        "SYS1_k2": {
+          "success": 0.25,
+          "incorrect": 0.75,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.2968122281781171
+        },
+        "SYS2_k2": {
+          "success": 0.5,
+          "incorrect": 0.5,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 2.0877190574963747
+        },
+        "J1_k4": {
+          "success": 0.25,
+          "incorrect": 0.13,
+          "rejection": 0.62,
+          "n_decisions": 100,
+          "mse": 0.9056335555649341
+        },
+        "J2_k4": {
+          "success": 0.78,
+          "incorrect": 0.22,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.9975541663214402
+        },
+        "SYS1_k4": {
+          "success": 0.87,
+          "incorrect": 0.13,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.6681776753273623
+        },
+        "SYS2_k4": {
+          "success": 0.78,
+          "incorrect": 0.22,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.9975541663214402
+        },
+        "J1_k8": {
+          "success": 0.67,
+          "incorrect": 0.01,
+          "rejection": 0.32,
+          "n_decisions": 100,
+          "mse": 0.542566634809772
+        },
+        "J2_k8": {
+          "success": 0.97,
+          "incorrect": 0.03,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.5593497079516321
+        },
+        "SYS1_k8": {
+          "success": 0.99,
+          "incorrect": 0.01,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.5364839581180828
+        },
+        "SYS2_k8": {
+          "success": 0.97,
+          "incorrect": 0.03,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.5593497079516321
+        },
+        "J1_k16": {
+          "success": 0.97,
+          "incorrect": 0.0,
+          "rejection": 0.03,
+          "n_decisions": 100,
+          "mse": 0.5242912294847617
+        },
+        "J2_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.5250973035854981
+        },
+        "SYS1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.5250973035854981
+        },
+        "SYS2_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.5250973035854981
+        },
+        "J1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.5250973035854981
+        },
+        "J2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.5250973035854981
+        },
+        "SYS1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.5250973035854981
+        },
+        "SYS2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.5250973035854981
+        },
+        "J1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.5250973035854981
+        },
+        "J2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.5250973035854981
+        },
+        "SYS1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.5250973035854981
+        },
+        "SYS2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.5250973035854981
+        }
+      },
+      "rel_S3": {
+        "type": "related",
+        "truth": 3,
+        "oracle_mse": 1.081668197229735,
+        "J0": {
+          "success": 0.05,
+          "incorrect": 0.95,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 11.796535886549545
+        },
+        "J1_k1": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k1": {
+          "success": 0.3,
+          "incorrect": 0.5,
+          "rejection": 0.2,
+          "n_decisions": 100,
+          "mse": 7.598163275948755
+        },
+        "SYS1_k1": {
+          "success": 0.05,
+          "incorrect": 0.95,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 11.796535886549545
+        },
+        "SYS2_k1": {
+          "success": 0.3,
+          "incorrect": 0.7,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 8.389841294104865
+        },
+        "J1_k2": {
+          "success": 0.0,
+          "incorrect": 0.03,
+          "rejection": 0.97,
+          "n_decisions": 100,
+          "mse": 14.987441931903149
+        },
+        "J2_k2": {
+          "success": 0.39,
+          "incorrect": 0.08,
+          "rejection": 0.53,
+          "n_decisions": 100,
+          "mse": 2.6830297740014255
+        },
+        "SYS1_k2": {
+          "success": 0.04,
+          "incorrect": 0.96,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 12.039939152016263
+        },
+        "SYS2_k2": {
+          "success": 0.4,
+          "incorrect": 0.6,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 7.722854887103994
+        },
+        "J1_k4": {
+          "success": 0.46,
+          "incorrect": 0.0,
+          "rejection": 0.54,
+          "n_decisions": 100,
+          "mse": 1.1068547438316363
+        },
+        "J2_k4": {
+          "success": 0.88,
+          "incorrect": 0.02,
+          "rejection": 0.1,
+          "n_decisions": 100,
+          "mse": 1.2104733464185675
+        },
+        "SYS1_k4": {
+          "success": 0.49,
+          "incorrect": 0.51,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 6.810182867732082
+        },
+        "SYS2_k4": {
+          "success": 0.88,
+          "incorrect": 0.12,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 2.283191072479336
+        },
+        "J1_k8": {
+          "success": 0.94,
+          "incorrect": 0.0,
+          "rejection": 0.06,
+          "n_decisions": 100,
+          "mse": 1.0770192316437115
+        },
+        "J2_k8": {
+          "success": 0.95,
+          "incorrect": 0.0,
+          "rejection": 0.05,
+          "n_decisions": 100,
+          "mse": 1.0805562139218914
+        },
+        "SYS1_k8": {
+          "success": 0.94,
+          "incorrect": 0.06,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.8020769486918917
+        },
+        "SYS2_k8": {
+          "success": 0.95,
+          "incorrect": 0.05,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.7809737645361248
+        },
+        "J1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.081668197229735
+        },
+        "J2_k16": {
+          "success": 0.98,
+          "incorrect": 0.0,
+          "rejection": 0.02,
+          "n_decisions": 100,
+          "mse": 1.080170057118267
+        },
+        "SYS1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.081668197229735
+        },
+        "SYS2_k16": {
+          "success": 0.98,
+          "incorrect": 0.02,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.3803071697278366
+        },
+        "J1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.081668197229735
+        },
+        "J2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.081668197229735
+        },
+        "SYS1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.081668197229735
+        },
+        "SYS2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.081668197229735
+        },
+        "J1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.081668197229735
+        },
+        "J2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.081668197229735
+        },
+        "SYS1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.081668197229735
+        },
+        "SYS2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.081668197229735
+        }
+      },
+      "unrel_0": {
+        "type": "unrelated",
+        "truth": null,
+        "oracle_mse": null,
+        "J0": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J1_k1": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k1": {
+          "success": 0.49,
+          "incorrect": 0.51,
+          "rejection": 0.49,
+          "n_decisions": 100,
+          "mse": 9.132309422654908
+        },
+        "SYS1_k1": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k1": {
+          "success": 0.49,
+          "incorrect": 0.51,
+          "rejection": 0.49,
+          "n_decisions": 100,
+          "mse": 9.132309422654908
+        },
+        "J1_k2": {
+          "success": 0.88,
+          "incorrect": 0.12,
+          "rejection": 0.88,
+          "n_decisions": 100,
+          "mse": 19.913415644184553
+        },
+        "J2_k2": {
+          "success": 0.81,
+          "incorrect": 0.19,
+          "rejection": 0.81,
+          "n_decisions": 100,
+          "mse": 6.540791328429286
+        },
+        "SYS1_k2": {
+          "success": 0.88,
+          "incorrect": 0.12,
+          "rejection": 0.88,
+          "n_decisions": 100,
+          "mse": 19.913415644184553
+        },
+        "SYS2_k2": {
+          "success": 0.81,
+          "incorrect": 0.19,
+          "rejection": 0.81,
+          "n_decisions": 100,
+          "mse": 6.540791328429286
+        },
+        "J1_k4": {
+          "success": 0.97,
+          "incorrect": 0.03,
+          "rejection": 0.97,
+          "n_decisions": 100,
+          "mse": 12.428598352839202
+        },
+        "J2_k4": {
+          "success": 0.54,
+          "incorrect": 0.46,
+          "rejection": 0.54,
+          "n_decisions": 100,
+          "mse": 5.844410322736111
+        },
+        "SYS1_k4": {
+          "success": 0.97,
+          "incorrect": 0.03,
+          "rejection": 0.97,
+          "n_decisions": 100,
+          "mse": 12.428598352839202
+        },
+        "SYS2_k4": {
+          "success": 0.54,
+          "incorrect": 0.46,
+          "rejection": 0.54,
+          "n_decisions": 100,
+          "mse": 5.844410322736111
+        },
+        "J1_k8": {
+          "success": 0.99,
+          "incorrect": 0.01,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 8.017482251639994
+        },
+        "J2_k8": {
+          "success": 0.87,
+          "incorrect": 0.13,
+          "rejection": 0.87,
+          "n_decisions": 100,
+          "mse": 6.202384201181378
+        },
+        "SYS1_k8": {
+          "success": 0.99,
+          "incorrect": 0.01,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 8.017482251639994
+        },
+        "SYS2_k8": {
+          "success": 0.87,
+          "incorrect": 0.13,
+          "rejection": 0.87,
+          "n_decisions": 100,
+          "mse": 6.202384201181378
+        },
+        "J1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k16": {
+          "success": 0.96,
+          "incorrect": 0.04,
+          "rejection": 0.96,
+          "n_decisions": 100,
+          "mse": 5.798626049686028
+        },
+        "SYS1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k16": {
+          "success": 0.96,
+          "incorrect": 0.04,
+          "rejection": 0.96,
+          "n_decisions": 100,
+          "mse": 5.798626049686028
+        },
+        "J1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        }
+      },
+      "unrel_1": {
+        "type": "unrelated",
+        "truth": null,
+        "oracle_mse": null,
+        "J0": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J1_k1": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k1": {
+          "success": 0.8,
+          "incorrect": 0.2,
+          "rejection": 0.8,
+          "n_decisions": 100,
+          "mse": 7.60726473823852
+        },
+        "SYS1_k1": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k1": {
+          "success": 0.8,
+          "incorrect": 0.2,
+          "rejection": 0.8,
+          "n_decisions": 100,
+          "mse": 7.60726473823852
+        },
+        "J1_k2": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k2": {
+          "success": 0.92,
+          "incorrect": 0.08,
+          "rejection": 0.92,
+          "n_decisions": 100,
+          "mse": 6.819969052014041
+        },
+        "SYS1_k2": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k2": {
+          "success": 0.92,
+          "incorrect": 0.08,
+          "rejection": 0.92,
+          "n_decisions": 100,
+          "mse": 6.819969052014041
+        },
+        "J1_k4": {
+          "success": 0.49,
+          "incorrect": 0.51,
+          "rejection": 0.49,
+          "n_decisions": 100,
+          "mse": 19.208173137393292
+        },
+        "J2_k4": {
+          "success": 0.67,
+          "incorrect": 0.33,
+          "rejection": 0.67,
+          "n_decisions": 100,
+          "mse": 3.417977329501626
+        },
+        "SYS1_k4": {
+          "success": 0.49,
+          "incorrect": 0.51,
+          "rejection": 0.49,
+          "n_decisions": 100,
+          "mse": 19.208173137393292
+        },
+        "SYS2_k4": {
+          "success": 0.67,
+          "incorrect": 0.33,
+          "rejection": 0.67,
+          "n_decisions": 100,
+          "mse": 3.417977329501626
+        },
+        "J1_k8": {
+          "success": 0.94,
+          "incorrect": 0.06,
+          "rejection": 0.94,
+          "n_decisions": 100,
+          "mse": 19.34837976354414
+        },
+        "J2_k8": {
+          "success": 0.82,
+          "incorrect": 0.18,
+          "rejection": 0.82,
+          "n_decisions": 100,
+          "mse": 3.5083960419596454
+        },
+        "SYS1_k8": {
+          "success": 0.94,
+          "incorrect": 0.06,
+          "rejection": 0.94,
+          "n_decisions": 100,
+          "mse": 19.34837976354414
+        },
+        "SYS2_k8": {
+          "success": 0.82,
+          "incorrect": 0.18,
+          "rejection": 0.82,
+          "n_decisions": 100,
+          "mse": 3.5083960419596454
+        },
+        "J1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k16": {
+          "success": 0.95,
+          "incorrect": 0.05,
+          "rejection": 0.95,
+          "n_decisions": 100,
+          "mse": 2.7183454066107573
+        },
+        "SYS1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k16": {
+          "success": 0.95,
+          "incorrect": 0.05,
+          "rejection": 0.95,
+          "n_decisions": 100,
+          "mse": 2.7183454066107573
+        },
+        "J1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k32": {
+          "success": 0.99,
+          "incorrect": 0.01,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 2.8491243780246203
+        },
+        "SYS1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k32": {
+          "success": 0.99,
+          "incorrect": 0.01,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 2.8491243780246203
+        },
+        "J1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        }
+      }
+    }
+  },
+  "R2_overlapping": {
+    "storage_reflex": 38784,
+    "storage_eff_cache": 7680,
+    "skipped_diverged": 0,
+    "j0_cfg": [
+      0.5,
+      0.0
+    ],
+    "j1_cfgs": {
+      "1": [
+        0.1,
+        0.0
+      ],
+      "2": [
+        1.0,
+        0.5
+      ],
+      "4": [
+        1.5,
+        0.1
+      ],
+      "8": [
+        1.5,
+        0.0
+      ],
+      "16": [
+        1.5,
+        0.0
+      ],
+      "32": [
+        1.5,
+        0.0
+      ],
+      "64": [
+        1.5,
+        0.0
+      ]
+    },
+    "j2_cfgs": {
+      "1": [
+        0.5,
+        2.0
+      ],
+      "2": [
+        0.5,
+        0.0
+      ],
+      "4": [
+        2.0,
+        0.0
+      ],
+      "8": [
+        2.0,
+        0.0
+      ],
+      "16": [
+        2.0,
+        0.0
+      ],
+      "32": [
+        2.0,
+        0.0
+      ],
+      "64": [
+        2.0,
+        0.0
+      ]
+    },
+    "J0_accept_all": {
+      "ident_familiar": 0.31,
+      "far": 0.0
+    },
+    "J0": {
+      "SEL": 0.5028571428571429,
+      "FAR": 0.0,
+      "FRR": 0.008,
+      "IDENT": 0.3075833333333334,
+      "MSE": 4.8561736800657265,
+      "oracle": 0.953423087217487
+    },
+    "J1_k1": {
+      "SEL": 0.2857142857142857,
+      "FAR": 0.0,
+      "FRR": 1.0,
+      "IDENT": 0.0,
+      "MSE": null,
+      "oracle": 0.953423087217487
+    },
+    "J1_k2": {
+      "SEL": 0.2871428571428571,
+      "FAR": 0.0,
+      "FRR": 0.9899999999999999,
+      "IDENT": 0.2,
+      "MSE": 2.7759149923638895,
+      "oracle": 0.953423087217487
+    },
+    "J1_k4": {
+      "SEL": 0.42428571428571427,
+      "FAR": 0.29,
+      "FRR": 0.40800000000000003,
+      "IDENT": 0.5079601703695177,
+      "MSE": 1.7935746379059332,
+      "oracle": 0.953423087217487
+    },
+    "J1_k8": {
+      "SEL": 0.7957142857142857,
+      "FAR": 0.07500000000000001,
+      "FRR": 0.20400000000000001,
+      "IDENT": 0.9171830572608981,
+      "MSE": 1.0703512435450164,
+      "oracle": 0.953423087217487
+    },
+    "J1_k16": {
+      "SEL": 0.8571428571428571,
+      "FAR": 0.0,
+      "FRR": 0.2,
+      "IDENT": 0.8,
+      "MSE": 0.6957886187697881,
+      "oracle": 0.953423087217487
+    },
+    "J1_k32": {
+      "SEL": 0.8571428571428571,
+      "FAR": 0.0,
+      "FRR": 0.2,
+      "IDENT": 0.8,
+      "MSE": 0.6957886187697881,
+      "oracle": 0.953423087217487
+    },
+    "J1_k64": {
+      "SEL": 0.8571428571428571,
+      "FAR": 0.0,
+      "FRR": 0.2,
+      "IDENT": 0.8,
+      "MSE": 0.6957886187697881,
+      "oracle": 0.953423087217487
+    },
+    "J2_k1": {
+      "SEL": 0.27999999999999997,
+      "FAR": 0.020000000000000018,
+      "FRR": 0.998,
+      "IDENT": 0.0,
+      "MSE": 7.79101760572176,
+      "oracle": 0.953423087217487
+    },
+    "J2_k2": {
+      "SEL": 0.4542857142857143,
+      "FAR": 0.20999999999999996,
+      "FRR": 0.338,
+      "IDENT": 0.48496781056832444,
+      "MSE": 2.689038349836657,
+      "oracle": 0.953423087217487
+    },
+    "J2_k4": {
+      "SEL": 0.6514285714285715,
+      "FAR": 0.435,
+      "FRR": 0.04,
+      "IDENT": 0.7096846513919683,
+      "MSE": 1.742051186103481,
+      "oracle": 0.953423087217487
+    },
+    "J2_k8": {
+      "SEL": 0.8371428571428572,
+      "FAR": 0.22999999999999998,
+      "FRR": 0.062,
+      "IDENT": 0.9104704184704184,
+      "MSE": 1.0572397488196068,
+      "oracle": 0.953423087217487
+    },
+    "J2_k16": {
+      "SEL": 0.9071428571428573,
+      "FAR": 0.09500000000000003,
+      "FRR": 0.06999999999999999,
+      "IDENT": 0.9683076923076923,
+      "MSE": 0.9990147623385821,
+      "oracle": 0.953423087217487
+    },
+    "J2_k32": {
+      "SEL": 0.9228571428571428,
+      "FAR": 0.044999999999999984,
+      "FRR": 0.088,
+      "IDENT": 0.9964285714285716,
+      "MSE": 0.9527205563732968,
+      "oracle": 0.953423087217487
+    },
+    "J2_k64": {
+      "SEL": 0.9357142857142857,
+      "FAR": 0.0,
+      "FRR": 0.09,
+      "IDENT": 1.0,
+      "MSE": 0.9546306659692103,
+      "oracle": 0.953423087217487
+    },
+    "SYS1_k1": {
+      "SEL": 0.5028571428571429,
+      "FAR": 0.0,
+      "FRR": 0.008,
+      "IDENT": 0.3075833333333334,
+      "MSE": 4.8561736800657265,
+      "oracle": 0.953423087217487
+    },
+    "SYS1_k2": {
+      "SEL": 0.5028571428571429,
+      "FAR": 0.0,
+      "FRR": 0.008,
+      "IDENT": 0.3075833333333334,
+      "MSE": 4.821081677124331,
+      "oracle": 0.953423087217487
+    },
+    "SYS1_k4": {
+      "SEL": 0.5071428571428571,
+      "FAR": 0.29,
+      "FRR": 0.002,
+      "IDENT": 0.42684848484848487,
+      "MSE": 3.008137645727564,
+      "oracle": 0.953423087217487
+    },
+    "SYS1_k8": {
+      "SEL": 0.8542857142857142,
+      "FAR": 0.07500000000000001,
+      "FRR": 0.0,
+      "IDENT": 0.826,
+      "MSE": 1.7456073800165934,
+      "oracle": 0.953423087217487
+    },
+    "SYS1_k16": {
+      "SEL": 0.9157142857142857,
+      "FAR": 0.0,
+      "FRR": 0.0,
+      "IDENT": 0.882,
+      "MSE": 1.6602286307010001,
+      "oracle": 0.953423087217487
+    },
+    "SYS1_k32": {
+      "SEL": 0.9157142857142857,
+      "FAR": 0.0,
+      "FRR": 0.0,
+      "IDENT": 0.882,
+      "MSE": 1.6602286307010001,
+      "oracle": 0.953423087217487
+    },
+    "SYS1_k64": {
+      "SEL": 0.9157142857142857,
+      "FAR": 0.0,
+      "FRR": 0.0,
+      "IDENT": 0.882,
+      "MSE": 1.6602286307010001,
+      "oracle": 0.953423087217487
+    },
+    "SYS2_k1": {
+      "SEL": 0.49714285714285705,
+      "FAR": 0.020000000000000018,
+      "FRR": 0.008,
+      "IDENT": 0.3075833333333334,
+      "MSE": 4.854360389374188,
+      "oracle": 0.953423087217487
+    },
+    "SYS2_k2": {
+      "SEL": 0.5257142857142857,
+      "FAR": 0.20999999999999996,
+      "FRR": 0.004,
+      "IDENT": 0.4217142857142857,
+      "MSE": 3.4129926826809354,
+      "oracle": 0.953423087217487
+    },
+    "SYS2_k4": {
+      "SEL": 0.6571428571428571,
+      "FAR": 0.435,
+      "FRR": 0.0,
+      "IDENT": 0.694,
+      "MSE": 1.8972386325701542,
+      "oracle": 0.953423087217487
+    },
+    "SYS2_k8": {
+      "SEL": 0.8514285714285714,
+      "FAR": 0.22999999999999998,
+      "FRR": 0.0,
+      "IDENT": 0.884,
+      "MSE": 1.292560530811922,
+      "oracle": 0.953423087217487
+    },
+    "SYS2_k16": {
+      "SEL": 0.9228571428571429,
+      "FAR": 0.09500000000000003,
+      "FRR": 0.0,
+      "IDENT": 0.93,
+      "MSE": 1.2838469036822202,
+      "oracle": 0.953423087217487
+    },
+    "SYS2_k32": {
+      "SEL": 0.9442857142857143,
+      "FAR": 0.044999999999999984,
+      "FRR": 0.0,
+      "IDENT": 0.9400000000000001,
+      "MSE": 1.302280010018356,
+      "oracle": 0.953423087217487
+    },
+    "SYS2_k64": {
+      "SEL": 0.96,
+      "FAR": 0.0,
+      "FRR": 0.0,
+      "IDENT": 0.944,
+      "MSE": 1.303732346698252,
+      "oracle": 0.953423087217487
+    },
+    "J1_examples_to_target": null,
+    "J2_examples_to_target": null,
+    "transitions_k64": {
+      "j1": {
+        "n_phase1_correct": 152,
+        "n_phase1_wrong": 348,
+        "n_corrupted": 41,
+        "n_rescued": 289,
+        "corrupt_rate": 0.26973684210526316,
+        "rescue_rate": 0.8304597701149425
+      },
+      "j2": {
+        "n_phase1_correct": 152,
+        "n_phase1_wrong": 348,
+        "n_corrupted": 17,
+        "n_rescued": 320,
+        "corrupt_rate": 0.1118421052631579,
+        "rescue_rate": 0.9195402298850575
+      }
+    },
+    "first_correct": {
+      "J1": {
+        "median": 8.0,
+        "frac_never": 0.158
+      },
+      "J2": {
+        "median": 4.0,
+        "frac_never": 0.024
+      }
+    },
+    "lat_us": {
+      "J0": 13.703865000024962,
+      "J1_k64": 59.054930002275796,
+      "J2_k64": 783.871859998726
+    },
+    "probes": {
+      "variant_S0": {
+        "type": "variant",
+        "truth": 0,
+        "oracle_mse": 0.48043134354454253,
+        "J0": {
+          "success": 0.23,
+          "incorrect": 0.77,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.0648119891646495
+        },
+        "J1_k1": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k1": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS1_k1": {
+          "success": 0.23,
+          "incorrect": 0.77,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.0648119891646495
+        },
+        "SYS2_k1": {
+          "success": 0.23,
+          "incorrect": 0.77,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.0648119891646495
+        },
+        "J1_k2": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k2": {
+          "success": 0.31,
+          "incorrect": 0.45,
+          "rejection": 0.24,
+          "n_decisions": 100,
+          "mse": 2.1487946510727705
+        },
+        "SYS1_k2": {
+          "success": 0.23,
+          "incorrect": 0.77,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.0648119891646495
+        },
+        "SYS2_k2": {
+          "success": 0.38,
+          "incorrect": 0.62,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 2.8118334239912532
+        },
+        "J1_k4": {
+          "success": 0.46,
+          "incorrect": 0.27,
+          "rejection": 0.27,
+          "n_decisions": 100,
+          "mse": 0.8377604154010793
+        },
+        "J2_k4": {
+          "success": 0.76,
+          "incorrect": 0.24,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.9830954564307091
+        },
+        "SYS1_k4": {
+          "success": 0.5,
+          "incorrect": 0.5,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 2.083506311689218
+        },
+        "SYS2_k4": {
+          "success": 0.76,
+          "incorrect": 0.24,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.9830954564307091
+        },
+        "J1_k8": {
+          "success": 0.94,
+          "incorrect": 0.06,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.533894218994973
+        },
+        "J2_k8": {
+          "success": 0.96,
+          "incorrect": 0.04,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.5205753062304002
+        },
+        "SYS1_k8": {
+          "success": 0.94,
+          "incorrect": 0.06,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.533894218994973
+        },
+        "SYS2_k8": {
+          "success": 0.96,
+          "incorrect": 0.04,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.5205753062304002
+        },
+        "J1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.48043134354454253
+        },
+        "J2_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.48043134354454253
+        },
+        "SYS1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.48043134354454253
+        },
+        "SYS2_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.48043134354454253
+        },
+        "J1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.48043134354454253
+        },
+        "J2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.48043134354454253
+        },
+        "SYS1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.48043134354454253
+        },
+        "SYS2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.48043134354454253
+        },
+        "J1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.48043134354454253
+        },
+        "J2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.48043134354454253
+        },
+        "SYS1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.48043134354454253
+        },
+        "SYS2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.48043134354454253
+        }
+      },
+      "variant_S2": {
+        "type": "variant",
+        "truth": 2,
+        "oracle_mse": 1.9839609610082833,
+        "J0": {
+          "success": 0.41,
+          "incorrect": 0.59,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.517988678425849
+        },
+        "J1_k1": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k1": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS1_k1": {
+          "success": 0.41,
+          "incorrect": 0.59,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.517988678425849
+        },
+        "SYS2_k1": {
+          "success": 0.41,
+          "incorrect": 0.59,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.517988678425849
+        },
+        "J1_k2": {
+          "success": 0.0,
+          "incorrect": 0.02,
+          "rejection": 0.98,
+          "n_decisions": 100,
+          "mse": 4.323908347300637
+        },
+        "J2_k2": {
+          "success": 0.24,
+          "incorrect": 0.25,
+          "rejection": 0.51,
+          "n_decisions": 100,
+          "mse": 3.830799532536591
+        },
+        "SYS1_k2": {
+          "success": 0.4,
+          "incorrect": 0.6,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.487817151815665
+        },
+        "SYS2_k2": {
+          "success": 0.41,
+          "incorrect": 0.59,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.0553162494497
+        },
+        "J1_k4": {
+          "success": 0.13,
+          "incorrect": 0.21,
+          "rejection": 0.66,
+          "n_decisions": 100,
+          "mse": 3.00718526572677
+        },
+        "J2_k4": {
+          "success": 0.47,
+          "incorrect": 0.35,
+          "rejection": 0.18,
+          "n_decisions": 100,
+          "mse": 3.1812374003938357
+        },
+        "SYS1_k4": {
+          "success": 0.37,
+          "incorrect": 0.63,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 4.756033539362534
+        },
+        "SYS2_k4": {
+          "success": 0.51,
+          "incorrect": 0.49,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 3.833149124624825
+        },
+        "J1_k8": {
+          "success": 0.1,
+          "incorrect": 0.02,
+          "rejection": 0.88,
+          "n_decisions": 100,
+          "mse": 2.1498528174727505
+        },
+        "J2_k8": {
+          "success": 0.52,
+          "incorrect": 0.18,
+          "rejection": 0.3,
+          "n_decisions": 100,
+          "mse": 2.2838216626295464
+        },
+        "SYS1_k8": {
+          "success": 0.46,
+          "incorrect": 0.54,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.077464107192456
+        },
+        "SYS2_k8": {
+          "success": 0.61,
+          "incorrect": 0.39,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 3.4613328872626825
+        },
+        "J1_k16": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k16": {
+          "success": 0.56,
+          "incorrect": 0.09,
+          "rejection": 0.35,
+          "n_decisions": 100,
+          "mse": 2.190481334337749
+        },
+        "SYS1_k16": {
+          "success": 0.41,
+          "incorrect": 0.59,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.517988678425849
+        },
+        "SYS2_k16": {
+          "success": 0.67,
+          "incorrect": 0.33,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 3.614642041055939
+        },
+        "J1_k32": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k32": {
+          "success": 0.55,
+          "incorrect": 0.01,
+          "rejection": 0.44,
+          "n_decisions": 100,
+          "mse": 1.9804483067873306
+        },
+        "SYS1_k32": {
+          "success": 0.41,
+          "incorrect": 0.59,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.517988678425849
+        },
+        "SYS2_k32": {
+          "success": 0.7,
+          "incorrect": 0.3,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 3.728245575012627
+        },
+        "J1_k64": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k64": {
+          "success": 0.55,
+          "incorrect": 0.0,
+          "rejection": 0.45,
+          "n_decisions": 100,
+          "mse": 1.9899988547668983
+        },
+        "SYS1_k64": {
+          "success": 0.41,
+          "incorrect": 0.59,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.517988678425849
+        },
+        "SYS2_k64": {
+          "success": 0.72,
+          "incorrect": 0.28,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 3.7355072584121056
+        }
+      },
+      "variant_S4": {
+        "type": "variant",
+        "truth": 4,
+        "oracle_mse": 0.8311781238705488,
+        "J0": {
+          "success": 0.38,
+          "incorrect": 0.62,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 4.2754258567247
+        },
+        "J1_k1": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k1": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS1_k1": {
+          "success": 0.38,
+          "incorrect": 0.62,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 4.2754258567247
+        },
+        "SYS2_k1": {
+          "success": 0.38,
+          "incorrect": 0.62,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 4.2754258567247
+        },
+        "J1_k2": {
+          "success": 0.01,
+          "incorrect": 0.0,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 0.794333374335757
+        },
+        "J2_k2": {
+          "success": 0.33,
+          "incorrect": 0.33,
+          "rejection": 0.34,
+          "n_decisions": 100,
+          "mse": 2.5766217409669614
+        },
+        "SYS1_k2": {
+          "success": 0.39,
+          "incorrect": 0.61,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 4.224312495351928
+        },
+        "SYS2_k2": {
+          "success": 0.48,
+          "incorrect": 0.52,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 3.020496166959043
+        },
+        "J1_k4": {
+          "success": 0.36,
+          "incorrect": 0.27,
+          "rejection": 0.37,
+          "n_decisions": 100,
+          "mse": 1.7935033336038484
+        },
+        "J2_k4": {
+          "success": 0.74,
+          "incorrect": 0.25,
+          "rejection": 0.01,
+          "n_decisions": 100,
+          "mse": 1.5383391389396306
+        },
+        "SYS1_k4": {
+          "success": 0.53,
+          "incorrect": 0.47,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 2.614059369341278
+        },
+        "SYS2_k4": {
+          "success": 0.74,
+          "incorrect": 0.26,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.6410668835065207
+        },
+        "J1_k8": {
+          "success": 0.85,
+          "incorrect": 0.04,
+          "rejection": 0.11,
+          "n_decisions": 100,
+          "mse": 0.9319244751545726
+        },
+        "J2_k8": {
+          "success": 0.94,
+          "incorrect": 0.05,
+          "rejection": 0.01,
+          "n_decisions": 100,
+          "mse": 0.8813091241069794
+        },
+        "SYS1_k8": {
+          "success": 0.9,
+          "incorrect": 0.1,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.1993922452677892
+        },
+        "SYS2_k8": {
+          "success": 0.95,
+          "incorrect": 0.05,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8804018094354185
+        },
+        "J1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8311781238705488
+        },
+        "J2_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8311781238705488
+        },
+        "SYS1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8311781238705488
+        },
+        "SYS2_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8311781238705488
+        },
+        "J1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8311781238705488
+        },
+        "J2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8311781238705488
+        },
+        "SYS1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8311781238705488
+        },
+        "SYS2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8311781238705488
+        },
+        "J1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8311781238705488
+        },
+        "J2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8311781238705488
+        },
+        "SYS1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8311781238705488
+        },
+        "SYS2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8311781238705488
+        }
+      },
+      "rel_S1": {
+        "type": "related",
+        "truth": 1,
+        "oracle_mse": 0.8083986213573913,
+        "J0": {
+          "success": 0.43,
+          "incorrect": 0.53,
+          "rejection": 0.04,
+          "n_decisions": 100,
+          "mse": 3.9538452589869437
+        },
+        "J1_k1": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k1": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS1_k1": {
+          "success": 0.43,
+          "incorrect": 0.53,
+          "rejection": 0.04,
+          "n_decisions": 100,
+          "mse": 3.9538452589869437
+        },
+        "SYS2_k1": {
+          "success": 0.43,
+          "incorrect": 0.53,
+          "rejection": 0.04,
+          "n_decisions": 100,
+          "mse": 3.9538452589869437
+        },
+        "J1_k2": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k2": {
+          "success": 0.32,
+          "incorrect": 0.37,
+          "rejection": 0.31,
+          "n_decisions": 100,
+          "mse": 2.241904618909453
+        },
+        "SYS1_k2": {
+          "success": 0.43,
+          "incorrect": 0.53,
+          "rejection": 0.04,
+          "n_decisions": 100,
+          "mse": 3.9538452589869437
+        },
+        "SYS2_k2": {
+          "success": 0.42,
+          "incorrect": 0.56,
+          "rejection": 0.02,
+          "n_decisions": 100,
+          "mse": 2.7366136774097534
+        },
+        "J1_k4": {
+          "success": 0.31,
+          "incorrect": 0.37,
+          "rejection": 0.32,
+          "n_decisions": 100,
+          "mse": 1.4373776605804587
+        },
+        "J2_k4": {
+          "success": 0.69,
+          "incorrect": 0.31,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.2425357766299283
+        },
+        "SYS1_k4": {
+          "success": 0.42,
+          "incorrect": 0.57,
+          "rejection": 0.01,
+          "n_decisions": 100,
+          "mse": 2.360770456580462
+        },
+        "SYS2_k4": {
+          "success": 0.69,
+          "incorrect": 0.31,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.2425357766299283
+        },
+        "J1_k8": {
+          "success": 0.94,
+          "incorrect": 0.06,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8769801619535749
+        },
+        "J2_k8": {
+          "success": 0.91,
+          "incorrect": 0.09,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.9154847710009626
+        },
+        "SYS1_k8": {
+          "success": 0.94,
+          "incorrect": 0.06,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8769801619535749
+        },
+        "SYS2_k8": {
+          "success": 0.91,
+          "incorrect": 0.09,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.9154847710009626
+        },
+        "J1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8083986213573913
+        },
+        "J2_k16": {
+          "success": 0.98,
+          "incorrect": 0.02,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8298366236334003
+        },
+        "SYS1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8083986213573913
+        },
+        "SYS2_k16": {
+          "success": 0.98,
+          "incorrect": 0.02,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8298366236334003
+        },
+        "J1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8083986213573913
+        },
+        "J2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8083986213573913
+        },
+        "SYS1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8083986213573913
+        },
+        "SYS2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8083986213573913
+        },
+        "J1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8083986213573913
+        },
+        "J2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8083986213573913
+        },
+        "SYS1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8083986213573913
+        },
+        "SYS2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.8083986213573913
+        }
+      },
+      "rel_S3": {
+        "type": "related",
+        "truth": 3,
+        "oracle_mse": 0.66314638630667,
+        "J0": {
+          "success": 0.07,
+          "incorrect": 0.93,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.468796617026491
+        },
+        "J1_k1": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k1": {
+          "success": 0.0,
+          "incorrect": 0.01,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 7.79101760572176
+        },
+        "SYS1_k1": {
+          "success": 0.07,
+          "incorrect": 0.93,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.468796617026491
+        },
+        "SYS2_k1": {
+          "success": 0.07,
+          "incorrect": 0.93,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.459730163568801
+        },
+        "J1_k2": {
+          "success": 0.0,
+          "incorrect": 0.02,
+          "rejection": 0.98,
+          "n_decisions": 100,
+          "mse": 3.2095032554552763
+        },
+        "J2_k2": {
+          "success": 0.4,
+          "incorrect": 0.31,
+          "rejection": 0.29,
+          "n_decisions": 100,
+          "mse": 2.6470712056975088
+        },
+        "SYS1_k2": {
+          "success": 0.07,
+          "incorrect": 0.93,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 5.374621490302469
+        },
+        "SYS2_k2": {
+          "success": 0.41,
+          "incorrect": 0.59,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 3.4407038955949245
+        },
+        "J1_k4": {
+          "success": 0.29,
+          "incorrect": 0.29,
+          "rejection": 0.42,
+          "n_decisions": 100,
+          "mse": 1.8920465142175094
+        },
+        "J2_k4": {
+          "success": 0.77,
+          "incorrect": 0.22,
+          "rejection": 0.01,
+          "n_decisions": 100,
+          "mse": 1.7650481581233008
+        },
+        "SYS1_k4": {
+          "success": 0.31,
+          "incorrect": 0.69,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 3.226318551664328
+        },
+        "SYS2_k4": {
+          "success": 0.77,
+          "incorrect": 0.23,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.7863459216587874
+        },
+        "J1_k8": {
+          "success": 0.89,
+          "incorrect": 0.08,
+          "rejection": 0.03,
+          "n_decisions": 100,
+          "mse": 0.8591045441492116
+        },
+        "J2_k8": {
+          "success": 0.99,
+          "incorrect": 0.01,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.685007880130146
+        },
+        "SYS1_k8": {
+          "success": 0.89,
+          "incorrect": 0.11,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.0403061666741746
+        },
+        "SYS2_k8": {
+          "success": 0.99,
+          "incorrect": 0.01,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.685007880130146
+        },
+        "J1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.6631463863066702
+        },
+        "J2_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.6631463863066702
+        },
+        "SYS1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.6631463863066702
+        },
+        "SYS2_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.6631463863066702
+        },
+        "J1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.6631463863066702
+        },
+        "J2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.6631463863066702
+        },
+        "SYS1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.6631463863066702
+        },
+        "SYS2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.6631463863066702
+        },
+        "J1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.6631463863066702
+        },
+        "J2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.6631463863066702
+        },
+        "SYS1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.6631463863066702
+        },
+        "SYS2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.6631463863066702
+        }
+      },
+      "unrel_0": {
+        "type": "unrelated",
+        "truth": null,
+        "oracle_mse": null,
+        "J0": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J1_k1": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k1": {
+          "success": 0.99,
+          "incorrect": 0.01,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 34.94681092970423
+        },
+        "SYS1_k1": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k1": {
+          "success": 0.99,
+          "incorrect": 0.01,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 34.94681092970423
+        },
+        "J1_k2": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k2": {
+          "success": 0.65,
+          "incorrect": 0.35,
+          "rejection": 0.65,
+          "n_decisions": 100,
+          "mse": 7.8028572421219335
+        },
+        "SYS1_k2": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k2": {
+          "success": 0.65,
+          "incorrect": 0.35,
+          "rejection": 0.65,
+          "n_decisions": 100,
+          "mse": 7.8028572421219335
+        },
+        "J1_k4": {
+          "success": 0.87,
+          "incorrect": 0.13,
+          "rejection": 0.87,
+          "n_decisions": 100,
+          "mse": 4.768782361997866
+        },
+        "J2_k4": {
+          "success": 0.36,
+          "incorrect": 0.64,
+          "rejection": 0.36,
+          "n_decisions": 100,
+          "mse": 4.614590015386224
+        },
+        "SYS1_k4": {
+          "success": 0.87,
+          "incorrect": 0.13,
+          "rejection": 0.87,
+          "n_decisions": 100,
+          "mse": 4.768782361997866
+        },
+        "SYS2_k4": {
+          "success": 0.36,
+          "incorrect": 0.64,
+          "rejection": 0.36,
+          "n_decisions": 100,
+          "mse": 4.614590015386224
+        },
+        "J1_k8": {
+          "success": 0.98,
+          "incorrect": 0.02,
+          "rejection": 0.98,
+          "n_decisions": 100,
+          "mse": 6.046890938463228
+        },
+        "J2_k8": {
+          "success": 0.62,
+          "incorrect": 0.38,
+          "rejection": 0.62,
+          "n_decisions": 100,
+          "mse": 3.364544999228017
+        },
+        "SYS1_k8": {
+          "success": 0.98,
+          "incorrect": 0.02,
+          "rejection": 0.98,
+          "n_decisions": 100,
+          "mse": 6.046890938463228
+        },
+        "SYS2_k8": {
+          "success": 0.62,
+          "incorrect": 0.38,
+          "rejection": 0.62,
+          "n_decisions": 100,
+          "mse": 3.364544999228017
+        },
+        "J1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k16": {
+          "success": 0.82,
+          "incorrect": 0.18,
+          "rejection": 0.82,
+          "n_decisions": 100,
+          "mse": 3.148067714911606
+        },
+        "SYS1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k16": {
+          "success": 0.82,
+          "incorrect": 0.18,
+          "rejection": 0.82,
+          "n_decisions": 100,
+          "mse": 3.148067714911606
+        },
+        "J1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k32": {
+          "success": 0.91,
+          "incorrect": 0.09,
+          "rejection": 0.91,
+          "n_decisions": 100,
+          "mse": 2.5252931352774337
+        },
+        "SYS1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k32": {
+          "success": 0.91,
+          "incorrect": 0.09,
+          "rejection": 0.91,
+          "n_decisions": 100,
+          "mse": 2.5252931352774337
+        },
+        "J1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        }
+      },
+      "unrel_1": {
+        "type": "unrelated",
+        "truth": null,
+        "oracle_mse": null,
+        "J0": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J1_k1": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k1": {
+          "success": 0.97,
+          "incorrect": 0.03,
+          "rejection": 0.97,
+          "n_decisions": 100,
+          "mse": 6.330248880545679
+        },
+        "SYS1_k1": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k1": {
+          "success": 0.97,
+          "incorrect": 0.03,
+          "rejection": 0.97,
+          "n_decisions": 100,
+          "mse": 6.330248880545679
+        },
+        "J1_k2": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k2": {
+          "success": 0.93,
+          "incorrect": 0.07,
+          "rejection": 0.93,
+          "n_decisions": 100,
+          "mse": 7.1484762411376455
+        },
+        "SYS1_k2": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k2": {
+          "success": 0.93,
+          "incorrect": 0.07,
+          "rejection": 0.93,
+          "n_decisions": 100,
+          "mse": 7.1484762411376455
+        },
+        "J1_k4": {
+          "success": 0.55,
+          "incorrect": 0.45,
+          "rejection": 0.55,
+          "n_decisions": 100,
+          "mse": 6.463136058684319
+        },
+        "J2_k4": {
+          "success": 0.77,
+          "incorrect": 0.23,
+          "rejection": 0.77,
+          "n_decisions": 100,
+          "mse": 5.570259460853154
+        },
+        "SYS1_k4": {
+          "success": 0.55,
+          "incorrect": 0.45,
+          "rejection": 0.55,
+          "n_decisions": 100,
+          "mse": 6.463136058684319
+        },
+        "SYS2_k4": {
+          "success": 0.77,
+          "incorrect": 0.23,
+          "rejection": 0.77,
+          "n_decisions": 100,
+          "mse": 5.570259460853154
+        },
+        "J1_k8": {
+          "success": 0.87,
+          "incorrect": 0.13,
+          "rejection": 0.87,
+          "n_decisions": 100,
+          "mse": 5.432900412923701
+        },
+        "J2_k8": {
+          "success": 0.92,
+          "incorrect": 0.08,
+          "rejection": 0.92,
+          "n_decisions": 100,
+          "mse": 4.8776912069654585
+        },
+        "SYS1_k8": {
+          "success": 0.87,
+          "incorrect": 0.13,
+          "rejection": 0.87,
+          "n_decisions": 100,
+          "mse": 5.432900412923701
+        },
+        "SYS2_k8": {
+          "success": 0.92,
+          "incorrect": 0.08,
+          "rejection": 0.92,
+          "n_decisions": 100,
+          "mse": 4.8776912069654585
+        },
+        "J1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k16": {
+          "success": 0.99,
+          "incorrect": 0.01,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 4.368538586736882
+        },
+        "SYS1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k16": {
+          "success": 0.99,
+          "incorrect": 0.01,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 4.368538586736882
+        },
+        "J1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        }
+      }
+    }
+  },
+  "R3_identical": {
+    "storage_reflex": 38784,
+    "storage_eff_cache": 7680,
+    "skipped_diverged": 0,
+    "j0_cfg": [
+      0.5,
+      0.25
+    ],
+    "j1_cfgs": {
+      "1": [
+        0.5,
+        0.0
+      ],
+      "2": [
+        0.5,
+        0.0
+      ],
+      "4": [
+        1.0,
+        0.0
+      ],
+      "8": [
+        3.0,
+        0.5
+      ],
+      "16": [
+        3.0,
+        0.5
+      ],
+      "32": [
+        3.0,
+        0.5
+      ],
+      "64": [
+        3.0,
+        0.5
+      ]
+    },
+    "j2_cfgs": {
+      "1": [
+        1.0,
+        0.5
+      ],
+      "2": [
+        3.0,
+        0.5
+      ],
+      "4": [
+        8.0,
+        0.5
+      ],
+      "8": [
+        5.0,
+        0.5
+      ],
+      "16": [
+        8.0,
+        0.5
+      ],
+      "32": [
+        5.0,
+        1.0
+      ],
+      "64": [
+        5.0,
+        1.0
+      ]
+    },
+    "J0_accept_all": {
+      "ident_familiar": 0.014000000000000002,
+      "far": 1.0
+    },
+    "J0": {
+      "SEL": 0.2857142857142857,
+      "FAR": 0.0,
+      "FRR": 1.0,
+      "IDENT": 0.0,
+      "MSE": null,
+      "oracle": 1.841740294513695
+    },
+    "J1_k1": {
+      "SEL": 0.28285714285714286,
+      "FAR": 0.05499999999999999,
+      "FRR": 0.9279999999999999,
+      "IDENT": 0.2,
+      "MSE": 5.71355288291101,
+      "oracle": 1.841740294513695
+    },
+    "J1_k2": {
+      "SEL": 0.2914285714285714,
+      "FAR": 0.010000000000000009,
+      "FRR": 0.982,
+      "IDENT": 0.2,
+      "MSE": 2.6180244151409098,
+      "oracle": 1.841740294513695
+    },
+    "J1_k4": {
+      "SEL": 0.33999999999999997,
+      "FAR": 0.07500000000000001,
+      "FRR": 0.8240000000000001,
+      "IDENT": 0.25503105590062114,
+      "MSE": 4.648194091933393,
+      "oracle": 1.841740294513695
+    },
+    "J1_k8": {
+      "SEL": 0.5185714285714286,
+      "FAR": 0.0,
+      "FRR": 0.674,
+      "IDENT": 0.6,
+      "MSE": 1.6552940686205782,
+      "oracle": 1.841740294513695
+    },
+    "J1_k16": {
+      "SEL": 0.6571428571428571,
+      "FAR": 0.0,
+      "FRR": 0.48,
+      "IDENT": 0.6,
+      "MSE": 1.570427555160036,
+      "oracle": 1.841740294513695
+    },
+    "J1_k32": {
+      "SEL": 0.7142857142857143,
+      "FAR": 0.0,
+      "FRR": 0.4,
+      "IDENT": 0.6,
+      "MSE": 1.589565678627464,
+      "oracle": 1.841740294513695
+    },
+    "J1_k64": {
+      "SEL": 0.7142857142857143,
+      "FAR": 0.0,
+      "FRR": 0.4,
+      "IDENT": 0.6,
+      "MSE": 1.589565678627464,
+      "oracle": 1.841740294513695
+    },
+    "J2_k1": {
+      "SEL": 0.31428571428571433,
+      "FAR": 0.08000000000000002,
+      "FRR": 0.8580000000000002,
+      "IDENT": 0.4121212121212121,
+      "MSE": 4.1978279668468295,
+      "oracle": 1.841740294513695
+    },
+    "J2_k2": {
+      "SEL": 0.38571428571428573,
+      "FAR": 0.13,
+      "FRR": 0.7140000000000001,
+      "IDENT": 0.46464646464646464,
+      "MSE": 3.935107136667716,
+      "oracle": 1.841740294513695
+    },
+    "J2_k4": {
+      "SEL": 0.51,
+      "FAR": 0.22000000000000003,
+      "FRR": 0.508,
+      "IDENT": 0.5778120786317509,
+      "MSE": 1.9924303632439682,
+      "oracle": 1.841740294513695
+    },
+    "J2_k8": {
+      "SEL": 0.56,
+      "FAR": 0.265,
+      "FRR": 0.43200000000000005,
+      "IDENT": 0.6096969696969696,
+      "MSE": 1.7300301253388557,
+      "oracle": 1.841740294513695
+    },
+    "J2_k16": {
+      "SEL": 0.5585714285714286,
+      "FAR": 0.355,
+      "FRR": 0.388,
+      "IDENT": 0.5698630136986301,
+      "MSE": 1.6854734956486879,
+      "oracle": 1.841740294513695
+    },
+    "J2_k32": {
+      "SEL": 0.6100000000000001,
+      "FAR": 0.175,
+      "FRR": 0.47000000000000003,
+      "IDENT": 0.6,
+      "MSE": 1.522017588275616,
+      "oracle": 1.841740294513695
+    },
+    "J2_k64": {
+      "SEL": 0.6385714285714286,
+      "FAR": 0.175,
+      "FRR": 0.43599999999999994,
+      "IDENT": 0.6,
+      "MSE": 1.5802451292413788,
+      "oracle": 1.841740294513695
+    },
+    "SYS1_k1": {
+      "SEL": 0.28285714285714286,
+      "FAR": 0.05499999999999999,
+      "FRR": 0.9279999999999999,
+      "IDENT": 0.2,
+      "MSE": 5.71355288291101,
+      "oracle": 1.841740294513695
+    },
+    "SYS1_k2": {
+      "SEL": 0.2914285714285714,
+      "FAR": 0.010000000000000009,
+      "FRR": 0.982,
+      "IDENT": 0.2,
+      "MSE": 2.6180244151409098,
+      "oracle": 1.841740294513695
+    },
+    "SYS1_k4": {
+      "SEL": 0.33999999999999997,
+      "FAR": 0.07500000000000001,
+      "FRR": 0.8240000000000001,
+      "IDENT": 0.25503105590062114,
+      "MSE": 4.648194091933393,
+      "oracle": 1.841740294513695
+    },
+    "SYS1_k8": {
+      "SEL": 0.5185714285714286,
+      "FAR": 0.0,
+      "FRR": 0.674,
+      "IDENT": 0.6,
+      "MSE": 1.6552940686205782,
+      "oracle": 1.841740294513695
+    },
+    "SYS1_k16": {
+      "SEL": 0.6571428571428571,
+      "FAR": 0.0,
+      "FRR": 0.48,
+      "IDENT": 0.6,
+      "MSE": 1.570427555160036,
+      "oracle": 1.841740294513695
+    },
+    "SYS1_k32": {
+      "SEL": 0.7142857142857143,
+      "FAR": 0.0,
+      "FRR": 0.4,
+      "IDENT": 0.6,
+      "MSE": 1.589565678627464,
+      "oracle": 1.841740294513695
+    },
+    "SYS1_k64": {
+      "SEL": 0.7142857142857143,
+      "FAR": 0.0,
+      "FRR": 0.4,
+      "IDENT": 0.6,
+      "MSE": 1.589565678627464,
+      "oracle": 1.841740294513695
+    },
+    "SYS2_k1": {
+      "SEL": 0.31428571428571433,
+      "FAR": 0.08000000000000002,
+      "FRR": 0.8580000000000002,
+      "IDENT": 0.4121212121212121,
+      "MSE": 4.1978279668468295,
+      "oracle": 1.841740294513695
+    },
+    "SYS2_k2": {
+      "SEL": 0.38571428571428573,
+      "FAR": 0.13,
+      "FRR": 0.7140000000000001,
+      "IDENT": 0.46464646464646464,
+      "MSE": 3.935107136667716,
+      "oracle": 1.841740294513695
+    },
+    "SYS2_k4": {
+      "SEL": 0.51,
+      "FAR": 0.22000000000000003,
+      "FRR": 0.508,
+      "IDENT": 0.5778120786317509,
+      "MSE": 1.9924303632439682,
+      "oracle": 1.841740294513695
+    },
+    "SYS2_k8": {
+      "SEL": 0.56,
+      "FAR": 0.265,
+      "FRR": 0.43200000000000005,
+      "IDENT": 0.6096969696969696,
+      "MSE": 1.7300301253388557,
+      "oracle": 1.841740294513695
+    },
+    "SYS2_k16": {
+      "SEL": 0.5585714285714286,
+      "FAR": 0.355,
+      "FRR": 0.388,
+      "IDENT": 0.5698630136986301,
+      "MSE": 1.6854734956486879,
+      "oracle": 1.841740294513695
+    },
+    "SYS2_k32": {
+      "SEL": 0.6100000000000001,
+      "FAR": 0.175,
+      "FRR": 0.47000000000000003,
+      "IDENT": 0.6,
+      "MSE": 1.522017588275616,
+      "oracle": 1.841740294513695
+    },
+    "SYS2_k64": {
+      "SEL": 0.6385714285714286,
+      "FAR": 0.175,
+      "FRR": 0.43599999999999994,
+      "IDENT": 0.6,
+      "MSE": 1.5802451292413788,
+      "oracle": 1.841740294513695
+    },
+    "J1_examples_to_target": null,
+    "J2_examples_to_target": null,
+    "transitions_k64": {
+      "j1": {
+        "n_phase1_correct": 0,
+        "n_phase1_wrong": 500,
+        "n_corrupted": 0,
+        "n_rescued": 300,
+        "corrupt_rate": 0.0,
+        "rescue_rate": 0.6
+      },
+      "j2": {
+        "n_phase1_correct": 0,
+        "n_phase1_wrong": 500,
+        "n_corrupted": 0,
+        "n_rescued": 282,
+        "corrupt_rate": 0.0,
+        "rescue_rate": 0.564
+      }
+    },
+    "first_correct": {
+      "J1": {
+        "median": 8.0,
+        "frac_never": 0.326
+      },
+      "J2": {
+        "median": 4.0,
+        "frac_never": 0.4
+      }
+    },
+    "lat_us": {
+      "J0": 13.678597999842168,
+      "J1_k64": 58.8651399993978,
+      "J2_k64": 848.9036499986469
+    },
+    "probes": {
+      "variant_S0": {
+        "type": "variant",
+        "truth": 0,
+        "oracle_mse": 3.143855479442444,
+        "J0": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J1_k1": {
+          "success": 0.0,
+          "incorrect": 0.03,
+          "rejection": 0.97,
+          "n_decisions": 100,
+          "mse": 8.570658947051104
+        },
+        "J2_k1": {
+          "success": 0.09,
+          "incorrect": 0.18,
+          "rejection": 0.73,
+          "n_decisions": 100,
+          "mse": 6.283591967506326
+        },
+        "SYS1_k1": {
+          "success": 0.0,
+          "incorrect": 0.03,
+          "rejection": 0.97,
+          "n_decisions": 100,
+          "mse": 8.570658947051104
+        },
+        "SYS2_k1": {
+          "success": 0.09,
+          "incorrect": 0.18,
+          "rejection": 0.73,
+          "n_decisions": 100,
+          "mse": 6.283591967506326
+        },
+        "J1_k2": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k2": {
+          "success": 0.18,
+          "incorrect": 0.15,
+          "rejection": 0.67,
+          "n_decisions": 100,
+          "mse": 4.645351955100466
+        },
+        "SYS1_k2": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k2": {
+          "success": 0.18,
+          "incorrect": 0.15,
+          "rejection": 0.67,
+          "n_decisions": 100,
+          "mse": 4.645351955100466
+        },
+        "J1_k4": {
+          "success": 0.0,
+          "incorrect": 0.01,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 6.782883810575103
+        },
+        "J2_k4": {
+          "success": 0.44,
+          "incorrect": 0.17,
+          "rejection": 0.39,
+          "n_decisions": 100,
+          "mse": 3.7542525148758616
+        },
+        "SYS1_k4": {
+          "success": 0.0,
+          "incorrect": 0.01,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 6.782883810575103
+        },
+        "SYS2_k4": {
+          "success": 0.44,
+          "incorrect": 0.17,
+          "rejection": 0.39,
+          "n_decisions": 100,
+          "mse": 3.7542525148758616
+        },
+        "J1_k8": {
+          "success": 0.11,
+          "incorrect": 0.0,
+          "rejection": 0.89,
+          "n_decisions": 100,
+          "mse": 3.3453395038030607
+        },
+        "J2_k8": {
+          "success": 0.52,
+          "incorrect": 0.08,
+          "rejection": 0.4,
+          "n_decisions": 100,
+          "mse": 3.395943824641337
+        },
+        "SYS1_k8": {
+          "success": 0.11,
+          "incorrect": 0.0,
+          "rejection": 0.89,
+          "n_decisions": 100,
+          "mse": 3.3453395038030607
+        },
+        "SYS2_k8": {
+          "success": 0.52,
+          "incorrect": 0.08,
+          "rejection": 0.4,
+          "n_decisions": 100,
+          "mse": 3.395943824641337
+        },
+        "J1_k16": {
+          "success": 0.6,
+          "incorrect": 0.0,
+          "rejection": 0.4,
+          "n_decisions": 100,
+          "mse": 3.0864411090401602
+        },
+        "J2_k16": {
+          "success": 0.62,
+          "incorrect": 0.11,
+          "rejection": 0.27,
+          "n_decisions": 100,
+          "mse": 3.537873199932039
+        },
+        "SYS1_k16": {
+          "success": 0.6,
+          "incorrect": 0.0,
+          "rejection": 0.4,
+          "n_decisions": 100,
+          "mse": 3.0864411090401602
+        },
+        "SYS2_k16": {
+          "success": 0.62,
+          "incorrect": 0.11,
+          "rejection": 0.27,
+          "n_decisions": 100,
+          "mse": 3.537873199932039
+        },
+        "J1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 3.143855479442444
+        },
+        "J2_k32": {
+          "success": 0.68,
+          "incorrect": 0.0,
+          "rejection": 0.32,
+          "n_decisions": 100,
+          "mse": 3.087141230956128
+        },
+        "SYS1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 3.143855479442444
+        },
+        "SYS2_k32": {
+          "success": 0.68,
+          "incorrect": 0.0,
+          "rejection": 0.32,
+          "n_decisions": 100,
+          "mse": 3.087141230956128
+        },
+        "J1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 3.143855479442444
+        },
+        "J2_k64": {
+          "success": 0.84,
+          "incorrect": 0.0,
+          "rejection": 0.16,
+          "n_decisions": 100,
+          "mse": 3.115119093843434
+        },
+        "SYS1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 3.143855479442444
+        },
+        "SYS2_k64": {
+          "success": 0.84,
+          "incorrect": 0.0,
+          "rejection": 0.16,
+          "n_decisions": 100,
+          "mse": 3.115119093843434
+        }
+      },
+      "variant_S2": {
+        "type": "variant",
+        "truth": 2,
+        "oracle_mse": 0.20619850921406668,
+        "J0": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J1_k1": {
+          "success": 0.0,
+          "incorrect": 0.14,
+          "rejection": 0.86,
+          "n_decisions": 100,
+          "mse": 3.449654740895016
+        },
+        "J2_k1": {
+          "success": 0.11,
+          "incorrect": 0.0,
+          "rejection": 0.89,
+          "n_decisions": 100,
+          "mse": 0.19351014225034546
+        },
+        "SYS1_k1": {
+          "success": 0.0,
+          "incorrect": 0.14,
+          "rejection": 0.86,
+          "n_decisions": 100,
+          "mse": 3.449654740895016
+        },
+        "SYS2_k1": {
+          "success": 0.11,
+          "incorrect": 0.0,
+          "rejection": 0.89,
+          "n_decisions": 100,
+          "mse": 0.19351014225034546
+        },
+        "J1_k2": {
+          "success": 0.0,
+          "incorrect": 0.03,
+          "rejection": 0.97,
+          "n_decisions": 100,
+          "mse": 3.794063204129683
+        },
+        "J2_k2": {
+          "success": 0.29,
+          "incorrect": 0.0,
+          "rejection": 0.71,
+          "n_decisions": 100,
+          "mse": 0.2103456484884936
+        },
+        "SYS1_k2": {
+          "success": 0.0,
+          "incorrect": 0.03,
+          "rejection": 0.97,
+          "n_decisions": 100,
+          "mse": 3.794063204129683
+        },
+        "SYS2_k2": {
+          "success": 0.29,
+          "incorrect": 0.0,
+          "rejection": 0.71,
+          "n_decisions": 100,
+          "mse": 0.2103456484884936
+        },
+        "J1_k4": {
+          "success": 0.18,
+          "incorrect": 0.17,
+          "rejection": 0.65,
+          "n_decisions": 100,
+          "mse": 1.4777500870705573
+        },
+        "J2_k4": {
+          "success": 0.67,
+          "incorrect": 0.0,
+          "rejection": 0.33,
+          "n_decisions": 100,
+          "mse": 0.2066228142058977
+        },
+        "SYS1_k4": {
+          "success": 0.18,
+          "incorrect": 0.17,
+          "rejection": 0.65,
+          "n_decisions": 100,
+          "mse": 1.4777500870705573
+        },
+        "SYS2_k4": {
+          "success": 0.67,
+          "incorrect": 0.0,
+          "rejection": 0.33,
+          "n_decisions": 100,
+          "mse": 0.2066228142058977
+        },
+        "J1_k8": {
+          "success": 0.66,
+          "incorrect": 0.0,
+          "rejection": 0.34,
+          "n_decisions": 100,
+          "mse": 0.20458799911722442
+        },
+        "J2_k8": {
+          "success": 0.91,
+          "incorrect": 0.0,
+          "rejection": 0.09,
+          "n_decisions": 100,
+          "mse": 0.20454549626510588
+        },
+        "SYS1_k8": {
+          "success": 0.66,
+          "incorrect": 0.0,
+          "rejection": 0.34,
+          "n_decisions": 100,
+          "mse": 0.20458799911722442
+        },
+        "SYS2_k8": {
+          "success": 0.91,
+          "incorrect": 0.0,
+          "rejection": 0.09,
+          "n_decisions": 100,
+          "mse": 0.20454549626510588
+        },
+        "J1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.20619850921406668
+        },
+        "J2_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.20619850921406668
+        },
+        "SYS1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.20619850921406668
+        },
+        "SYS2_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.20619850921406668
+        },
+        "J1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.20619850921406668
+        },
+        "J2_k32": {
+          "success": 0.94,
+          "incorrect": 0.0,
+          "rejection": 0.06,
+          "n_decisions": 100,
+          "mse": 0.20572396131347687
+        },
+        "SYS1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.20619850921406668
+        },
+        "SYS2_k32": {
+          "success": 0.94,
+          "incorrect": 0.0,
+          "rejection": 0.06,
+          "n_decisions": 100,
+          "mse": 0.20572396131347687
+        },
+        "J1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.20619850921406668
+        },
+        "J2_k64": {
+          "success": 0.98,
+          "incorrect": 0.0,
+          "rejection": 0.02,
+          "n_decisions": 100,
+          "mse": 0.2069732466548209
+        },
+        "SYS1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 0.20619850921406668
+        },
+        "SYS2_k64": {
+          "success": 0.98,
+          "incorrect": 0.0,
+          "rejection": 0.02,
+          "n_decisions": 100,
+          "mse": 0.2069732466548209
+        }
+      },
+      "variant_S4": {
+        "type": "variant",
+        "truth": 4,
+        "oracle_mse": 1.418643047225881,
+        "J0": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J1_k1": {
+          "success": 0.0,
+          "incorrect": 0.03,
+          "rejection": 0.97,
+          "n_decisions": 100,
+          "mse": 9.717434265397154
+        },
+        "J2_k1": {
+          "success": 0.16,
+          "incorrect": 0.06,
+          "rejection": 0.78,
+          "n_decisions": 100,
+          "mse": 3.9796380682016137
+        },
+        "SYS1_k1": {
+          "success": 0.0,
+          "incorrect": 0.03,
+          "rejection": 0.97,
+          "n_decisions": 100,
+          "mse": 9.717434265397154
+        },
+        "SYS2_k1": {
+          "success": 0.16,
+          "incorrect": 0.06,
+          "rejection": 0.78,
+          "n_decisions": 100,
+          "mse": 3.9796380682016137
+        },
+        "J1_k2": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k2": {
+          "success": 0.49,
+          "incorrect": 0.14,
+          "rejection": 0.37,
+          "n_decisions": 100,
+          "mse": 3.6176130715314874
+        },
+        "SYS1_k2": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k2": {
+          "success": 0.49,
+          "incorrect": 0.14,
+          "rejection": 0.37,
+          "n_decisions": 100,
+          "mse": 3.6176130715314874
+        },
+        "J1_k4": {
+          "success": 0.0,
+          "incorrect": 0.01,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 10.054965688742072
+        },
+        "J2_k4": {
+          "success": 0.86,
+          "incorrect": 0.02,
+          "rejection": 0.12,
+          "n_decisions": 100,
+          "mse": 1.5596941139682807
+        },
+        "SYS1_k4": {
+          "success": 0.0,
+          "incorrect": 0.01,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 10.054965688742072
+        },
+        "SYS2_k4": {
+          "success": 0.86,
+          "incorrect": 0.02,
+          "rejection": 0.12,
+          "n_decisions": 100,
+          "mse": 1.5596941139682807
+        },
+        "J1_k8": {
+          "success": 0.86,
+          "incorrect": 0.0,
+          "rejection": 0.14,
+          "n_decisions": 100,
+          "mse": 1.4159547029414492
+        },
+        "J2_k8": {
+          "success": 0.98,
+          "incorrect": 0.0,
+          "rejection": 0.02,
+          "n_decisions": 100,
+          "mse": 1.4190440667018758
+        },
+        "SYS1_k8": {
+          "success": 0.86,
+          "incorrect": 0.0,
+          "rejection": 0.14,
+          "n_decisions": 100,
+          "mse": 1.4159547029414492
+        },
+        "SYS2_k8": {
+          "success": 0.98,
+          "incorrect": 0.0,
+          "rejection": 0.02,
+          "n_decisions": 100,
+          "mse": 1.4190440667018758
+        },
+        "J1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.418643047225881
+        },
+        "J2_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.418643047225881
+        },
+        "SYS1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.418643047225881
+        },
+        "SYS2_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.418643047225881
+        },
+        "J1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.418643047225881
+        },
+        "J2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.418643047225881
+        },
+        "SYS1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.418643047225881
+        },
+        "SYS2_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.418643047225881
+        },
+        "J1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.418643047225881
+        },
+        "J2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.418643047225881
+        },
+        "SYS1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.418643047225881
+        },
+        "SYS2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 0.0,
+          "n_decisions": 100,
+          "mse": 1.418643047225881
+        }
+      },
+      "rel_S1": {
+        "type": "related",
+        "truth": 1,
+        "oracle_mse": 1.5448027979814156,
+        "J0": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J1_k1": {
+          "success": 0.09,
+          "incorrect": 0.0,
+          "rejection": 0.91,
+          "n_decisions": 100,
+          "mse": 1.6015090285413576
+        },
+        "J2_k1": {
+          "success": 0.0,
+          "incorrect": 0.05,
+          "rejection": 0.95,
+          "n_decisions": 100,
+          "mse": 5.613272698014256
+        },
+        "SYS1_k1": {
+          "success": 0.09,
+          "incorrect": 0.0,
+          "rejection": 0.91,
+          "n_decisions": 100,
+          "mse": 1.6015090285413576
+        },
+        "SYS2_k1": {
+          "success": 0.0,
+          "incorrect": 0.05,
+          "rejection": 0.95,
+          "n_decisions": 100,
+          "mse": 5.613272698014256
+        },
+        "J1_k2": {
+          "success": 0.06,
+          "incorrect": 0.0,
+          "rejection": 0.94,
+          "n_decisions": 100,
+          "mse": 1.4419856261521364
+        },
+        "J2_k2": {
+          "success": 0.0,
+          "incorrect": 0.01,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 6.6791774562235116
+        },
+        "SYS1_k2": {
+          "success": 0.06,
+          "incorrect": 0.0,
+          "rejection": 0.94,
+          "n_decisions": 100,
+          "mse": 1.4419856261521364
+        },
+        "SYS2_k2": {
+          "success": 0.0,
+          "incorrect": 0.01,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 6.6791774562235116
+        },
+        "J1_k4": {
+          "success": 0.35,
+          "incorrect": 0.11,
+          "rejection": 0.54,
+          "n_decisions": 100,
+          "mse": 1.534733208006107
+        },
+        "J2_k4": {
+          "success": 0.0,
+          "incorrect": 0.09,
+          "rejection": 0.91,
+          "n_decisions": 100,
+          "mse": 0.9882656120861709
+        },
+        "SYS1_k4": {
+          "success": 0.35,
+          "incorrect": 0.11,
+          "rejection": 0.54,
+          "n_decisions": 100,
+          "mse": 1.534733208006107
+        },
+        "SYS2_k4": {
+          "success": 0.0,
+          "incorrect": 0.09,
+          "rejection": 0.91,
+          "n_decisions": 100,
+          "mse": 0.9882656120861709
+        },
+        "J1_k8": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k8": {
+          "success": 0.0,
+          "incorrect": 0.13,
+          "rejection": 0.87,
+          "n_decisions": 100,
+          "mse": 1.024855419525477
+        },
+        "SYS1_k8": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k8": {
+          "success": 0.0,
+          "incorrect": 0.13,
+          "rejection": 0.87,
+          "n_decisions": 100,
+          "mse": 1.024855419525477
+        },
+        "J1_k16": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k16": {
+          "success": 0.0,
+          "incorrect": 0.19,
+          "rejection": 0.81,
+          "n_decisions": 100,
+          "mse": 0.9069875674686135
+        },
+        "SYS1_k16": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k16": {
+          "success": 0.0,
+          "incorrect": 0.19,
+          "rejection": 0.81,
+          "n_decisions": 100,
+          "mse": 0.9069875674686135
+        },
+        "J1_k32": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k32": {
+          "success": 0.0,
+          "incorrect": 0.01,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 0.9406248573789165
+        },
+        "SYS1_k32": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k32": {
+          "success": 0.0,
+          "incorrect": 0.01,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 0.9406248573789165
+        },
+        "J1_k64": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k64": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS1_k64": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k64": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        }
+      },
+      "rel_S3": {
+        "type": "related",
+        "truth": 3,
+        "oracle_mse": 2.895201638704668,
+        "J0": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J1_k1": {
+          "success": 0.0,
+          "incorrect": 0.07,
+          "rejection": 0.93,
+          "n_decisions": 100,
+          "mse": 5.228507432670419
+        },
+        "J2_k1": {
+          "success": 0.0,
+          "incorrect": 0.06,
+          "rejection": 0.94,
+          "n_decisions": 100,
+          "mse": 4.919126958261607
+        },
+        "SYS1_k1": {
+          "success": 0.0,
+          "incorrect": 0.07,
+          "rejection": 0.93,
+          "n_decisions": 100,
+          "mse": 5.228507432670419
+        },
+        "SYS2_k1": {
+          "success": 0.0,
+          "incorrect": 0.06,
+          "rejection": 0.94,
+          "n_decisions": 100,
+          "mse": 4.919126958261607
+        },
+        "J1_k2": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k2": {
+          "success": 0.0,
+          "incorrect": 0.17,
+          "rejection": 0.83,
+          "n_decisions": 100,
+          "mse": 4.523047551994621
+        },
+        "SYS1_k2": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k2": {
+          "success": 0.0,
+          "incorrect": 0.17,
+          "rejection": 0.83,
+          "n_decisions": 100,
+          "mse": 4.523047551994621
+        },
+        "J1_k4": {
+          "success": 0.0,
+          "incorrect": 0.05,
+          "rejection": 0.95,
+          "n_decisions": 100,
+          "mse": 3.390637665273124
+        },
+        "J2_k4": {
+          "success": 0.04,
+          "incorrect": 0.17,
+          "rejection": 0.79,
+          "n_decisions": 100,
+          "mse": 3.453316761083628
+        },
+        "SYS1_k4": {
+          "success": 0.0,
+          "incorrect": 0.05,
+          "rejection": 0.95,
+          "n_decisions": 100,
+          "mse": 3.390637665273124
+        },
+        "SYS2_k4": {
+          "success": 0.04,
+          "incorrect": 0.17,
+          "rejection": 0.79,
+          "n_decisions": 100,
+          "mse": 3.453316761083628
+        },
+        "J1_k8": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k8": {
+          "success": 0.04,
+          "incorrect": 0.18,
+          "rejection": 0.78,
+          "n_decisions": 100,
+          "mse": 2.6057618195604833
+        },
+        "SYS1_k8": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k8": {
+          "success": 0.04,
+          "incorrect": 0.18,
+          "rejection": 0.78,
+          "n_decisions": 100,
+          "mse": 2.6057618195604833
+        },
+        "J1_k16": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k16": {
+          "success": 0.0,
+          "incorrect": 0.14,
+          "rejection": 0.86,
+          "n_decisions": 100,
+          "mse": 2.357665154402839
+        },
+        "SYS1_k16": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k16": {
+          "success": 0.0,
+          "incorrect": 0.14,
+          "rejection": 0.86,
+          "n_decisions": 100,
+          "mse": 2.357665154402839
+        },
+        "J1_k32": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k32": {
+          "success": 0.0,
+          "incorrect": 0.02,
+          "rejection": 0.98,
+          "n_decisions": 100,
+          "mse": 1.9579548445036765
+        },
+        "SYS1_k32": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k32": {
+          "success": 0.0,
+          "incorrect": 0.02,
+          "rejection": 0.98,
+          "n_decisions": 100,
+          "mse": 1.9579548445036765
+        },
+        "J1_k64": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k64": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS1_k64": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k64": {
+          "success": 0.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        }
+      },
+      "unrel_0": {
+        "type": "unrelated",
+        "truth": null,
+        "oracle_mse": null,
+        "J0": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J1_k1": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k1": {
+          "success": 0.87,
+          "incorrect": 0.13,
+          "rejection": 0.87,
+          "n_decisions": 100,
+          "mse": 9.096510655246698
+        },
+        "SYS1_k1": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k1": {
+          "success": 0.87,
+          "incorrect": 0.13,
+          "rejection": 0.87,
+          "n_decisions": 100,
+          "mse": 9.096510655246698
+        },
+        "J1_k2": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k2": {
+          "success": 0.78,
+          "incorrect": 0.22,
+          "rejection": 0.78,
+          "n_decisions": 100,
+          "mse": 7.2093300613790525
+        },
+        "SYS1_k2": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k2": {
+          "success": 0.78,
+          "incorrect": 0.22,
+          "rejection": 0.78,
+          "n_decisions": 100,
+          "mse": 7.2093300613790525
+        },
+        "J1_k4": {
+          "success": 0.98,
+          "incorrect": 0.02,
+          "rejection": 0.98,
+          "n_decisions": 100,
+          "mse": 6.283720487231005
+        },
+        "J2_k4": {
+          "success": 0.7,
+          "incorrect": 0.3,
+          "rejection": 0.7,
+          "n_decisions": 100,
+          "mse": 3.732820922208254
+        },
+        "SYS1_k4": {
+          "success": 0.98,
+          "incorrect": 0.02,
+          "rejection": 0.98,
+          "n_decisions": 100,
+          "mse": 6.283720487231005
+        },
+        "SYS2_k4": {
+          "success": 0.7,
+          "incorrect": 0.3,
+          "rejection": 0.7,
+          "n_decisions": 100,
+          "mse": 3.732820922208254
+        },
+        "J1_k8": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k8": {
+          "success": 0.62,
+          "incorrect": 0.38,
+          "rejection": 0.62,
+          "n_decisions": 100,
+          "mse": 2.9554069426387493
+        },
+        "SYS1_k8": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k8": {
+          "success": 0.62,
+          "incorrect": 0.38,
+          "rejection": 0.62,
+          "n_decisions": 100,
+          "mse": 2.9554069426387493
+        },
+        "J1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k16": {
+          "success": 0.39,
+          "incorrect": 0.61,
+          "rejection": 0.39,
+          "n_decisions": 100,
+          "mse": 2.633144874369401
+        },
+        "SYS1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k16": {
+          "success": 0.39,
+          "incorrect": 0.61,
+          "rejection": 0.39,
+          "n_decisions": 100,
+          "mse": 2.633144874369401
+        },
+        "J1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k32": {
+          "success": 0.66,
+          "incorrect": 0.34,
+          "rejection": 0.66,
+          "n_decisions": 100,
+          "mse": 2.609534342561235
+        },
+        "SYS1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k32": {
+          "success": 0.66,
+          "incorrect": 0.34,
+          "rejection": 0.66,
+          "n_decisions": 100,
+          "mse": 2.609534342561235
+        },
+        "J1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k64": {
+          "success": 0.65,
+          "incorrect": 0.35,
+          "rejection": 0.65,
+          "n_decisions": 100,
+          "mse": 2.646053435767315
+        },
+        "SYS1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k64": {
+          "success": 0.65,
+          "incorrect": 0.35,
+          "rejection": 0.65,
+          "n_decisions": 100,
+          "mse": 2.646053435767315
+        }
+      },
+      "unrel_1": {
+        "type": "unrelated",
+        "truth": null,
+        "oracle_mse": null,
+        "J0": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J1_k1": {
+          "success": 0.89,
+          "incorrect": 0.11,
+          "rejection": 0.89,
+          "n_decisions": 100,
+          "mse": 2.6802292640307184
+        },
+        "J2_k1": {
+          "success": 0.97,
+          "incorrect": 0.03,
+          "rejection": 0.97,
+          "n_decisions": 100,
+          "mse": 3.668629896159567
+        },
+        "SYS1_k1": {
+          "success": 0.89,
+          "incorrect": 0.11,
+          "rejection": 0.89,
+          "n_decisions": 100,
+          "mse": 2.6802292640307184
+        },
+        "SYS2_k1": {
+          "success": 0.97,
+          "incorrect": 0.03,
+          "rejection": 0.97,
+          "n_decisions": 100,
+          "mse": 3.668629896159567
+        },
+        "J1_k2": {
+          "success": 0.98,
+          "incorrect": 0.02,
+          "rejection": 0.98,
+          "n_decisions": 100,
+          "mse": 3.235789997316355
+        },
+        "J2_k2": {
+          "success": 0.96,
+          "incorrect": 0.04,
+          "rejection": 0.96,
+          "n_decisions": 100,
+          "mse": 3.9216354450848354
+        },
+        "SYS1_k2": {
+          "success": 0.98,
+          "incorrect": 0.02,
+          "rejection": 0.98,
+          "n_decisions": 100,
+          "mse": 3.235789997316355
+        },
+        "SYS2_k2": {
+          "success": 0.96,
+          "incorrect": 0.04,
+          "rejection": 0.96,
+          "n_decisions": 100,
+          "mse": 3.9216354450848354
+        },
+        "J1_k4": {
+          "success": 0.87,
+          "incorrect": 0.13,
+          "rejection": 0.87,
+          "n_decisions": 100,
+          "mse": 2.6094342278946976
+        },
+        "J2_k4": {
+          "success": 0.86,
+          "incorrect": 0.14,
+          "rejection": 0.86,
+          "n_decisions": 100,
+          "mse": 2.40432923705421
+        },
+        "SYS1_k4": {
+          "success": 0.87,
+          "incorrect": 0.13,
+          "rejection": 0.87,
+          "n_decisions": 100,
+          "mse": 2.6094342278946976
+        },
+        "SYS2_k4": {
+          "success": 0.86,
+          "incorrect": 0.14,
+          "rejection": 0.86,
+          "n_decisions": 100,
+          "mse": 2.40432923705421
+        },
+        "J1_k8": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k8": {
+          "success": 0.85,
+          "incorrect": 0.15,
+          "rejection": 0.85,
+          "n_decisions": 100,
+          "mse": 1.7059949777925765
+        },
+        "SYS1_k8": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k8": {
+          "success": 0.85,
+          "incorrect": 0.15,
+          "rejection": 0.85,
+          "n_decisions": 100,
+          "mse": 1.7059949777925765
+        },
+        "J1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k16": {
+          "success": 0.9,
+          "incorrect": 0.1,
+          "rejection": 0.9,
+          "n_decisions": 100,
+          "mse": 1.4987959477847974
+        },
+        "SYS1_k16": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k16": {
+          "success": 0.9,
+          "incorrect": 0.1,
+          "rejection": 0.9,
+          "n_decisions": 100,
+          "mse": 1.4987959477847974
+        },
+        "J1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k32": {
+          "success": 0.99,
+          "incorrect": 0.01,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 1.4120554188606207
+        },
+        "SYS1_k32": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k32": {
+          "success": 0.99,
+          "incorrect": 0.01,
+          "rejection": 0.99,
+          "n_decisions": 100,
+          "mse": 1.4120554188606207
+        },
+        "J1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "J2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS1_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        },
+        "SYS2_k64": {
+          "success": 1.0,
+          "incorrect": 0.0,
+          "rejection": 1.0,
+          "n_decisions": 100,
+          "mse": null
+        }
+      }
+    }
+  },
+  "seconds": 20.51382513899989
+}

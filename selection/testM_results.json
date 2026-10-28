@@ -1,0 +1,6535 @@
+{
+  "R1_separated": {
+    "201": {
+      "J1": {
+        "cfgs": {
+          "M0": [
+            2.0,
+            0.0
+          ],
+          "M1": [
+            2.0,
+            0.0
+          ],
+          "M2": [
+            2.5,
+            0.0
+          ]
+        },
+        "M0": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.6,
+            "familiar_coverage": 0.6,
+            "familiar_FRR": 0.4,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.6854733679753598,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.37007424033937747,
+              0.43069113937790077
+            ],
+            "IDENT_wilson": [
+              0.9936380666717896,
+              1.0
+            ],
+            "success_wilson": [
+              0.5693088606220993,
+              0.6299257596606225
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.0162320287525295,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.17854514711257963,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.8616429280609702,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "M1": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.6,
+            "familiar_coverage": 0.6,
+            "familiar_FRR": 0.4,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.6854733679753598,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.37007424033937747,
+              0.43069113937790077
+            ],
+            "IDENT_wilson": [
+              0.9936380666717896,
+              1.0
+            ],
+            "success_wilson": [
+              0.5693088606220993,
+              0.6299257596606225
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.0162320287525295,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.17854514711257963,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.8616429280609702,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "M2": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.6,
+            "familiar_coverage": 0.8,
+            "familiar_FRR": 0.2,
+            "familiar_IDENT": 0.75,
+            "familiar_MSE": 1.6243899630716927,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.17637667806123578,
+              0.2259194610905986
+            ],
+            "IDENT_wilson": [
+              0.7188469409042083,
+              0.7787635335972357
+            ],
+            "success_wilson": [
+              0.5693088606220993,
+              0.6299257596606225
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.0162320287525295,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 1.0,
+              "rejection": 0.0,
+              "IDENT": 0.0,
+              "mse": 4.441139748360691,
+              "counts": [
+                0,
+                200,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.17854514711257963,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.8616429280609702,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "curve_margin": 0.0,
+        "curve": [
+          {
+            "thr": 0.1,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 0.25,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 0.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 0.75,
+            "val_FAR": 0.0,
+            "val_coverage": 0.19999999999999996,
+            "val_success": 0.2,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.19999999999999996,
+            "test_success": 0.2,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.8
+          },
+          {
+            "thr": 1.0,
+            "val_FAR": 0.0,
+            "val_coverage": 0.19999999999999996,
+            "val_success": 0.2,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.19999999999999996,
+            "test_success": 0.2,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.8
+          },
+          {
+            "thr": 1.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.4,
+            "val_success": 0.4,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.4,
+            "test_success": 0.4,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.6
+          },
+          {
+            "thr": 2.0,
+            "val_FAR": 0.0,
+            "val_coverage": 0.6,
+            "val_success": 0.6,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.6,
+            "test_success": 0.6,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.4
+          },
+          {
+            "thr": 2.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.8,
+            "val_success": 0.6,
+            "val_IDENT": 0.75,
+            "test_FAR": 0.0,
+            "test_coverage": 0.8,
+            "test_success": 0.6,
+            "test_IDENT": 0.75,
+            "test_FRR": 0.2
+          },
+          {
+            "thr": 3.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 0.8,
+            "val_IDENT": 0.8,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 0.8,
+            "test_IDENT": 0.8,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 4.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 0.8,
+            "val_IDENT": 0.8,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 0.8,
+            "test_IDENT": 0.8,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 5.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 0.8,
+            "val_IDENT": 0.8,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 0.8,
+            "test_IDENT": 0.8,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 7.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 0.8,
+            "val_IDENT": 0.8,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 0.8,
+            "test_IDENT": 0.8,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 10.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 0.8,
+            "val_IDENT": 0.8,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 0.8,
+            "test_IDENT": 0.8,
+            "test_FRR": 0.0
+          }
+        ]
+      },
+      "J2": {
+        "cfgs": {
+          "M0": [
+            5.0,
+            0.0
+          ],
+          "M1": [
+            3.0,
+            0.0
+          ],
+          "M2": [
+            3.0,
+            0.0
+          ]
+        },
+        "M0": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.977,
+            "familiar_coverage": 0.983,
+            "familiar_FRR": 0.017,
+            "familiar_IDENT": 0.9934426229508198,
+            "familiar_MSE": 1.4437397640113776,
+            "FAR": 0.045,
+            "FAR_counts": [
+              18,
+              400
+            ],
+            "FAR_wilson": [
+              0.028651223384090457,
+              0.07000527956161895
+            ],
+            "FRR_wilson": [
+              0.010640599663218203,
+              0.027056184371235047
+            ],
+            "IDENT_wilson": [
+              0.9867474556700288,
+              0.9971997147775894
+            ],
+            "success_wilson": [
+              0.9657233030515149,
+              0.9846258356970685
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.0162320287525295,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.9895008480103025,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.17854514711257963,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.8616429280609702,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 0.885,
+              "incorrect": 0.03,
+              "rejection": 0.085,
+              "IDENT": 0.9672131147540983,
+              "mse": 4.172777868120506,
+              "counts": [
+                177,
+                6,
+                17
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 7,
+              "rejection": 0.965
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 11,
+              "rejection": 0.945
+            }
+          }
+        },
+        "M1": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.806,
+            "familiar_coverage": 0.806,
+            "familiar_FRR": 0.194,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 1.4189996767485025,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.17068102312568378,
+              0.21966103880918725
+            ],
+            "IDENT_wilson": [
+              0.9952563563047392,
+              1.0
+            ],
+            "success_wilson": [
+              0.7803389611908129,
+              0.8293189768743163
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.0162320287525295,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.9895008480103025,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.17854514711257963,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.8616429280609702,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 0.03,
+              "incorrect": 0.0,
+              "rejection": 0.97,
+              "IDENT": 1.0,
+              "mse": 4.04907743180613,
+              "counts": [
+                6,
+                0,
+                194
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "M2": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.806,
+            "familiar_coverage": 0.806,
+            "familiar_FRR": 0.194,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 1.4189996767485025,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.17068102312568378,
+              0.21966103880918725
+            ],
+            "IDENT_wilson": [
+              0.9952563563047392,
+              1.0
+            ],
+            "success_wilson": [
+              0.7803389611908129,
+              0.8293189768743163
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.0162320287525295,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.9895008480103025,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.17854514711257963,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.8616429280609702,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 0.03,
+              "incorrect": 0.0,
+              "rejection": 0.97,
+              "IDENT": 1.0,
+              "mse": 4.04907743180613,
+              "counts": [
+                6,
+                0,
+                194
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "curve_margin": 0.0,
+        "curve": [
+          {
+            "thr": 0.25,
+            "val_FAR": 0.0,
+            "val_coverage": 0.19999999999999996,
+            "val_success": 0.2,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.19400000000000017,
+            "test_success": 0.194,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.8059999999999998
+          },
+          {
+            "thr": 0.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.19999999999999996,
+            "val_success": 0.2,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.19999999999999996,
+            "test_success": 0.2,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.8
+          },
+          {
+            "thr": 0.75,
+            "val_FAR": 0.0,
+            "val_coverage": 0.26,
+            "val_success": 0.26,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.2510000000000001,
+            "test_success": 0.251,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.7489999999999999
+          },
+          {
+            "thr": 1.0,
+            "val_FAR": 0.0,
+            "val_coverage": 0.554,
+            "val_success": 0.554,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.54,
+            "test_success": 0.54,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.45999999999999996
+          },
+          {
+            "thr": 1.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.8,
+            "val_success": 0.8,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.797,
+            "test_success": 0.7969999999999999,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.20299999999999999
+          },
+          {
+            "thr": 2.0,
+            "val_FAR": 0.0,
+            "val_coverage": 0.8,
+            "val_success": 0.8,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.8,
+            "test_success": 0.8,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.2
+          },
+          {
+            "thr": 3.0,
+            "val_FAR": 0.0,
+            "val_coverage": 0.808,
+            "val_success": 0.808,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.806,
+            "test_success": 0.806,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.194
+          },
+          {
+            "thr": 5.0,
+            "val_FAR": 0.03,
+            "val_coverage": 0.97,
+            "val_success": 0.9640000000000001,
+            "val_IDENT": 0.9929411764705882,
+            "test_FAR": 0.045,
+            "test_coverage": 0.983,
+            "test_success": 0.977,
+            "test_IDENT": 0.9934426229508198,
+            "test_FRR": 0.017
+          },
+          {
+            "thr": 8.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 0.9879999999999999,
+            "val_IDENT": 0.9879999999999999,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 0.991,
+            "test_IDENT": 0.991,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 12.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 0.9879999999999999,
+            "val_IDENT": 0.9879999999999999,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 0.991,
+            "test_IDENT": 0.991,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 20.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 0.9879999999999999,
+            "val_IDENT": 0.9879999999999999,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 0.991,
+            "test_IDENT": 0.991,
+            "test_FRR": 0.0
+          }
+        ]
+      },
+      "correlated_FA": {
+        "M0": {
+          "unrelated_both": 0.0,
+          "unrelated_same": 0.0,
+          "same_given_both_unrelated": null,
+          "familiar_both": 0.6,
+          "familiar_same": 0.6,
+          "per_unrelated": {
+            "unrel_0": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            },
+            "unrel_1": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            }
+          }
+        },
+        "M1": {
+          "unrelated_both": 0.0,
+          "unrelated_same": 0.0,
+          "same_given_both_unrelated": null,
+          "familiar_both": 0.6,
+          "familiar_same": 0.6,
+          "per_unrelated": {
+            "unrel_0": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            },
+            "unrel_1": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            }
+          }
+        }
+      }
+    },
+    "202": {
+      "J1": {
+        "cfgs": {
+          "M0": [
+            1.5,
+            0.0
+          ],
+          "M1": [
+            1.5,
+            0.0
+          ],
+          "M2": [
+            1.5,
+            0.0
+          ]
+        },
+        "M0": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 1.0,
+            "familiar_coverage": 1.0,
+            "familiar_FRR": 0.0,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.5045526492585537,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.0,
+              0.003826898586390522
+            ],
+            "IDENT_wilson": [
+              0.9961731014136095,
+              1.0
+            ],
+            "success_wilson": [
+              0.9961731014136095,
+              1.0
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.5582899700754019,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.09901641775698429,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.6527702809648213,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.41670656145731305,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.795980016038248,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "M1": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 1.0,
+            "familiar_coverage": 1.0,
+            "familiar_FRR": 0.0,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.5045526492585537,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.0,
+              0.003826898586390522
+            ],
+            "IDENT_wilson": [
+              0.9961731014136095,
+              1.0
+            ],
+            "success_wilson": [
+              0.9961731014136095,
+              1.0
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.5582899700754019,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.09901641775698429,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.6527702809648213,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.41670656145731305,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.795980016038248,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "M2": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 1.0,
+            "familiar_coverage": 1.0,
+            "familiar_FRR": 0.0,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.5045526492585537,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.0,
+              0.003826898586390522
+            ],
+            "IDENT_wilson": [
+              0.9961731014136095,
+              1.0
+            ],
+            "success_wilson": [
+              0.9961731014136095,
+              1.0
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.5582899700754019,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.09901641775698429,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.6527702809648213,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.41670656145731305,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.795980016038248,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "curve_margin": 0.0,
+        "curve": [
+          {
+            "thr": 0.1,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 0.25,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 0.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.19999999999999996,
+            "val_success": 0.2,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.19999999999999996,
+            "test_success": 0.2,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.8
+          },
+          {
+            "thr": 0.75,
+            "val_FAR": 0.0,
+            "val_coverage": 0.19999999999999996,
+            "val_success": 0.2,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.19999999999999996,
+            "test_success": 0.2,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.8
+          },
+          {
+            "thr": 1.0,
+            "val_FAR": 0.0,
+            "val_coverage": 0.45999999999999996,
+            "val_success": 0.45999999999999996,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.479,
+            "test_success": 0.479,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.521
+          },
+          {
+            "thr": 1.5,
+            "val_FAR": 0.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 2.0,
+            "val_FAR": 0.61,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.6025,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 2.5,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 3.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 4.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 5.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 7.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 10.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          }
+        ]
+      },
+      "J2": {
+        "cfgs": {
+          "M0": [
+            1.5,
+            0.0
+          ],
+          "M1": [
+            1.5,
+            0.0
+          ],
+          "M2": [
+            1.5,
+            0.0
+          ]
+        },
+        "M0": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 1.0,
+            "familiar_coverage": 1.0,
+            "familiar_FRR": 0.0,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.5045526492585537,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.0,
+              0.003826898586390522
+            ],
+            "IDENT_wilson": [
+              0.9961731014136095,
+              1.0
+            ],
+            "success_wilson": [
+              0.9961731014136095,
+              1.0
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.5582899700754019,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.09901641775698429,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.6527702809648213,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.41670656145731305,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.795980016038248,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "M1": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 1.0,
+            "familiar_coverage": 1.0,
+            "familiar_FRR": 0.0,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.5045526492585537,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.0,
+              0.003826898586390522
+            ],
+            "IDENT_wilson": [
+              0.9961731014136095,
+              1.0
+            ],
+            "success_wilson": [
+              0.9961731014136095,
+              1.0
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.5582899700754019,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.09901641775698429,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.6527702809648213,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.41670656145731305,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.795980016038248,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "M2": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 1.0,
+            "familiar_coverage": 1.0,
+            "familiar_FRR": 0.0,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.5045526492585537,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.0,
+              0.003826898586390522
+            ],
+            "IDENT_wilson": [
+              0.9961731014136095,
+              1.0
+            ],
+            "success_wilson": [
+              0.9961731014136095,
+              1.0
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.5582899700754019,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.09901641775698429,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.6527702809648213,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.41670656145731305,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.795980016038248,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "curve_margin": 0.0,
+        "curve": [
+          {
+            "thr": 0.25,
+            "val_FAR": 0.0,
+            "val_coverage": 0.19999999999999996,
+            "val_success": 0.2,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.19999999999999996,
+            "test_success": 0.2,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.8
+          },
+          {
+            "thr": 0.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.45199999999999996,
+            "val_success": 0.45199999999999996,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.4610000000000001,
+            "test_success": 0.461,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.5389999999999999
+          },
+          {
+            "thr": 0.75,
+            "val_FAR": 0.0,
+            "val_coverage": 0.8320000000000001,
+            "val_success": 0.8320000000000001,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.819,
+            "test_success": 0.819,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.181
+          },
+          {
+            "thr": 1.0,
+            "val_FAR": 0.0,
+            "val_coverage": 0.984,
+            "val_success": 0.984,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.979,
+            "test_success": 0.9789999999999999,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.020999999999999998
+          },
+          {
+            "thr": 1.5,
+            "val_FAR": 0.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 2.0,
+            "val_FAR": 0.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 3.0,
+            "val_FAR": 0.2,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.225,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 5.0,
+            "val_FAR": 0.985,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.98,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 8.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 12.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 20.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          }
+        ]
+      },
+      "correlated_FA": {
+        "M0": {
+          "unrelated_both": 0.0,
+          "unrelated_same": 0.0,
+          "same_given_both_unrelated": null,
+          "familiar_both": 1.0,
+          "familiar_same": 1.0,
+          "per_unrelated": {
+            "unrel_0": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            },
+            "unrel_1": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            }
+          }
+        },
+        "M1": {
+          "unrelated_both": 0.0,
+          "unrelated_same": 0.0,
+          "same_given_both_unrelated": null,
+          "familiar_both": 1.0,
+          "familiar_same": 1.0,
+          "per_unrelated": {
+            "unrel_0": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            },
+            "unrel_1": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            }
+          }
+        }
+      }
+    },
+    "203": {
+      "J1": {
+        "cfgs": {
+          "M0": [
+            3.0,
+            0.0
+          ],
+          "M1": [
+            1.0,
+            0.0
+          ],
+          "M2": [
+            1.0,
+            0.0
+          ]
+        },
+        "M0": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.796,
+            "familiar_coverage": 1.0,
+            "familiar_FRR": 0.0,
+            "familiar_IDENT": 0.796,
+            "familiar_MSE": 1.7074774401313761,
+            "FAR": 1.0,
+            "FAR_counts": [
+              400,
+              400
+            ],
+            "FAR_wilson": [
+              0.9904873594003194,
+              1.0
+            ],
+            "FRR_wilson": [
+              0.0,
+              0.003826898586390522
+            ],
+            "IDENT_wilson": [
+              0.7699130750438999,
+              0.8198214009929571
+            ],
+            "success_wilson": [
+              0.7699130750438999,
+              0.8198214009929571
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.5029582702234865,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 0.98,
+              "incorrect": 0.02,
+              "rejection": 0.0,
+              "IDENT": 0.98,
+              "mse": 0.5445321378448316,
+              "counts": [
+                196,
+                4,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.23557401471654188,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 2.7893452766909133,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 1.0,
+              "rejection": 0.0,
+              "IDENT": 0.0,
+              "mse": 3.4649775011811075,
+              "counts": [
+                0,
+                200,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 200,
+              "rejection": 0.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 200,
+              "rejection": 0.0
+            }
+          }
+        },
+        "M1": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.2,
+            "familiar_coverage": 0.19999999999999996,
+            "familiar_FRR": 0.8,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.23557401471654188,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.7740805389094014,
+              0.8236233219387643
+            ],
+            "IDENT_wilson": [
+              0.9811539940816791,
+              1.0
+            ],
+            "success_wilson": [
+              0.17637667806123578,
+              0.2259194610905986
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.23557401471654188,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "M2": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.2,
+            "familiar_coverage": 0.19999999999999996,
+            "familiar_FRR": 0.8,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.23557401471654188,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.7740805389094014,
+              0.8236233219387643
+            ],
+            "IDENT_wilson": [
+              0.9811539940816791,
+              1.0
+            ],
+            "success_wilson": [
+              0.17637667806123578,
+              0.2259194610905986
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.23557401471654188,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "curve_margin": 0.0,
+        "curve": [
+          {
+            "thr": 0.1,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 0.25,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 0.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 0.75,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 1.0,
+            "val_FAR": 0.0,
+            "val_coverage": 0.19999999999999996,
+            "val_success": 0.2,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.19999999999999996,
+            "test_success": 0.2,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.8
+          },
+          {
+            "thr": 1.5,
+            "val_FAR": 0.5,
+            "val_coverage": 0.19999999999999996,
+            "val_success": 0.2,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.5,
+            "test_coverage": 0.19999999999999996,
+            "test_success": 0.2,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.8
+          },
+          {
+            "thr": 2.0,
+            "val_FAR": 0.5,
+            "val_coverage": 0.6,
+            "val_success": 0.398,
+            "val_IDENT": 0.6633333333333333,
+            "test_FAR": 0.5,
+            "test_coverage": 0.6,
+            "test_success": 0.396,
+            "test_IDENT": 0.66,
+            "test_FRR": 0.4
+          },
+          {
+            "thr": 2.5,
+            "val_FAR": 1.0,
+            "val_coverage": 0.988,
+            "val_success": 0.786,
+            "val_IDENT": 0.798,
+            "test_FAR": 1.0,
+            "test_coverage": 0.994,
+            "test_success": 0.79,
+            "test_IDENT": 0.796,
+            "test_FRR": 0.006
+          },
+          {
+            "thr": 3.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 0.798,
+            "val_IDENT": 0.798,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 0.796,
+            "test_IDENT": 0.796,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 4.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 0.798,
+            "val_IDENT": 0.798,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 0.796,
+            "test_IDENT": 0.796,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 5.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 0.798,
+            "val_IDENT": 0.798,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 0.796,
+            "test_IDENT": 0.796,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 7.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 0.798,
+            "val_IDENT": 0.798,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 0.796,
+            "test_IDENT": 0.796,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 10.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 0.798,
+            "val_IDENT": 0.798,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 0.796,
+            "test_IDENT": 0.796,
+            "test_FRR": 0.0
+          }
+        ]
+      },
+      "J2": {
+        "cfgs": {
+          "M0": [
+            5.0,
+            0.5
+          ],
+          "M1": [
+            0.5,
+            0.0
+          ],
+          "M2": [
+            0.5,
+            0.0
+          ]
+        },
+        "M0": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.998,
+            "familiar_coverage": 0.998,
+            "familiar_FRR": 0.002,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 1.2415155237347897,
+            "FAR": 0.5975,
+            "FAR_counts": [
+              239,
+              400
+            ],
+            "FAR_wilson": [
+              0.5487332989658665,
+              0.6444117361171958
+            ],
+            "FRR_wilson": [
+              0.000548632102457155,
+              0.007262958889587807
+            ],
+            "IDENT_wilson": [
+              0.9961654616857596,
+              1.0
+            ],
+            "success_wilson": [
+              0.9927370411104123,
+              0.9994513678975429
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.5029582702234865,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 0.995,
+              "incorrect": 0.0,
+              "rejection": 0.005,
+              "IDENT": 1.0,
+              "mse": 0.5062575225399201,
+              "counts": [
+                199,
+                0,
+                1
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.23557401471654188,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 2.7893452766909133,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 0.995,
+              "incorrect": 0.0,
+              "rejection": 0.005,
+              "IDENT": 1.0,
+              "mse": 1.1734425345030872,
+              "counts": [
+                199,
+                0,
+                1
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 200,
+              "rejection": 0.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 39,
+              "rejection": 0.805
+            }
+          }
+        },
+        "M1": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.294,
+            "familiar_coverage": 0.29399999999999993,
+            "familiar_FRR": 0.7060000000000001,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.3711766061999572,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.6770168391561994,
+              0.7334064786262077
+            ],
+            "IDENT_wilson": [
+              0.9871018689128719,
+              1.0
+            ],
+            "success_wilson": [
+              0.26659352137379233,
+              0.32298316084380063
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 0.47,
+              "incorrect": 0.0,
+              "rejection": 0.53,
+              "IDENT": 1.0,
+              "mse": 0.5067791976833725,
+              "counts": [
+                94,
+                0,
+                106
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.23557401471654188,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "M2": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.294,
+            "familiar_coverage": 0.29399999999999993,
+            "familiar_FRR": 0.7060000000000001,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.3711766061999572,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.6770168391561994,
+              0.7334064786262077
+            ],
+            "IDENT_wilson": [
+              0.9871018689128719,
+              1.0
+            ],
+            "success_wilson": [
+              0.26659352137379233,
+              0.32298316084380063
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 0.47,
+              "incorrect": 0.0,
+              "rejection": 0.53,
+              "IDENT": 1.0,
+              "mse": 0.5067791976833725,
+              "counts": [
+                94,
+                0,
+                106
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.23557401471654188,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "curve_margin": 0.0,
+        "curve": [
+          {
+            "thr": 0.25,
+            "val_FAR": 0.0,
+            "val_coverage": 0.1439999999999999,
+            "val_success": 0.144,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.132,
+            "test_success": 0.132,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.868
+          },
+          {
+            "thr": 0.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.30000000000000004,
+            "val_success": 0.3,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.29399999999999993,
+            "test_success": 0.294,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.7060000000000001
+          },
+          {
+            "thr": 0.75,
+            "val_FAR": 0.12,
+            "val_coverage": 0.402,
+            "val_success": 0.40199999999999997,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.1175,
+            "test_coverage": 0.401,
+            "test_success": 0.40099999999999997,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.599
+          },
+          {
+            "thr": 1.0,
+            "val_FAR": 0.455,
+            "val_coverage": 0.44800000000000006,
+            "val_success": 0.44799999999999995,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.4775,
+            "test_coverage": 0.44100000000000006,
+            "test_success": 0.441,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.5589999999999999
+          },
+          {
+            "thr": 1.5,
+            "val_FAR": 0.5,
+            "val_coverage": 0.692,
+            "val_success": 0.6920000000000001,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.5,
+            "test_coverage": 0.6799999999999999,
+            "test_success": 0.68,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.32
+          },
+          {
+            "thr": 2.0,
+            "val_FAR": 0.5,
+            "val_coverage": 0.8,
+            "val_success": 0.8,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.5,
+            "test_coverage": 0.788,
+            "test_success": 0.788,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.21199999999999997
+          },
+          {
+            "thr": 3.0,
+            "val_FAR": 0.5,
+            "val_coverage": 0.9359999999999999,
+            "val_success": 0.9359999999999999,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.5,
+            "test_coverage": 0.928,
+            "test_success": 0.9280000000000002,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.072
+          },
+          {
+            "thr": 5.0,
+            "val_FAR": 0.585,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.5975,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 8.0,
+            "val_FAR": 0.995,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 12.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 20.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          }
+        ]
+      },
+      "correlated_FA": {
+        "M0": {
+          "unrelated_both": 0.5975,
+          "unrelated_same": 0.5,
+          "same_given_both_unrelated": 0.8368200836820083,
+          "familiar_both": 0.998,
+          "familiar_same": 0.795,
+          "per_unrelated": {
+            "unrel_0": {
+              "both": 1.0,
+              "same": 1.0,
+              "n": 200
+            },
+            "unrel_1": {
+              "both": 0.195,
+              "same": 0.0,
+              "n": 200
+            }
+          }
+        },
+        "M1": {
+          "unrelated_both": 0.0,
+          "unrelated_same": 0.0,
+          "same_given_both_unrelated": null,
+          "familiar_both": 0.2,
+          "familiar_same": 0.2,
+          "per_unrelated": {
+            "unrel_0": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            },
+            "unrel_1": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            }
+          }
+        }
+      }
+    }
+  },
+  "R2_overlapping": {
+    "301": {
+      "J1": {
+        "cfgs": {
+          "M0": [
+            2.5,
+            0.25
+          ],
+          "M1": [
+            2.5,
+            0.25
+          ],
+          "M2": [
+            2.5,
+            0.25
+          ]
+        },
+        "M0": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 1.0,
+            "familiar_coverage": 1.0,
+            "familiar_FRR": 0.0,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 1.2307225941429958,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.0,
+              0.003826898586390522
+            ],
+            "IDENT_wilson": [
+              0.9961731014136095,
+              1.0
+            ],
+            "success_wilson": [
+              0.9961731014136095,
+              1.0
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.14913524180111712,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.7549879216955199,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.966946399128866,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 2.655137868354775,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.627405539734701,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "M1": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 1.0,
+            "familiar_coverage": 1.0,
+            "familiar_FRR": 0.0,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 1.2307225941429958,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.0,
+              0.003826898586390522
+            ],
+            "IDENT_wilson": [
+              0.9961731014136095,
+              1.0
+            ],
+            "success_wilson": [
+              0.9961731014136095,
+              1.0
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.14913524180111712,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.7549879216955199,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.966946399128866,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 2.655137868354775,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.627405539734701,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "M2": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 1.0,
+            "familiar_coverage": 1.0,
+            "familiar_FRR": 0.0,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 1.2307225941429958,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.0,
+              0.003826898586390522
+            ],
+            "IDENT_wilson": [
+              0.9961731014136095,
+              1.0
+            ],
+            "success_wilson": [
+              0.9961731014136095,
+              1.0
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.14913524180111712,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.7549879216955199,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.966946399128866,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 2.655137868354775,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.627405539734701,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "curve_margin": 0.25,
+        "curve": [
+          {
+            "thr": 0.1,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 0.25,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 0.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 0.75,
+            "val_FAR": 0.0,
+            "val_coverage": 0.19999999999999996,
+            "val_success": 0.2,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.19999999999999996,
+            "test_success": 0.2,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.8
+          },
+          {
+            "thr": 1.0,
+            "val_FAR": 0.0,
+            "val_coverage": 0.19999999999999996,
+            "val_success": 0.2,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.19999999999999996,
+            "test_success": 0.2,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.8
+          },
+          {
+            "thr": 1.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.6,
+            "val_success": 0.6,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.6,
+            "test_success": 0.6,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.4
+          },
+          {
+            "thr": 2.0,
+            "val_FAR": 0.0,
+            "val_coverage": 0.8,
+            "val_success": 0.8,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.8,
+            "test_success": 0.8,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.2
+          },
+          {
+            "thr": 2.5,
+            "val_FAR": 0.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 3.0,
+            "val_FAR": 0.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 4.0,
+            "val_FAR": 0.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 5.0,
+            "val_FAR": 0.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 7.0,
+            "val_FAR": 0.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 10.0,
+            "val_FAR": 0.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          }
+        ]
+      },
+      "J2": {
+        "cfgs": {
+          "M0": [
+            5.0,
+            0.0
+          ],
+          "M1": [
+            3.0,
+            0.0
+          ],
+          "M2": [
+            3.0,
+            0.0
+          ]
+        },
+        "M0": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.9960000000000001,
+            "familiar_coverage": 1.0,
+            "familiar_FRR": 0.0,
+            "familiar_IDENT": 0.9960000000000001,
+            "familiar_MSE": 1.237662713411023,
+            "FAR": 0.0675,
+            "FAR_counts": [
+              27,
+              400
+            ],
+            "FAR_wilson": [
+              0.046801154899328234,
+              0.09642727921939556
+            ],
+            "FRR_wilson": [
+              0.0,
+              0.003826898586390522
+            ],
+            "IDENT_wilson": [
+              0.9897602795701941,
+              0.9984434370321067
+            ],
+            "success_wilson": [
+              0.9897602795701941,
+              0.9984434370321067
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.14913524180111712,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.7549879216955199,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.966946399128866,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 0.98,
+              "incorrect": 0.02,
+              "rejection": 0.0,
+              "IDENT": 0.98,
+              "mse": 2.6898384646949114,
+              "counts": [
+                196,
+                4,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.627405539734701,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 27,
+              "rejection": 0.865
+            }
+          }
+        },
+        "M1": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.943,
+            "familiar_coverage": 0.944,
+            "familiar_FRR": 0.05600000000000001,
+            "familiar_IDENT": 0.9986111111111111,
+            "familiar_MSE": 1.2282674147507158,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.04337460969160231,
+              0.07202367625311248
+            ],
+            "IDENT_wilson": [
+              0.9940239609279052,
+              0.9998129839793449
+            ],
+            "success_wilson": [
+              0.9268626022720123,
+              0.9557467655804457
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.14913524180111712,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.7549879216955199,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.966946399128866,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 0.715,
+              "incorrect": 0.005,
+              "rejection": 0.28,
+              "IDENT": 0.9930555555555556,
+              "mse": 2.6428619713933745,
+              "counts": [
+                143,
+                1,
+                56
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.627405539734701,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "M2": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.943,
+            "familiar_coverage": 0.944,
+            "familiar_FRR": 0.05600000000000001,
+            "familiar_IDENT": 0.9986111111111111,
+            "familiar_MSE": 1.2282674147507158,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.04337460969160231,
+              0.07202367625311248
+            ],
+            "IDENT_wilson": [
+              0.9940239609279052,
+              0.9998129839793449
+            ],
+            "success_wilson": [
+              0.9268626022720123,
+              0.9557467655804457
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.14913524180111712,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.7549879216955199,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.966946399128866,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 0.715,
+              "incorrect": 0.005,
+              "rejection": 0.28,
+              "IDENT": 0.9930555555555556,
+              "mse": 2.6428619713933745,
+              "counts": [
+                143,
+                1,
+                56
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.627405539734701,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "curve_margin": 0.0,
+        "curve": [
+          {
+            "thr": 0.25,
+            "val_FAR": 0.0,
+            "val_coverage": 0.19999999999999996,
+            "val_success": 0.2,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.19900000000000007,
+            "test_success": 0.199,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.8009999999999999
+          },
+          {
+            "thr": 0.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.20399999999999996,
+            "val_success": 0.20400000000000001,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.20300000000000007,
+            "test_success": 0.20299999999999999,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.7969999999999999
+          },
+          {
+            "thr": 0.75,
+            "val_FAR": 0.0,
+            "val_coverage": 0.32800000000000007,
+            "val_success": 0.328,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.32999999999999996,
+            "test_success": 0.33,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.67
+          },
+          {
+            "thr": 1.0,
+            "val_FAR": 0.0,
+            "val_coverage": 0.5,
+            "val_success": 0.5,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.499,
+            "test_success": 0.499,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.501
+          },
+          {
+            "thr": 1.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.67,
+            "val_success": 0.6699999999999999,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.6679999999999999,
+            "test_success": 0.6679999999999999,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.332
+          },
+          {
+            "thr": 2.0,
+            "val_FAR": 0.0,
+            "val_coverage": 0.79,
+            "val_success": 0.79,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.796,
+            "test_success": 0.796,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.20400000000000001
+          },
+          {
+            "thr": 3.0,
+            "val_FAR": 0.0,
+            "val_coverage": 0.962,
+            "val_success": 0.9620000000000001,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.944,
+            "test_success": 0.943,
+            "test_IDENT": 0.9986111111111111,
+            "test_FRR": 0.05600000000000001
+          },
+          {
+            "thr": 5.0,
+            "val_FAR": 0.08,
+            "val_coverage": 1.0,
+            "val_success": 0.998,
+            "val_IDENT": 0.998,
+            "test_FAR": 0.0675,
+            "test_coverage": 1.0,
+            "test_success": 0.9960000000000001,
+            "test_IDENT": 0.9960000000000001,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 8.0,
+            "val_FAR": 0.5,
+            "val_coverage": 1.0,
+            "val_success": 0.998,
+            "val_IDENT": 0.998,
+            "test_FAR": 0.4975,
+            "test_coverage": 1.0,
+            "test_success": 0.9960000000000001,
+            "test_IDENT": 0.9960000000000001,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 12.0,
+            "val_FAR": 0.82,
+            "val_coverage": 1.0,
+            "val_success": 0.998,
+            "val_IDENT": 0.998,
+            "test_FAR": 0.81,
+            "test_coverage": 1.0,
+            "test_success": 0.9960000000000001,
+            "test_IDENT": 0.9960000000000001,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 20.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 0.998,
+            "val_IDENT": 0.998,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 0.9960000000000001,
+            "test_IDENT": 0.9960000000000001,
+            "test_FRR": 0.0
+          }
+        ]
+      },
+      "correlated_FA": {
+        "M0": {
+          "unrelated_both": 0.0,
+          "unrelated_same": 0.0,
+          "same_given_both_unrelated": null,
+          "familiar_both": 1.0,
+          "familiar_same": 0.996,
+          "per_unrelated": {
+            "unrel_0": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            },
+            "unrel_1": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            }
+          }
+        },
+        "M1": {
+          "unrelated_both": 0.0,
+          "unrelated_same": 0.0,
+          "same_given_both_unrelated": null,
+          "familiar_both": 0.944,
+          "familiar_same": 0.943,
+          "per_unrelated": {
+            "unrel_0": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            },
+            "unrel_1": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            }
+          }
+        }
+      }
+    },
+    "302": {
+      "J1": {
+        "cfgs": {
+          "M0": [
+            1.5,
+            0.0
+          ],
+          "M1": [
+            1.5,
+            0.0
+          ],
+          "M2": [
+            1.5,
+            0.0
+          ]
+        },
+        "M0": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.8,
+            "familiar_coverage": 0.8,
+            "familiar_FRR": 0.2,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.9006279056558678,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.17637667806123578,
+              0.2259194610905986
+            ],
+            "IDENT_wilson": [
+              0.9952209490028883,
+              1.0
+            ],
+            "success_wilson": [
+              0.7740805389094014,
+              0.8236233219387643
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.1084393276603663,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.1033631101703925,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.9677929753408905,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.42291620945182196,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "M1": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.8,
+            "familiar_coverage": 0.8,
+            "familiar_FRR": 0.2,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.9006279056558678,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.17637667806123578,
+              0.2259194610905986
+            ],
+            "IDENT_wilson": [
+              0.9952209490028883,
+              1.0
+            ],
+            "success_wilson": [
+              0.7740805389094014,
+              0.8236233219387643
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.1084393276603663,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.1033631101703925,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.9677929753408905,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.42291620945182196,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "M2": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.8,
+            "familiar_coverage": 0.8,
+            "familiar_FRR": 0.2,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.9006279056558678,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.17637667806123578,
+              0.2259194610905986
+            ],
+            "IDENT_wilson": [
+              0.9952209490028883,
+              1.0
+            ],
+            "success_wilson": [
+              0.7740805389094014,
+              0.8236233219387643
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.1084393276603663,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.1033631101703925,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.9677929753408905,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.42291620945182196,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "curve_margin": 0.0,
+        "curve": [
+          {
+            "thr": 0.1,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 0.25,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 0.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 0.75,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 1.0,
+            "val_FAR": 0.0,
+            "val_coverage": 0.19999999999999996,
+            "val_success": 0.2,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.19999999999999996,
+            "test_success": 0.2,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.8
+          },
+          {
+            "thr": 1.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.8,
+            "val_success": 0.8,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.8,
+            "test_success": 0.8,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.2
+          },
+          {
+            "thr": 2.0,
+            "val_FAR": 0.57,
+            "val_coverage": 0.8,
+            "val_success": 0.8,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.5675,
+            "test_coverage": 0.8,
+            "test_success": 0.8,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.2
+          },
+          {
+            "thr": 2.5,
+            "val_FAR": 1.0,
+            "val_coverage": 0.98,
+            "val_success": 0.9800000000000001,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 0.972,
+            "test_success": 0.9719999999999999,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.028000000000000004
+          },
+          {
+            "thr": 3.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 4.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 5.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 7.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 10.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          }
+        ]
+      },
+      "J2": {
+        "cfgs": {
+          "M0": [
+            2.0,
+            0.0
+          ],
+          "M1": [
+            1.5,
+            0.0
+          ],
+          "M2": [
+            1.5,
+            0.0
+          ]
+        },
+        "M0": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.8009999999999999,
+            "familiar_coverage": 0.8049999999999999,
+            "familiar_FRR": 0.195,
+            "familiar_IDENT": 0.9960000000000001,
+            "familiar_MSE": 1.2484378088570411,
+            "FAR": 0.035,
+            "FAR_counts": [
+              14,
+              400
+            ],
+            "FAR_wilson": [
+              0.0209610999014911,
+              0.05788565585621193
+            ],
+            "FRR_wilson": [
+              0.17162968644915114,
+              0.22070472168854713
+            ],
+            "IDENT_wilson": [
+              0.9872937434880629,
+              0.9980660599641829
+            ],
+            "success_wilson": [
+              0.7751230014375367,
+              0.8245732056134564
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 0.025,
+              "incorrect": 0.0,
+              "rejection": 0.975,
+              "IDENT": 1.0,
+              "mse": 2.6310689410761285,
+              "counts": [
+                5,
+                0,
+                195
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.1084393276603663,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 0.995,
+              "incorrect": 0.005,
+              "rejection": 0.0,
+              "IDENT": 0.995,
+              "mse": 1.1066107220574997,
+              "counts": [
+                199,
+                1,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 0.985,
+              "incorrect": 0.015,
+              "rejection": 0.0,
+              "IDENT": 0.985,
+              "mse": 0.9731538440393883,
+              "counts": [
+                197,
+                3,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.42291620945182196,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 14,
+              "rejection": 0.93
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "M1": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.787,
+            "familiar_coverage": 0.791,
+            "familiar_FRR": 0.209,
+            "familiar_IDENT": 0.9949679487179487,
+            "familiar_MSE": 0.9034654135398594,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.18493627231405968,
+              0.23529098266321963
+            ],
+            "IDENT_wilson": [
+              0.9870701360583737,
+              0.9980318012332831
+            ],
+            "success_wilson": [
+              0.7605498923280081,
+              0.8112534678834038
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 0.98,
+              "incorrect": 0.0,
+              "rejection": 0.02,
+              "IDENT": 1.0,
+              "mse": 1.1081833046166911,
+              "counts": [
+                196,
+                0,
+                4
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 0.97,
+              "incorrect": 0.005,
+              "rejection": 0.025,
+              "IDENT": 0.9948717948717949,
+              "mse": 1.1096082960515363,
+              "counts": [
+                194,
+                1,
+                5
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 0.985,
+              "incorrect": 0.015,
+              "rejection": 0.0,
+              "IDENT": 0.985,
+              "mse": 0.9731538440393883,
+              "counts": [
+                197,
+                3,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.42291620945182196,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "M2": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 0.787,
+            "familiar_coverage": 0.791,
+            "familiar_FRR": 0.209,
+            "familiar_IDENT": 0.9949679487179487,
+            "familiar_MSE": 0.9034654135398594,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.18493627231405968,
+              0.23529098266321963
+            ],
+            "IDENT_wilson": [
+              0.9870701360583737,
+              0.9980318012332831
+            ],
+            "success_wilson": [
+              0.7605498923280081,
+              0.8112534678834038
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 0.0,
+              "incorrect": 0.0,
+              "rejection": 1.0,
+              "IDENT": null,
+              "mse": null,
+              "counts": [
+                0,
+                0,
+                200
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 0.98,
+              "incorrect": 0.0,
+              "rejection": 0.02,
+              "IDENT": 1.0,
+              "mse": 1.1081833046166911,
+              "counts": [
+                196,
+                0,
+                4
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 0.97,
+              "incorrect": 0.005,
+              "rejection": 0.025,
+              "IDENT": 0.9948717948717949,
+              "mse": 1.1096082960515363,
+              "counts": [
+                194,
+                1,
+                5
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 0.985,
+              "incorrect": 0.015,
+              "rejection": 0.0,
+              "IDENT": 0.985,
+              "mse": 0.9731538440393883,
+              "counts": [
+                197,
+                3,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.42291620945182196,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "curve_margin": 0.0,
+        "curve": [
+          {
+            "thr": 0.25,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0020000000000000018,
+            "test_success": 0.002,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.998
+          },
+          {
+            "thr": 0.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.17599999999999993,
+            "val_success": 0.176,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.16099999999999992,
+            "test_success": 0.161,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.8390000000000001
+          },
+          {
+            "thr": 0.75,
+            "val_FAR": 0.0,
+            "val_coverage": 0.22999999999999998,
+            "val_success": 0.22999999999999998,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.2230000000000001,
+            "test_success": 0.223,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.7769999999999999
+          },
+          {
+            "thr": 1.0,
+            "val_FAR": 0.0,
+            "val_coverage": 0.45799999999999996,
+            "val_success": 0.458,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.43499999999999994,
+            "test_success": 0.433,
+            "test_IDENT": 0.9958677685950413,
+            "test_FRR": 0.5650000000000001
+          },
+          {
+            "thr": 1.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.79,
+            "val_success": 0.788,
+            "val_IDENT": 0.9974747474747475,
+            "test_FAR": 0.0,
+            "test_coverage": 0.791,
+            "test_success": 0.787,
+            "test_IDENT": 0.9949679487179487,
+            "test_FRR": 0.209
+          },
+          {
+            "thr": 2.0,
+            "val_FAR": 0.025,
+            "val_coverage": 0.8160000000000001,
+            "val_success": 0.8140000000000001,
+            "val_IDENT": 0.998,
+            "test_FAR": 0.035,
+            "test_coverage": 0.8049999999999999,
+            "test_success": 0.8009999999999999,
+            "test_IDENT": 0.9960000000000001,
+            "test_FRR": 0.195
+          },
+          {
+            "thr": 3.0,
+            "val_FAR": 0.46,
+            "val_coverage": 0.966,
+            "val_success": 0.9640000000000001,
+            "val_IDENT": 0.998,
+            "test_FAR": 0.44,
+            "test_coverage": 0.937,
+            "test_success": 0.933,
+            "test_IDENT": 0.9960000000000001,
+            "test_FRR": 0.063
+          },
+          {
+            "thr": 5.0,
+            "val_FAR": 0.915,
+            "val_coverage": 1.0,
+            "val_success": 0.998,
+            "val_IDENT": 0.998,
+            "test_FAR": 0.9275,
+            "test_coverage": 1.0,
+            "test_success": 0.9960000000000001,
+            "test_IDENT": 0.9960000000000001,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 8.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 0.998,
+            "val_IDENT": 0.998,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 0.9960000000000001,
+            "test_IDENT": 0.9960000000000001,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 12.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 0.998,
+            "val_IDENT": 0.998,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 0.9960000000000001,
+            "test_IDENT": 0.9960000000000001,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 20.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 0.998,
+            "val_IDENT": 0.998,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 0.9960000000000001,
+            "test_IDENT": 0.9960000000000001,
+            "test_FRR": 0.0
+          }
+        ]
+      },
+      "correlated_FA": {
+        "M0": {
+          "unrelated_both": 0.0,
+          "unrelated_same": 0.0,
+          "same_given_both_unrelated": null,
+          "familiar_both": 0.8,
+          "familiar_same": 0.796,
+          "per_unrelated": {
+            "unrel_0": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            },
+            "unrel_1": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            }
+          }
+        },
+        "M1": {
+          "unrelated_both": 0.0,
+          "unrelated_same": 0.0,
+          "same_given_both_unrelated": null,
+          "familiar_both": 0.791,
+          "familiar_same": 0.787,
+          "per_unrelated": {
+            "unrel_0": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            },
+            "unrel_1": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            }
+          }
+        }
+      }
+    },
+    "303": {
+      "J1": {
+        "cfgs": {
+          "M0": [
+            2.0,
+            0.1
+          ],
+          "M1": [
+            2.0,
+            0.1
+          ],
+          "M2": [
+            2.0,
+            0.1
+          ]
+        },
+        "M0": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 1.0,
+            "familiar_coverage": 1.0,
+            "familiar_FRR": 0.0,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.6985122272969917,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.0,
+              0.003826898586390522
+            ],
+            "IDENT_wilson": [
+              0.9961731014136095,
+              1.0
+            ],
+            "success_wilson": [
+              0.9961731014136095,
+              1.0
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.5525911004718693,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.43190666635466246,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.3671707055853535,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.3320243518198484,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.8088683122532251,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "M1": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 1.0,
+            "familiar_coverage": 1.0,
+            "familiar_FRR": 0.0,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.6985122272969917,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.0,
+              0.003826898586390522
+            ],
+            "IDENT_wilson": [
+              0.9961731014136095,
+              1.0
+            ],
+            "success_wilson": [
+              0.9961731014136095,
+              1.0
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.5525911004718693,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.43190666635466246,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.3671707055853535,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.3320243518198484,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.8088683122532251,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "M2": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 1.0,
+            "familiar_coverage": 1.0,
+            "familiar_FRR": 0.0,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.6985122272969917,
+            "FAR": 0.0,
+            "FAR_counts": [
+              0,
+              400
+            ],
+            "FAR_wilson": [
+              0.0,
+              0.009512640599680667
+            ],
+            "FRR_wilson": [
+              0.0,
+              0.003826898586390522
+            ],
+            "IDENT_wilson": [
+              0.9961731014136095,
+              1.0
+            ],
+            "success_wilson": [
+              0.9961731014136095,
+              1.0
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.5525911004718693,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.43190666635466246,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.3671707055853535,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.3320243518198484,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.8088683122532251,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            }
+          }
+        },
+        "curve_margin": 0.1,
+        "curve": [
+          {
+            "thr": 0.1,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 0.25,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 0.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 0.75,
+            "val_FAR": 0.0,
+            "val_coverage": 0.0,
+            "val_success": 0.0,
+            "val_IDENT": null,
+            "test_FAR": 0.0,
+            "test_coverage": 0.0,
+            "test_success": 0.0,
+            "test_IDENT": null,
+            "test_FRR": 1.0
+          },
+          {
+            "thr": 1.0,
+            "val_FAR": 0.0,
+            "val_coverage": 0.6,
+            "val_success": 0.6,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.6,
+            "test_success": 0.6,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.4
+          },
+          {
+            "thr": 1.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.8,
+            "val_success": 0.8,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.8,
+            "test_success": 0.8,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.2
+          },
+          {
+            "thr": 2.0,
+            "val_FAR": 0.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 2.5,
+            "val_FAR": 0.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 3.0,
+            "val_FAR": 0.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 4.0,
+            "val_FAR": 0.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 5.0,
+            "val_FAR": 0.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 7.0,
+            "val_FAR": 0.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 10.0,
+            "val_FAR": 0.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          }
+        ]
+      },
+      "J2": {
+        "cfgs": {
+          "M0": [
+            3.0,
+            0.0
+          ],
+          "M1": [
+            3.0,
+            0.0
+          ],
+          "M2": [
+            3.0,
+            0.0
+          ]
+        },
+        "M0": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 1.0,
+            "familiar_coverage": 1.0,
+            "familiar_FRR": 0.0,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.6985122272969917,
+            "FAR": 0.0025,
+            "FAR_counts": [
+              1,
+              400
+            ],
+            "FAR_wilson": [
+              0.00044143642943440895,
+              0.014023640967247855
+            ],
+            "FRR_wilson": [
+              0.0,
+              0.003826898586390522
+            ],
+            "IDENT_wilson": [
+              0.9961731014136095,
+              1.0
+            ],
+            "success_wilson": [
+              0.9961731014136095,
+              1.0
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.5525911004718693,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.43190666635466246,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.3671707055853535,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.3320243518198484,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.8088683122532251,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 1,
+              "rejection": 0.995
+            }
+          }
+        },
+        "M1": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 1.0,
+            "familiar_coverage": 1.0,
+            "familiar_FRR": 0.0,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.6985122272969917,
+            "FAR": 0.0025,
+            "FAR_counts": [
+              1,
+              400
+            ],
+            "FAR_wilson": [
+              0.00044143642943440895,
+              0.014023640967247855
+            ],
+            "FRR_wilson": [
+              0.0,
+              0.003826898586390522
+            ],
+            "IDENT_wilson": [
+              0.9961731014136095,
+              1.0
+            ],
+            "success_wilson": [
+              0.9961731014136095,
+              1.0
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.5525911004718693,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.43190666635466246,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.3671707055853535,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.3320243518198484,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.8088683122532251,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 1,
+              "rejection": 0.995
+            }
+          }
+        },
+        "M2": {
+          "feasible": true,
+          "agg": {
+            "familiar_success": 1.0,
+            "familiar_coverage": 1.0,
+            "familiar_FRR": 0.0,
+            "familiar_IDENT": 1.0,
+            "familiar_MSE": 0.6985122272969917,
+            "FAR": 0.0025,
+            "FAR_counts": [
+              1,
+              400
+            ],
+            "FAR_wilson": [
+              0.00044143642943440895,
+              0.014023640967247855
+            ],
+            "FRR_wilson": [
+              0.0,
+              0.003826898586390522
+            ],
+            "IDENT_wilson": [
+              0.9961731014136095,
+              1.0
+            ],
+            "success_wilson": [
+              0.9961731014136095,
+              1.0
+            ]
+          },
+          "probes": {
+            "variant_S0": {
+              "type": "variant",
+              "truth": 0,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 1.5525911004718693,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S2": {
+              "type": "variant",
+              "truth": 2,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.43190666635466246,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "variant_S4": {
+              "type": "variant",
+              "truth": 4,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.3671707055853535,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S1": {
+              "type": "related",
+              "truth": 1,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.3320243518198484,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "rel_S3": {
+              "type": "related",
+              "truth": 3,
+              "n": 200,
+              "success": 1.0,
+              "incorrect": 0.0,
+              "rejection": 0.0,
+              "IDENT": 1.0,
+              "mse": 0.8088683122532251,
+              "counts": [
+                200,
+                0,
+                0
+              ]
+            },
+            "unrel_0": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 0,
+              "rejection": 1.0
+            },
+            "unrel_1": {
+              "type": "unrelated",
+              "n": 200,
+              "accepted": 1,
+              "rejection": 0.995
+            }
+          }
+        },
+        "curve_margin": 0.0,
+        "curve": [
+          {
+            "thr": 0.25,
+            "val_FAR": 0.0,
+            "val_coverage": 0.008000000000000007,
+            "val_success": 0.008,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.015000000000000013,
+            "test_success": 0.015,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.985
+          },
+          {
+            "thr": 0.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.562,
+            "val_success": 0.5619999999999999,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.545,
+            "test_success": 0.545,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.45499999999999996
+          },
+          {
+            "thr": 0.75,
+            "val_FAR": 0.0,
+            "val_coverage": 0.6799999999999999,
+            "val_success": 0.6799999999999999,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.6719999999999999,
+            "test_success": 0.6719999999999999,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.328
+          },
+          {
+            "thr": 1.0,
+            "val_FAR": 0.0,
+            "val_coverage": 0.784,
+            "val_success": 0.784,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.781,
+            "test_success": 0.781,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.219
+          },
+          {
+            "thr": 1.5,
+            "val_FAR": 0.0,
+            "val_coverage": 0.88,
+            "val_success": 0.8800000000000001,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.911,
+            "test_success": 0.9109999999999999,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.089
+          },
+          {
+            "thr": 2.0,
+            "val_FAR": 0.0,
+            "val_coverage": 0.982,
+            "val_success": 0.982,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0,
+            "test_coverage": 0.994,
+            "test_success": 0.994,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.006
+          },
+          {
+            "thr": 3.0,
+            "val_FAR": 0.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.0025,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 5.0,
+            "val_FAR": 0.63,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 0.5775,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 8.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 12.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          },
+          {
+            "thr": 20.0,
+            "val_FAR": 1.0,
+            "val_coverage": 1.0,
+            "val_success": 1.0,
+            "val_IDENT": 1.0,
+            "test_FAR": 1.0,
+            "test_coverage": 1.0,
+            "test_success": 1.0,
+            "test_IDENT": 1.0,
+            "test_FRR": 0.0
+          }
+        ]
+      },
+      "correlated_FA": {
+        "M0": {
+          "unrelated_both": 0.0,
+          "unrelated_same": 0.0,
+          "same_given_both_unrelated": null,
+          "familiar_both": 1.0,
+          "familiar_same": 1.0,
+          "per_unrelated": {
+            "unrel_0": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            },
+            "unrel_1": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            }
+          }
+        },
+        "M1": {
+          "unrelated_both": 0.0,
+          "unrelated_same": 0.0,
+          "same_given_both_unrelated": null,
+          "familiar_both": 1.0,
+          "familiar_same": 1.0,
+          "per_unrelated": {
+            "unrel_0": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            },
+            "unrel_1": {
+              "both": 0.0,
+              "same": 0.0,
+              "n": 200
+            }
+          }
+        }
+      }
+    }
+  },
+  "seconds": 293.723757664
+}
