@@ -1,0 +1,55 @@
+{
+  "resnet18_params": 11169858,
+  "epochs_per_task": 5,
+  "batch": 128,
+  "lr": 0.001,
+  "input": "grayscale 16x16 standardized, replicated to 3 channels",
+  "sequential_immediate": [
+    0.9225,
+    0.801,
+    0.8675,
+    0.9495,
+    0.9045
+  ],
+  "sequential_final": [
+    0.2395,
+    0.426,
+    0.4715,
+    0.5345,
+    0.9045
+  ],
+  "sequential_old_mean": 0.417875,
+  "sequential_time_s": 27.156382900080644,
+  "fresh": [
+    0.9375,
+    0.759,
+    0.817,
+    0.942,
+    0.9235
+  ],
+  "fresh_time_s": 24.54956019995734,
+  "paw_pulled": {
+    "T0": 0.676,
+    "T1": 0.6105,
+    "T2": 0.62,
+    "T3": 0.5685,
+    "T4": 0.647
+  },
+  "paw_pulled_old_mean": 0.6187500000000001,
+  "paw_learn": [
+    0.8633,
+    0.7163,
+    0.7162,
+    0.6438,
+    0.6931
+  ],
+  "paw_router_acc": {
+    "T0": 0.4615,
+    "T1": 0.345,
+    "T2": 0.3825,
+    "T3": 0.425,
+    "T4": 0.519
+  },
+  "paw_resident_params": 33154,
+  "paw_stored_snapshot_params": 165770
+}

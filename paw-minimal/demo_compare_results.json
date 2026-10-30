@@ -1,0 +1,210 @@
+{
+  "seeds": [
+    {
+      "seed": 0,
+      "paw": {
+        "linear": 0.2991287492310204,
+        "quadratic": 0.9648553565692584,
+        "cubic": 0.1182422734627414
+      },
+      "tiny_continuous": {
+        "linear": 3.912098413313036,
+        "quadratic": 2.7064149405147946,
+        "cubic": 0.10501629323674434
+      },
+      "normal_sequential": {
+        "linear": 3.8167681102172395,
+        "quadratic": 2.832948811593923,
+        "cubic": 0.0008685841373809116
+      },
+      "normal_sequential_immediate": {
+        "linear": 0.0010406310099756368,
+        "quadratic": 0.004084984564392531,
+        "cubic": 0.0008685841373809116
+      },
+      "normal_joint": {
+        "linear": 2.9986600541805384,
+        "quadratic": 2.4180172984589454,
+        "cubic": 0.309884843366072
+      }
+    },
+    {
+      "seed": 1,
+      "paw": {
+        "linear": 0.35590731980338713,
+        "quadratic": 1.4428818461755841,
+        "cubic": 0.09843872621841102
+      },
+      "tiny_continuous": {
+        "linear": 3.655696555362365,
+        "quadratic": 2.8934387251070266,
+        "cubic": 0.09647826664564545
+      },
+      "normal_sequential": {
+        "linear": 3.661483044415525,
+        "quadratic": 2.872147225719765,
+        "cubic": 0.0011289483801065084
+      },
+      "normal_sequential_immediate": {
+        "linear": 0.0008857053358410021,
+        "quadratic": 0.0019721757583770756,
+        "cubic": 0.0011289483801065084
+      },
+      "normal_joint": {
+        "linear": 2.5728282442980834,
+        "quadratic": 2.571404490201103,
+        "cubic": 0.3400401051165022
+      }
+    },
+    {
+      "seed": 2,
+      "paw": {
+        "linear": 0.4391038864366348,
+        "quadratic": 1.4297913272898053,
+        "cubic": 0.10817807068288215
+      },
+      "tiny_continuous": {
+        "linear": 3.8641096628099234,
+        "quadratic": 2.6126059327486533,
+        "cubic": 0.10386651739566725
+      },
+      "normal_sequential": {
+        "linear": 3.7328382641148092,
+        "quadratic": 2.4625279667521345,
+        "cubic": 0.0008984814844270739
+      },
+      "normal_sequential_immediate": {
+        "linear": 0.0005901108597398772,
+        "quadratic": 0.001848415165962515,
+        "cubic": 0.0008984814844270739
+      },
+      "normal_joint": {
+        "linear": 2.826147945663367,
+        "quadratic": 2.2831062221483154,
+        "cubic": 0.2918768839130481
+      }
+    },
+    {
+      "seed": 3,
+      "paw": {
+        "linear": 0.19916879861156786,
+        "quadratic": 1.0085455526469023,
+        "cubic": 0.10281367120035069
+      },
+      "tiny_continuous": {
+        "linear": 3.8538492162905094,
+        "quadratic": 2.8461249769643793,
+        "cubic": 0.09757714949391391
+      },
+      "normal_sequential": {
+        "linear": 3.83216382791931,
+        "quadratic": 2.848048926149251,
+        "cubic": 0.0012623697946263003
+      },
+      "normal_sequential_immediate": {
+        "linear": 0.0008871921517211844,
+        "quadratic": 0.0032682289635797205,
+        "cubic": 0.0012623697946263003
+      },
+      "normal_joint": {
+        "linear": 2.7610746901370367,
+        "quadratic": 2.6580689554707377,
+        "cubic": 0.2827084819270023
+      }
+    },
+    {
+      "seed": 4,
+      "paw": {
+        "linear": 0.42245872230769704,
+        "quadratic": 1.3175821967767443,
+        "cubic": 0.1192132046023273
+      },
+      "tiny_continuous": {
+        "linear": 3.6303832653868087,
+        "quadratic": 2.4209073908378214,
+        "cubic": 0.1022848191721279
+      },
+      "normal_sequential": {
+        "linear": 3.657597884055174,
+        "quadratic": 2.3665081444020517,
+        "cubic": 0.0005440141576926789
+      },
+      "normal_sequential_immediate": {
+        "linear": 0.0003588837310799424,
+        "quadratic": 0.0034382926521149882,
+        "cubic": 0.0005440141576926789
+      },
+      "normal_joint": {
+        "linear": 2.4352878920601206,
+        "quadratic": 2.4815134939975225,
+        "cubic": 0.29948947269601767
+      }
+    }
+  ],
+  "summary": {
+    "paw.linear": {
+      "mean": 0.3431534952780614,
+      "std": 0.08755367242597731
+    },
+    "paw.quadratic": {
+      "mean": 1.2327312558916588,
+      "std": 0.2060157040044957
+    },
+    "paw.cubic": {
+      "mean": 0.1093771892333425,
+      "std": 0.008240200775827407
+    },
+    "tiny_continuous.linear": {
+      "mean": 3.783227422632528,
+      "std": 0.11641526125503832
+    },
+    "tiny_continuous.quadratic": {
+      "mean": 2.695898393234535,
+      "std": 0.16985787724746443
+    },
+    "tiny_continuous.cubic": {
+      "mean": 0.10104460918881979,
+      "std": 0.003410288019053793
+    },
+    "normal_sequential.linear": {
+      "mean": 3.7401702261444116,
+      "std": 0.07401848488815939
+    },
+    "normal_sequential.quadratic": {
+      "mean": 2.676436214923425,
+      "std": 0.21636176318867328
+    },
+    "normal_sequential.cubic": {
+      "mean": 0.0009404795908466946,
+      "std": 0.00024627278561474135
+    },
+    "normal_sequential_immediate.linear": {
+      "mean": 0.0007525046176715285,
+      "std": 0.00024503433068357247
+    },
+    "normal_sequential_immediate.quadratic": {
+      "mean": 0.0029224194208853664,
+      "std": 0.0008710585859912251
+    },
+    "normal_sequential_immediate.cubic": {
+      "mean": 0.0009404795908466946,
+      "std": 0.00024627278561474135
+    },
+    "normal_joint.linear": {
+      "mean": 2.7187997652678293,
+      "std": 0.19663125367102752
+    },
+    "normal_joint.quadratic": {
+      "mean": 2.4824220920553244,
+      "std": 0.12856539720535795
+    },
+    "normal_joint.cubic": {
+      "mean": 0.30479995740372845,
+      "std": 0.019753300691698575
+    },
+    "paw.old_task_mean": 0.78794237558486,
+    "tiny_continuous.old_task_mean": 3.2395629079335313,
+    "normal_sequential.old_task_mean": 3.2083032205339186,
+    "normal_joint.old_task_mean": 2.6006109286615766
+  }
+}

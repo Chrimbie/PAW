@@ -1,0 +1,21 @@
+PAW 2.0 — WINDOWS QUICK START
+
+1. Install Python 3.11+ if it is not already installed.
+2. Extract the ZIP completely, preserving all folders.
+3. Open PowerShell in this directory.
+4. Run these commands:
+
+   py -3 paw.py test
+   py -3 paw.py demo
+   py -3 paw.py auto '{"x":0.75}'
+   py -3 paw.py tasks
+   py -3 paw.py audit
+
+5. Train your own file:
+
+   py -3 paw.py train mytask "C:\path\to\data.csv"
+   py -3 paw.py train-stream mytask "C:\path\to\bigdata.jsonl"
+
+Read README.md for formats, safeguards, and limits.
+No third-party pip packages required. Settings in config.py.
+Beta: not production certified.

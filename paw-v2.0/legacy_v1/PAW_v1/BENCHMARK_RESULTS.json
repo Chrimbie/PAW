@@ -1,0 +1,43 @@
+{
+  "model": "exact four scalar neurons, 8 trainable scalars",
+  "task_count": 3,
+  "epochs_per_task": 50,
+  "tasks": {
+    "linear": {
+      "offload_equals_in_memory_exactly": true,
+      "validation_mse": 0.08973369404095899,
+      "mean_predictor_mse": 5.390407345562362,
+      "validation_saturation": 0.0,
+      "validation_dead_hidden": 0,
+      "updates": 350,
+      "file_bytes": 1023,
+      "offload_seconds": 1.937,
+      "direct_seconds": 0.014,
+      "offload_overhead_ratio": 133.8
+    },
+    "quadratic": {
+      "offload_equals_in_memory_exactly": true,
+      "validation_mse": 0.9648170295088889,
+      "mean_predictor_mse": 1.2859527387249619,
+      "validation_saturation": 0.3333333333333333,
+      "validation_dead_hidden": 0,
+      "updates": 350,
+      "file_bytes": 1020,
+      "offload_seconds": 1.873,
+      "direct_seconds": 0.016,
+      "offload_overhead_ratio": 117.0
+    },
+    "cubic": {
+      "offload_equals_in_memory_exactly": true,
+      "validation_mse": 0.11383260596497123,
+      "mean_predictor_mse": 0.5260946373603802,
+      "validation_saturation": 0.0,
+      "validation_dead_hidden": 0,
+      "updates": 350,
+      "file_bytes": 1012,
+      "offload_seconds": 2.009,
+      "direct_seconds": 0.019,
+      "offload_overhead_ratio": 108.0
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "resnet18_params": 11169858,
+  "epochs_per_task": 5,
+  "batch": 128,
+  "lr": 0.001,
+  "input": "grayscale 16x16 standardized, replicated to 3 channels",
+  "store_file": "paw_resnet_store.rflx",
+  "store_file_bytes": 223788550,
+  "snapshot_bytes_each": [
+    44757630,
+    44757630,
+    44757630,
+    44757630,
+    44757630
+  ],
+  "sequential_immediate": [
+    0.9535,
+    0.7855,
+    0.863,
+    0.9505,
+    0.9485
+  ],
+  "sequential_final_no_pull": [
+    0.3925,
+    0.471,
+    0.5545,
+    0.605,
+    0.9485
+  ],
+  "sequential_final_old_mean": 0.5057499999999999,
+  "sequential_time_s": 26.089633299969137,
+  "pulled_task_keyed": [
+    0.9535,
+    0.7855,
+    0.863,
+    0.9505,
+    0.9485
+  ],
+  "pulled_task_keyed_old_mean": 0.8881249999999999,
+  "router_acc": [
+    0.4425,
+    0.3505,
+    0.3645,
+    0.418,
+    0.516
+  ],
+  "router_max_iter": 500,
+  "router_train": "full train pixels (no subsample)",
+  "router_abstain_threshold": 0.6,
+  "router_abstain_rate": [
+    0.509,
+    0.734,
+    0.752,
+    0.704,
+    0.4795
+  ],
+  "pulled_router": [
+    0.4155,
+    0.1725,
+    0.164,
+    0.2335,
+    0.4555
+  ],
+  "pulled_router_old_mean": 0.246375,
+  "pulled_router_answered_acc": [
+    0.8462321792260692,
+    0.6484962406015038,
+    0.6612903225806451,
+    0.7888513513513513,
+    0.8751200768491835
+  ],
+  "fit_id_probes": 16,
+  "fit_id_draws_per_task": 5,
+  "fit_id_per_task": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "fit_id_acc": 1.0,
+  "feature_router_acc": [
+    0.602,
+    0.3955,
+    0.4535,
+    0.482,
+    0.6225
+  ],
+  "feature_router_mean": 0.5111000000000001,
+  "feature_router_abstain_rate": [
+    0.374,
+    0.618,
+    0.6025,
+    0.5505,
+    0.354
+  ],
+  "pulled_feature_router": [
+    0.5635,
+    0.2665,
+    0.2985,
+    0.3665,
+    0.589
+  ],
+  "pulled_feature_router_old_mean": 0.37375,
+  "pulled_feature_router_answered_acc": [
+    0.9001597444089456,
+    0.6976439790575916,
+    0.7509433962264151,
+    0.8153503893214683,
+    0.9117647058823529
+  ],
+  "feature_extraction_router_time_s": 44.55706039990764,
+  "feature_router_file": "paw_resnet_feature_router.pkl",
+  "reopen_t0": 0.9535,
+  "store_backup_file": "paw_resnet_store.rflx.bak",
+  "router_file": "paw_resnet_router.pkl",
+  "manifest_file": "paw_resnet_manifest.json",
+  "reference_resnet_sequential_final": [
+    0.2395,
+    0.426,
+    0.4715,
+    0.5345,
+    0.9045
+  ],
+  "reference_resnet_fresh": [
+    0.9375,
+    0.759,
+    0.817,
+    0.942,
+    0.9235
+  ],
+  "reference_paw_mlp_pulled": {
+    "T0": 0.676,
+    "T1": 0.6105,
+    "T2": 0.62,
+    "T3": 0.5685,
+    "T4": 0.647
+  }
+}

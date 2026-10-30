@@ -1,0 +1,111 @@
+{
+ "1_corruption": {
+  "verdict": "SURVIVES",
+  "detail": {
+   "clean_t0_acc": 0.8175,
+   "payload_bytes": 266637,
+   "offsets": {
+    "100": "loud (raise ValueError)",
+    "1000": "loud (raise ValueError)",
+    "66659": "loud (raise ValueError)",
+    "133318": "loud (raise ValueError)",
+    "199977": "loud (raise ValueError)",
+    "266627": "loud (raise ValueError)"
+   },
+   "magic_zeroed": "loud (None)",
+   "silent_count": 0
+  }
+ },
+ "2_compaction": {
+  "verdict": "BREAKS",
+  "detail": {
+   "mse_clean": 0.8638498856596882,
+   "mse_after_noisy_retrain": 1.1651192023071537,
+   "mse_after_close_reopen": 1.1651192023071537,
+   "bytes_pre_close": 1784863,
+   "bytes_post_close": 1308,
+   "good_snapshot_recoverable": false
+  }
+ },
+ "3_reopen_routing": {
+  "verdict": "SURVIVES",
+  "detail": {
+   "identify_by_fit_after_reopen": {
+    "best": "quadratic",
+    "scores": {
+     "quadratic": 1.0308304589702475
+    },
+    "task_ids": [
+     "quadratic"
+    ]
+   },
+   "auto_pull_after_reopen": "works",
+   "keyed_predict_after_reopen_works": true
+  }
+ },
+ "4_identical_inputs": {
+  "verdict": "BREAKS",
+  "detail": {
+   "router_acc_task_A_rows": 0.5,
+   "router_acc_task_B_rows": 0.5,
+   "router_overall": 0.5,
+   "bayes_optimal": 0.5,
+   "fit_id_with_A_probes": "A",
+   "fit_id_with_B_probes": "B"
+  }
+ },
+ "5_noise_shift_ood": {
+  "verdict": "BREAKS",
+  "detail": {
+   "clean_per_task": [
+    0.8175,
+    0.6425,
+    0.676,
+    0.6025,
+    0.675
+   ],
+   "clean_mean": 0.6827,
+   "noise_0.25_mean": 0.6799999999999999,
+   "noise_0.5_mean": 0.6712999999999999,
+   "noise_1.0_mean": 0.6404,
+   "shift_+1.0_mean": 0.6143,
+   "mean_conf_clean": 0.7817199099923149,
+   "mean_conf_pure_noise": 0.7876459669587766,
+   "pull_abstains": false
+  }
+ },
+ "6_amnesia": {
+  "verdict": "BREAKS",
+  "detail": {
+   "live_only_T4_snapshot_on_T0_test": 0.454,
+   "missing_snapshot_returns": null,
+   "missing_snapshot_predict": "KeyError: 'no stored state for task quadratic'",
+   "backup_or_replica": false
+  }
+ },
+ "7_latency": {
+  "verdict": "PARTIAL",
+  "detail": {
+   "resnet_record_bytes": 44757630,
+   "get_ms_first_3": [
+    5.543478999925355,
+    2.0225149999077985,
+    1.8077029999403749
+   ],
+   "get_ms_alternating_mean": 2.6095328333137027,
+   "small_snapshot_payload_bytes": 266637
+  }
+ },
+ "8_offload_math": {
+  "verdict": "BREAKS",
+  "detail": {
+   "resnet_steps_per_run": 1975,
+   "bytes_per_step": 44757630,
+   "per_step_offload_bytes_per_run": 88396319250,
+   "per_step_offload_GB": 88.39631925,
+   "per_epoch_GB": 3.53585277,
+   "task_boundary_snapshot_MB_per_run": 223.78815,
+   "minimal_build_bytes_per_run_pre_compact": 4850235
+  }
+ }
+}

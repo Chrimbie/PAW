@@ -1,0 +1,166 @@
+{
+  "splits": {
+    "seed0": {
+      "iris": {
+        "n_val": 30,
+        "n_test": 30,
+        "tau_star": 0.2970825355302141,
+        "val_acc_at_tau": 0.9666666666666667,
+        "core_acc": 0.8666666666666667,
+        "memory_acc": 1.0,
+        "corrected_acc": 1.0,
+        "fixes": 4,
+        "degradations": 0,
+        "net": 4
+      },
+      "wine": {
+        "n_val": 36,
+        "n_test": 36,
+        "tau_star": 0.5299372107847132,
+        "val_acc_at_tau": 0.9166666666666666,
+        "core_acc": 0.3055555555555556,
+        "memory_acc": 0.8611111111111112,
+        "corrected_acc": 0.8055555555555556,
+        "fixes": 20,
+        "degradations": 2,
+        "net": 18
+      }
+    },
+    "seed1": {
+      "iris": {
+        "n_val": 30,
+        "n_test": 30,
+        "tau_star": 0.16230213756562925,
+        "val_acc_at_tau": 1.0,
+        "core_acc": 0.8666666666666667,
+        "memory_acc": 0.9666666666666667,
+        "corrected_acc": 0.9666666666666667,
+        "fixes": 3,
+        "degradations": 0,
+        "net": 3
+      },
+      "wine": {
+        "n_val": 36,
+        "n_test": 36,
+        "tau_star": 0.7418997257938433,
+        "val_acc_at_tau": 0.9444444444444444,
+        "core_acc": 0.3055555555555556,
+        "memory_acc": 0.9166666666666666,
+        "corrected_acc": 0.9166666666666666,
+        "fixes": 25,
+        "degradations": 3,
+        "net": 22
+      }
+    },
+    "seed2": {
+      "iris": {
+        "n_val": 30,
+        "n_test": 30,
+        "tau_star": 0.1644924402989243,
+        "val_acc_at_tau": 1.0,
+        "core_acc": 0.9666666666666667,
+        "memory_acc": 0.9666666666666667,
+        "corrected_acc": 0.9666666666666667,
+        "fixes": 1,
+        "degradations": 1,
+        "net": 0
+      },
+      "wine": {
+        "n_val": 36,
+        "n_test": 36,
+        "tau_star": 0.513647579435607,
+        "val_acc_at_tau": 0.8888888888888888,
+        "core_acc": 0.5555555555555556,
+        "memory_acc": 0.9166666666666666,
+        "corrected_acc": 0.8611111111111112,
+        "fixes": 13,
+        "degradations": 2,
+        "net": 11
+      }
+    },
+    "seed3": {
+      "iris": {
+        "n_val": 30,
+        "n_test": 30,
+        "tau_star": 0.10457926674945389,
+        "val_acc_at_tau": 0.9666666666666667,
+        "core_acc": 0.8,
+        "memory_acc": 0.9666666666666667,
+        "corrected_acc": 0.8333333333333334,
+        "fixes": 1,
+        "degradations": 0,
+        "net": 1
+      },
+      "wine": {
+        "n_val": 36,
+        "n_test": 36,
+        "tau_star": 0.8298125668153611,
+        "val_acc_at_tau": 0.9444444444444444,
+        "core_acc": 0.3888888888888889,
+        "memory_acc": 0.9166666666666666,
+        "corrected_acc": 0.9166666666666666,
+        "fixes": 21,
+        "degradations": 2,
+        "net": 19
+      }
+    },
+    "seed4": {
+      "iris": {
+        "n_val": 30,
+        "n_test": 30,
+        "tau_star": -1.0,
+        "val_acc_at_tau": 1.0,
+        "core_acc": 0.8333333333333334,
+        "memory_acc": 0.9666666666666667,
+        "corrected_acc": 0.8333333333333334,
+        "fixes": 0,
+        "degradations": 0,
+        "net": 0
+      },
+      "wine": {
+        "n_val": 36,
+        "n_test": 36,
+        "tau_star": 0.6224378275435871,
+        "val_acc_at_tau": 0.8611111111111112,
+        "core_acc": 0.2777777777777778,
+        "memory_acc": 0.9166666666666666,
+        "corrected_acc": 0.8888888888888888,
+        "fixes": 23,
+        "degradations": 1,
+        "net": 22
+      }
+    }
+  },
+  "pooled": {
+    "iris": {
+      "core_acc_mean": 0.8666666666666666,
+      "memory_acc_mean": 0.9733333333333334,
+      "corrected_acc_mean": 0.9200000000000002,
+      "taus": [
+        0.2970825355302141,
+        0.16230213756562925,
+        0.1644924402989243,
+        0.10457926674945389,
+        -1.0
+      ],
+      "fixes": 9,
+      "degradations": 1,
+      "net": 8
+    },
+    "wine": {
+      "core_acc_mean": 0.3666666666666667,
+      "memory_acc_mean": 0.9055555555555556,
+      "corrected_acc_mean": 0.8777777777777779,
+      "taus": [
+        0.5299372107847132,
+        0.7418997257938433,
+        0.513647579435607,
+        0.8298125668153611,
+        0.6224378275435871
+      ],
+      "fixes": 102,
+      "degradations": 10,
+      "net": 92
+    }
+  }
+}

@@ -130,3 +130,33 @@ python3 demo_cifar.py         # minutes, 1 seed (CIFAR data required at
 ```
 
 Numpy + scikit-learn only. No torch.
+
+## Break-battery fixes (2026-10-30, same day)
+
+All fixes live in the wrappers and engine; Christopher's
+`reflex_optimized.py` is untouched (byte-identical).
+
+- **Checksums (`paw/store.py`).** Task snapshots now carry a
+  companion SHA-256 record; `get_task_snapshot` raises ValueError
+  on mismatch instead of returning wrong weights silently. Chunk
+  records are keyed by content hash, so `get_chunk` verifies the
+  key itself. Pre-fix records (no companion record) still load
+  (backward compatible). Verified: corrupted payloads now raise
+  loudly; the old demo store still loads at 0.8175.
+- **Manifest (`paw/store.py`, `paw/engine.py`).** Task list + fitted
+  router model are persisted in the store on every fit and on
+  close, so reopening restores routing, not just keyed pull.
+  Verified: fresh 2-task digits run closes and reopens with tasks
+  [0, 1], router restored, router pull 0.972 on task B.
+- **Abstention (`pull_predict`, opt-in).** `abstain_threshold`
+  returns None for rows whose snapshot max-softmax-probability
+  falls below the threshold (None = old behavior). Honest limit,
+  measured: at 0.6, clean abstains 6.2% vs noise 7.6%; at 0.9,
+  32.9% vs 41.0% — the threshold moves both together, so softmax
+  confidence does NOT separate OOD here. Real OOD detection needs
+  a density/distance signal, still open.
+- **Snapshot cache.** Loaded snapshots are cached in memory
+  (copy-on-read); repeated pulls no longer re-read the store.
+- **Backup.** `close()` copies the store file to `.bak` after
+  finalize, so a corrupted or lost live file is recoverable.
+  Same disk — not protection against disk failure.

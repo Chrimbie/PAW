@@ -1,0 +1,350 @@
+{
+  "seeds": [
+    {
+      "seed": 0,
+      "A_immediate": {
+        "linear": 0.28387133875549264,
+        "quadratic": 1.452719481048745,
+        "cubic": 0.10501629323674434
+      },
+      "A_final": {
+        "linear": 3.912098413313036,
+        "quadratic": 2.7064149405147946,
+        "cubic": 0.10501629323674434
+      },
+      "A_sat": {
+        "linear": {
+          "mean_abs": 0.21089274776678826,
+          "frac_gt_095": 0.0
+        },
+        "quadratic": {
+          "mean_abs": 0.2162641965086335,
+          "frac_gt_095": 0.0
+        },
+        "cubic": {
+          "mean_abs": 0.2161126019348378,
+          "frac_gt_095": 0.0
+        }
+      },
+      "B_final": {
+        "linear": 0.28387133875549264,
+        "quadratic": 0.9721477025401023,
+        "cubic": 0.11832420612816355
+      },
+      "B_sat": {
+        "linear": {
+          "mean_abs": 0.5358324990067772,
+          "frac_gt_095": 0.0
+        },
+        "quadratic": {
+          "mean_abs": 0.6887750347772219,
+          "frac_gt_095": 0.369
+        },
+        "cubic": {
+          "mean_abs": 0.25832154916395256,
+          "frac_gt_095": 0.0
+        }
+      },
+      "vessel_clean": true,
+      "store_bytes": 4850235,
+      "writes": 9000,
+      "flushes": 93,
+      "router_acc": 0.337
+    },
+    {
+      "seed": 1,
+      "A_immediate": {
+        "linear": 0.3317729121690745,
+        "quadratic": 1.4437119317483411,
+        "cubic": 0.09647826664564545
+      },
+      "A_final": {
+        "linear": 3.655696555362365,
+        "quadratic": 2.8934387251070266,
+        "cubic": 0.09647826664564545
+      },
+      "A_sat": {
+        "linear": {
+          "mean_abs": 0.3518287514851962,
+          "frac_gt_095": 0.0
+        },
+        "quadratic": {
+          "mean_abs": 0.3466554389868704,
+          "frac_gt_095": 0.0
+        },
+        "cubic": {
+          "mean_abs": 0.346838187452135,
+          "frac_gt_095": 0.0
+        }
+      },
+      "B_final": {
+        "linear": 0.3317729121690745,
+        "quadratic": 1.4428818461755841,
+        "cubic": 0.09843318784557954
+      },
+      "B_sat": {
+        "linear": {
+          "mean_abs": 0.554727954202247,
+          "frac_gt_095": 0.0
+        },
+        "quadratic": {
+          "mean_abs": 0.6935382191586952,
+          "frac_gt_095": 0.0
+        },
+        "cubic": {
+          "mean_abs": 0.22045227114277322,
+          "frac_gt_095": 0.0
+        }
+      },
+      "vessel_clean": true,
+      "store_bytes": 4850235,
+      "writes": 9000,
+      "flushes": 93,
+      "router_acc": 0.33566666666666667
+    },
+    {
+      "seed": 2,
+      "A_immediate": {
+        "linear": 0.39034537577244266,
+        "quadratic": 1.4297856499069994,
+        "cubic": 0.10386651739566725
+      },
+      "A_final": {
+        "linear": 3.8641096628099234,
+        "quadratic": 2.6126059327486533,
+        "cubic": 0.10386651739566725
+      },
+      "A_sat": {
+        "linear": {
+          "mean_abs": 0.383039237281172,
+          "frac_gt_095": 0.0
+        },
+        "quadratic": {
+          "mean_abs": 0.3898090468986145,
+          "frac_gt_095": 0.0
+        },
+        "cubic": {
+          "mean_abs": 0.39793737177701094,
+          "frac_gt_095": 0.0
+        }
+      },
+      "B_final": {
+        "linear": 0.39034537577244266,
+        "quadratic": 1.4277734534784796,
+        "cubic": 0.1083758206556585
+      },
+      "B_sat": {
+        "linear": {
+          "mean_abs": 0.5646976515070128,
+          "frac_gt_095": 0.0195
+        },
+        "quadratic": {
+          "mean_abs": 0.4580175169962524,
+          "frac_gt_095": 0.0
+        },
+        "cubic": {
+          "mean_abs": 0.31274713319957276,
+          "frac_gt_095": 0.0
+        }
+      },
+      "vessel_clean": true,
+      "store_bytes": 4850235,
+      "writes": 9000,
+      "flushes": 93,
+      "router_acc": 0.3333333333333333
+    },
+    {
+      "seed": 3,
+      "A_immediate": {
+        "linear": 0.2121638825030388,
+        "quadratic": 1.5907114024652313,
+        "cubic": 0.09757714949391391
+      },
+      "A_final": {
+        "linear": 3.8538492162905094,
+        "quadratic": 2.8461249769643793,
+        "cubic": 0.09757714949391391
+      },
+      "A_sat": {
+        "linear": {
+          "mean_abs": 0.2556938643042319,
+          "frac_gt_095": 0.0
+        },
+        "quadratic": {
+          "mean_abs": 0.26183878554668305,
+          "frac_gt_095": 0.0
+        },
+        "cubic": {
+          "mean_abs": 0.26201421010048465,
+          "frac_gt_095": 0.0
+        }
+      },
+      "B_final": {
+        "linear": 0.2121638825030388,
+        "quadratic": 1.016103277445696,
+        "cubic": 0.1027202996137862
+      },
+      "B_sat": {
+        "linear": {
+          "mean_abs": 0.538221845886299,
+          "frac_gt_095": 0.0
+        },
+        "quadratic": {
+          "mean_abs": 0.5292880028945914,
+          "frac_gt_095": 0.364
+        },
+        "cubic": {
+          "mean_abs": 0.22710872972971746,
+          "frac_gt_095": 0.0
+        }
+      },
+      "vessel_clean": true,
+      "store_bytes": 4850235,
+      "writes": 9000,
+      "flushes": 93,
+      "router_acc": 0.33666666666666667
+    },
+    {
+      "seed": 4,
+      "A_immediate": {
+        "linear": 0.36720325272891824,
+        "quadratic": 1.319331794768641,
+        "cubic": 0.1022848191721279
+      },
+      "A_final": {
+        "linear": 3.6303832653868087,
+        "quadratic": 2.4209073908378214,
+        "cubic": 0.1022848191721279
+      },
+      "A_sat": {
+        "linear": {
+          "mean_abs": 0.18796166127929223,
+          "frac_gt_095": 0.0
+        },
+        "quadratic": {
+          "mean_abs": 0.17986463900657482,
+          "frac_gt_095": 0.0
+        },
+        "cubic": {
+          "mean_abs": 0.1955835625609981,
+          "frac_gt_095": 0.0
+        }
+      },
+      "B_final": {
+        "linear": 0.36720325272891824,
+        "quadratic": 1.3175821967767443,
+        "cubic": 0.11927894611038403
+      },
+      "B_sat": {
+        "linear": {
+          "mean_abs": 0.5740351646120281,
+          "frac_gt_095": 0.0
+        },
+        "quadratic": {
+          "mean_abs": 0.38486245788354645,
+          "frac_gt_095": 0.0
+        },
+        "cubic": {
+          "mean_abs": 0.3206621011618006,
+          "frac_gt_095": 0.0
+        }
+      },
+      "vessel_clean": true,
+      "store_bytes": 4850235,
+      "writes": 9000,
+      "flushes": 93,
+      "router_acc": 0.3393333333333333
+    }
+  ],
+  "summary": {
+    "A_immediate.linear": {
+      "mean": 0.31707135238579337,
+      "std": 0.06357081710595647
+    },
+    "A_immediate.quadratic": {
+      "mean": 1.4472520519875915,
+      "std": 0.08636165570427282
+    },
+    "A_immediate.cubic": {
+      "mean": 0.10104460918881979,
+      "std": 0.003410288019053793
+    },
+    "A_final.linear": {
+      "mean": 3.783227422632528,
+      "std": 0.11641526125503832
+    },
+    "A_final.quadratic": {
+      "mean": 2.695898393234535,
+      "std": 0.16985787724746443
+    },
+    "A_final.cubic": {
+      "mean": 0.10104460918881979,
+      "std": 0.003410288019053793
+    },
+    "B_final.linear": {
+      "mean": 0.31707135238579337,
+      "std": 0.06357081710595647
+    },
+    "B_final.quadratic": {
+      "mean": 1.2352976952833212,
+      "std": 0.20209054795928266
+    },
+    "B_final.cubic": {
+      "mean": 0.10942649207071438,
+      "std": 0.008284561926017269
+    },
+    "A_sat.linear.mean_abs": {
+      "mean": 0.2778832524233361,
+      "std": 0.07693075743296013
+    },
+    "A_sat.linear.frac_gt_095": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "A_sat.quadratic.mean_abs": {
+      "mean": 0.2788864213894752,
+      "std": 0.07863071526966858
+    },
+    "A_sat.quadratic.frac_gt_095": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "A_sat.cubic.mean_abs": {
+      "mean": 0.2836971867650933,
+      "std": 0.0772521121956088
+    },
+    "A_sat.cubic.frac_gt_095": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "B_sat.linear.mean_abs": {
+      "mean": 0.5535030230428728,
+      "std": 0.014792909079771968
+    },
+    "B_sat.linear.frac_gt_095": {
+      "mean": 0.0039,
+      "std": 0.007799999999999999
+    },
+    "B_sat.quadratic.mean_abs": {
+      "mean": 0.5508962463420615,
+      "std": 0.12330278680470534
+    },
+    "B_sat.quadratic.frac_gt_095": {
+      "mean": 0.1466,
+      "std": 0.17955455995323538
+    },
+    "B_sat.cubic.mean_abs": {
+      "mean": 0.26785835687956333,
+      "std": 0.04195725784383825
+    },
+    "B_sat.cubic.frac_gt_095": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "vessel_clean_all_seeds": true,
+    "store_bytes_mean": 4850235.0,
+    "writes_per_seed": 9000,
+    "flushes_per_seed": 93,
+    "router_acc_mean": 0.3364
+  }
+}

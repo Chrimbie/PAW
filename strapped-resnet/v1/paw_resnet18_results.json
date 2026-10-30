@@ -1,0 +1,77 @@
+{
+  "resnet18_params": 11169858,
+  "epochs_per_task": 5,
+  "batch": 128,
+  "lr": 0.001,
+  "input": "grayscale 16x16 standardized, replicated to 3 channels",
+  "store_file": "paw_resnet_store.rflx",
+  "store_file_bytes": 223788270,
+  "snapshot_bytes_each": [
+    44757630,
+    44757630,
+    44757630,
+    44757630,
+    44757630
+  ],
+  "sequential_immediate": [
+    0.9475,
+    0.804,
+    0.8615,
+    0.9505,
+    0.9275
+  ],
+  "sequential_final_no_pull": [
+    0.5165,
+    0.6355,
+    0.5705,
+    0.6555,
+    0.9275
+  ],
+  "sequential_final_old_mean": 0.5945,
+  "sequential_time_s": 26.00770580000244,
+  "pulled_task_keyed": [
+    0.9475,
+    0.804,
+    0.8615,
+    0.9505,
+    0.9275
+  ],
+  "pulled_task_keyed_old_mean": 0.890875,
+  "router_acc": [
+    0.3555,
+    0.3,
+    0.3225,
+    0.304,
+    0.4425
+  ],
+  "pulled_router": [
+    0.7775,
+    0.6385,
+    0.674,
+    0.6135,
+    0.768
+  ],
+  "pulled_router_old_mean": 0.675875,
+  "reopen_t0": 0.9475,
+  "reference_resnet_sequential_final": [
+    0.2395,
+    0.426,
+    0.4715,
+    0.5345,
+    0.9045
+  ],
+  "reference_resnet_fresh": [
+    0.9375,
+    0.759,
+    0.817,
+    0.942,
+    0.9235
+  ],
+  "reference_paw_mlp_pulled": {
+    "T0": 0.676,
+    "T1": 0.6105,
+    "T2": 0.62,
+    "T3": 0.5685,
+    "T4": 0.647
+  }
+}

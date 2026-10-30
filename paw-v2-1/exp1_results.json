@@ -1,0 +1,172 @@
+{
+  "splits": {
+    "seed0": {
+      "iris": {
+        "n": 30,
+        "method": "core",
+        "core_acc": 0.8333333333333334,
+        "memory_acc": 1.0,
+        "selected_acc": 0.8333333333333334,
+        "memory_none": 0,
+        "both_right": 25,
+        "core_only_right": 0,
+        "memory_only_right": 5,
+        "both_wrong": 0
+      },
+      "wine": {
+        "n": 36,
+        "method": "memory",
+        "core_acc": 0.4166666666666667,
+        "memory_acc": 0.9444444444444444,
+        "selected_acc": 0.9444444444444444,
+        "memory_none": 0,
+        "both_right": 13,
+        "core_only_right": 2,
+        "memory_only_right": 21,
+        "both_wrong": 0
+      }
+    },
+    "seed1": {
+      "iris": {
+        "n": 30,
+        "method": "memory",
+        "core_acc": 0.8,
+        "memory_acc": 0.9666666666666667,
+        "selected_acc": 0.9666666666666667,
+        "memory_none": 0,
+        "both_right": 24,
+        "core_only_right": 0,
+        "memory_only_right": 5,
+        "both_wrong": 1
+      },
+      "wine": {
+        "n": 36,
+        "method": "memory",
+        "core_acc": 0.4722222222222222,
+        "memory_acc": 0.9444444444444444,
+        "selected_acc": 0.9444444444444444,
+        "memory_none": 0,
+        "both_right": 15,
+        "core_only_right": 2,
+        "memory_only_right": 19,
+        "both_wrong": 0
+      }
+    },
+    "seed2": {
+      "iris": {
+        "n": 30,
+        "method": "memory",
+        "core_acc": 0.9333333333333333,
+        "memory_acc": 0.9666666666666667,
+        "selected_acc": 0.9666666666666667,
+        "memory_none": 0,
+        "both_right": 27,
+        "core_only_right": 1,
+        "memory_only_right": 2,
+        "both_wrong": 0
+      },
+      "wine": {
+        "n": 36,
+        "method": "memory",
+        "core_acc": 0.4722222222222222,
+        "memory_acc": 0.9166666666666666,
+        "selected_acc": 0.9166666666666666,
+        "memory_none": 0,
+        "both_right": 14,
+        "core_only_right": 3,
+        "memory_only_right": 19,
+        "both_wrong": 0
+      }
+    },
+    "seed3": {
+      "iris": {
+        "n": 30,
+        "method": "memory",
+        "core_acc": 0.7333333333333333,
+        "memory_acc": 0.9333333333333333,
+        "selected_acc": 0.9333333333333333,
+        "memory_none": 0,
+        "both_right": 21,
+        "core_only_right": 1,
+        "memory_only_right": 7,
+        "both_wrong": 1
+      },
+      "wine": {
+        "n": 36,
+        "method": "memory",
+        "core_acc": 0.5277777777777778,
+        "memory_acc": 1.0,
+        "selected_acc": 1.0,
+        "memory_none": 0,
+        "both_right": 19,
+        "core_only_right": 0,
+        "memory_only_right": 17,
+        "both_wrong": 0
+      }
+    },
+    "seed4": {
+      "iris": {
+        "n": 30,
+        "method": "memory",
+        "core_acc": 0.9,
+        "memory_acc": 0.9333333333333333,
+        "selected_acc": 0.9333333333333333,
+        "memory_none": 0,
+        "both_right": 25,
+        "core_only_right": 2,
+        "memory_only_right": 3,
+        "both_wrong": 0
+      },
+      "wine": {
+        "n": 36,
+        "method": "memory",
+        "core_acc": 0.3611111111111111,
+        "memory_acc": 0.9444444444444444,
+        "selected_acc": 0.9444444444444444,
+        "memory_none": 0,
+        "both_right": 11,
+        "core_only_right": 2,
+        "memory_only_right": 23,
+        "both_wrong": 0
+      }
+    }
+  },
+  "pooled": {
+    "iris": {
+      "n_total": 150,
+      "core_acc": 0.8400000000000001,
+      "memory_acc": 0.9600000000000002,
+      "selected_acc": 0.9266666666666667,
+      "methods": [
+        "core",
+        "memory",
+        "memory",
+        "memory",
+        "memory"
+      ],
+      "both_right": 122,
+      "core_only_right": 4,
+      "memory_only_right": 22,
+      "both_wrong": 2,
+      "memory_none_total": 0
+    },
+    "wine": {
+      "n_total": 180,
+      "core_acc": 0.45,
+      "memory_acc": 0.95,
+      "selected_acc": 0.95,
+      "methods": [
+        "memory",
+        "memory",
+        "memory",
+        "memory",
+        "memory"
+      ],
+      "both_right": 72,
+      "core_only_right": 9,
+      "memory_only_right": 99,
+      "both_wrong": 0,
+      "memory_none_total": 0
+    }
+  }
+}

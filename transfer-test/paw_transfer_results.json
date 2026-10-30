@@ -1,0 +1,83 @@
+{
+  "resnet18_params": 11169858,
+  "epochs_per_task": 5,
+  "batch": 128,
+  "lr": 0.001,
+  "input": "grayscale 16x16 standardized, replicated to 3 channels",
+  "store_file": "paw_transfer_store.rflx",
+  "store_file_bytes": 395388550,
+  "snapshot_bytes_each": [
+    44757630,
+    44757630,
+    44757630,
+    44757630,
+    44757630
+  ],
+  "teacher_immediate": [
+    0.9465,
+    0.812,
+    0.8715,
+    0.939,
+    0.9385
+  ],
+  "teacher_immediate_old_mean": 0.8922500000000001,
+  "teacher_keyed": [
+    0.9465,
+    0.812,
+    0.8715,
+    0.939,
+    0.9385
+  ],
+  "teacher_keyed_old_mean": 0.8922500000000001,
+  "sequential_time_s": 26.43890189996455,
+  "distill_soft": [
+    0.8025,
+    0.587,
+    0.617,
+    0.7165,
+    0.7515
+  ],
+  "distill_soft_old_mean": 0.68075,
+  "distill_true": [
+    0.7965,
+    0.5855,
+    0.618,
+    0.722,
+    0.7465
+  ],
+  "distill_true_old_mean": 0.6805,
+  "distill_epochs": 300,
+  "distill_lr": 0.05,
+  "retrieval_pixel_k1": [
+    0.729,
+    0.66,
+    0.6865,
+    0.776,
+    0.689
+  ],
+  "retrieval_pixel_k1_old_mean": 0.7128749999999999,
+  "retrieval_pixel_k5": [
+    0.704,
+    0.6485,
+    0.695,
+    0.77,
+    0.681
+  ],
+  "retrieval_pixel_k5_old_mean": 0.704375,
+  "retrieval_feat_k1": [
+    0.7985,
+    0.6,
+    0.633,
+    0.7555,
+    0.9405
+  ],
+  "retrieval_feat_k1_old_mean": 0.69675,
+  "retrieval_feat_k5": [
+    0.8325,
+    0.6385,
+    0.6795,
+    0.803,
+    0.942
+  ],
+  "retrieval_feat_k5_old_mean": 0.738375
+}

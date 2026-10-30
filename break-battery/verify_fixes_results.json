@@ -1,0 +1,89 @@
+{
+ "A_checksum_offset_1000": {
+  "ok": true,
+  "detail": {
+   "outcome": "loud ValueError: checksum mismatch for task 0: stored snapshot corrupted, ref"
+  }
+ },
+ "A_checksum_offset_133318": {
+  "ok": true,
+  "detail": {
+   "outcome": "loud ValueError: checksum mismatch for task 0: stored snapshot corrupted, ref"
+  }
+ },
+ "A2_old_store_loads": {
+  "ok": true,
+  "detail": {
+   "t0_acc": 0.8175
+  }
+ },
+ "B_chunk_checksum": {
+  "ok": true,
+  "detail": {
+   "outcome": "loud ValueError"
+  }
+ },
+ "C_min_reopen_routing": {
+  "ok": true,
+  "detail": {
+   "task_ids": [
+    "linear",
+    "quadratic"
+   ],
+   "identified": "quadratic",
+   "auto_pull": "quadratic",
+   "auto_preds_len": 8
+  }
+ },
+ "D_min_rollback": {
+  "ok": true,
+  "detail": {
+   "mse_clean": 0.8638498856596882,
+   "mse_bad": 1.1651192023071537,
+   "mse_after_rollback": 0.8638498856596882,
+   "bak_exists": true,
+   "bak_bytes": 3570694,
+   "live_bytes": 1903
+  }
+ },
+ "E_min_abstention": {
+  "ok": true,
+  "detail": {
+   "clean_probes": "quadratic",
+   "noise_probes": null
+  }
+ },
+ "F_opt_reopen_routing": {
+  "ok": true,
+  "detail": {
+   "task_ids": [
+    0,
+    1
+   ],
+   "router_restored": true,
+   "router_pull_acc_on_B": 0.9722222222222222,
+   "bak_exists": true
+  }
+ },
+ "G_opt_abstention": {
+  "ok": true,
+  "detail": {
+   "0.6": {
+    "clean_abstain": 0.0615,
+    "noise_abstain": 0.076
+   },
+   "0.9": {
+    "clean_abstain": 0.329,
+    "noise_abstain": 0.4095
+   }
+  }
+ },
+ "H_cache": {
+  "ok": true,
+  "detail": {
+   "cached_tasks": [
+    "linear"
+   ]
+  }
+ }
+}
