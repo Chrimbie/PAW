@@ -1,0 +1,118 @@
+{
+  "protocol": "CIFAR-10 official splits, grayscale 16x16 standardized, 5 binary tasks T0={0,1} T1={2,3} T2={4,5} T3={6,7} T4={8,9}; ResNet input replicated to 3 channels; PAW CNN input 1-channel grayscale",
+  "seed": 0,
+  "epochs_per_task": 5,
+  "batch": 128,
+  "lr": 0.001,
+  "quick": false,
+  "resnet18_params": 11169858,
+  "resnet_sequential_immediate": [
+    0.943,
+    0.7955,
+    0.864,
+    0.943,
+    0.9315
+  ],
+  "resnet_sequential_final": [
+    0.454,
+    0.489,
+    0.487,
+    0.63,
+    0.9315
+  ],
+  "resnet_sequential_old_mean": 0.515,
+  "resnet_sequential_time_s": 25.044179299962707,
+  "resnet_fresh": [
+    0.9475,
+    0.7575,
+    0.8325,
+    0.924,
+    0.913
+  ],
+  "resnet_fresh_mean": 0.8749,
+  "resnet_fresh_time_s": 24.777411599992774,
+  "paw_cnn_architecture": "Conv 1->32 3x3 + BN + ReLU + MaxPool2 -> Conv 32->64 3x3 + BN + ReLU + MaxPool2 -> Linear 1024->2, fresh per task, stored as numpy-ified state_dicts in ChunkStore",
+  "paw_cnn_params": 20962,
+  "paw_cnn_fit_torch": [
+    0.934,
+    0.733,
+    0.8425,
+    0.9355,
+    0.898
+  ],
+  "paw_cnn_keyed": [
+    0.934,
+    0.733,
+    0.8425,
+    0.9355,
+    0.898
+  ],
+  "paw_cnn_keyed_mean": 0.8686,
+  "paw_cnn_keyed_old_mean_T0_T3": 0.8612500000000001,
+  "paw_cnn_health": [
+    {
+      "dead_fraction_conv2": 0.0,
+      "mean_abs_activation": 0.4029371738433838
+    },
+    {
+      "dead_fraction_conv2": 0.0,
+      "mean_abs_activation": 0.3704267740249634
+    },
+    {
+      "dead_fraction_conv2": 0.0,
+      "mean_abs_activation": 0.3757636547088623
+    },
+    {
+      "dead_fraction_conv2": 0.0,
+      "mean_abs_activation": 0.3758581578731537
+    },
+    {
+      "dead_fraction_conv2": 0.0,
+      "mean_abs_activation": 0.37441617250442505
+    }
+  ],
+  "paw_cnn_adequacy_budgets": [
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "paw_cnn_adequacy": {
+    "0.25": {
+      "decided_accuracy": 0.0,
+      "decided": 1,
+      "abstain_rate": 0.996
+    },
+    "0.5": {
+      "decided_accuracy": 0.2631578947368421,
+      "decided": 19,
+      "abstain_rate": 0.924
+    },
+    "1.0": {
+      "decided_accuracy": 0.17333333333333334,
+      "decided": 75,
+      "abstain_rate": 0.7
+    },
+    "2.0": {
+      "decided_accuracy": 0.17796610169491525,
+      "decided": 118,
+      "abstain_rate": 0.528
+    },
+    "4.0": {
+      "decided_accuracy": 0.17647058823529413,
+      "decided": 119,
+      "abstain_rate": 0.524
+    }
+  },
+  "paw_cnn_correct_task_selection_mse_median": 3.8077060780095096,
+  "paw_cnn_time_s": 3.3353764000348747,
+  "history_for_orientation_only": {
+    "unified_mlp_keyed_mean": 0.7378,
+    "unified_mlp_adequacy_abstain_rate": 0.972,
+    "previous_resnet_sequential_old_mean": 0.4356,
+    "previous_resnet_fresh_mean": 0.8673,
+    "strapped_keyed_old_mean": 0.892,
+    "strapped_fit_id": 1.0
+  }
+}

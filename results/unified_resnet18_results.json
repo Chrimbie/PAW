@@ -1,0 +1,133 @@
+{
+  "protocol": "CIFAR-10 official splits, grayscale 16x16 standardized, 5 binary tasks T0={0,1} T1={2,3} T2={4,5} T3={6,7} T4={8,9}; ResNet input replicated to 3 channels, unified MLP input flattened 256",
+  "seed": 0,
+  "epochs_per_task": 5,
+  "batch": 128,
+  "lr": 0.001,
+  "quick": false,
+  "unified_mlp": "256->128 tanh->2, torch Adam, fresh per task, weights handed to PAWUnified (fixed Oct 30 code)",
+  "unified_mlp_params_resident": 33154,
+  "unified_mlp_params_stored": 165770,
+  "unified_mlp_fit_torch": [
+    0.8115,
+    0.646,
+    0.6855,
+    0.752,
+    0.794
+  ],
+  "unified_keyed": [
+    0.8115,
+    0.646,
+    0.6855,
+    0.752,
+    0.794
+  ],
+  "unified_keyed_mean": 0.7377999999999999,
+  "unified_keyed_old_mean_T0_T3": 0.7237499999999999,
+  "unified_health": [
+    [
+      {
+        "layer": 0,
+        "dead_fraction": null,
+        "saturated_fraction": 0.1670625
+      }
+    ],
+    [
+      {
+        "layer": 0,
+        "dead_fraction": null,
+        "saturated_fraction": 0.112125
+      }
+    ],
+    [
+      {
+        "layer": 0,
+        "dead_fraction": null,
+        "saturated_fraction": 0.103984375
+      }
+    ],
+    [
+      {
+        "layer": 0,
+        "dead_fraction": null,
+        "saturated_fraction": 0.14425
+      }
+    ],
+    [
+      {
+        "layer": 0,
+        "dead_fraction": null,
+        "saturated_fraction": 0.1748125
+      }
+    ]
+  ],
+  "unified_adequacy_budgets": [
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "unified_adequacy": {
+    "0.25": {
+      "decided_accuracy": null,
+      "decided": 0,
+      "abstain_rate": 1.0
+    },
+    "0.5": {
+      "decided_accuracy": 1.0,
+      "decided": 1,
+      "abstain_rate": 0.996
+    },
+    "1.0": {
+      "decided_accuracy": 0.5714285714285714,
+      "decided": 7,
+      "abstain_rate": 0.972
+    },
+    "2.0": {
+      "decided_accuracy": 0.5714285714285714,
+      "decided": 7,
+      "abstain_rate": 0.972
+    },
+    "4.0": {
+      "decided_accuracy": 0.5714285714285714,
+      "decided": 7,
+      "abstain_rate": 0.972
+    }
+  },
+  "unified_correct_task_selection_mse_median": 0.6346429326677159,
+  "unified_time_s": 3.2579548999201506,
+  "resnet18_params": 11169858,
+  "resnet_sequential_immediate": [
+    0.949,
+    0.801,
+    0.8565,
+    0.9215,
+    0.9255
+  ],
+  "resnet_sequential_final": [
+    0.2825,
+    0.4275,
+    0.463,
+    0.5695,
+    0.9255
+  ],
+  "resnet_sequential_old_mean": 0.43562500000000004,
+  "resnet_sequential_time_s": 24.057310599950142,
+  "resnet_fresh": [
+    0.951,
+    0.7485,
+    0.813,
+    0.9315,
+    0.8925
+  ],
+  "resnet_fresh_mean": 0.8673,
+  "resnet_fresh_time_s": 23.574067400069907,
+  "history_for_orientation_only": {
+    "plain_resnet18_sequential_old_mean": 0.418,
+    "plain_resnet18_fresh_mean": 0.876,
+    "strapped_keyed_old_mean": 0.892,
+    "strapped_fit_id": 1.0,
+    "paw_mlp_pulled_old_mean_10_epochs": 0.619
+  }
+}
