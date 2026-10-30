@@ -1,0 +1,97 @@
+{
+ "seeds": [
+  {
+   "seed": 0,
+   "source_test_acc": 1.0,
+   "expA": {
+    "3": {
+     "chunk_readout": 1.0,
+     "random_readout": 0.7666666666666667,
+     "full_mlp": 1.0
+    },
+    "5": {
+     "chunk_readout": 1.0,
+     "random_readout": 0.9333333333333333,
+     "full_mlp": 0.9666666666666667
+    },
+    "8": {
+     "chunk_readout": 1.0,
+     "random_readout": 1.0,
+     "full_mlp": 1.0
+    },
+    "12": {
+     "chunk_readout": 1.0,
+     "random_readout": 1.0,
+     "full_mlp": 1.0
+    }
+   },
+   "expB": {
+    "chunk_readout": 0.7333333333333333,
+    "random_readout": 0.7333333333333333,
+    "raw_linear": 0.7666666666666667
+   }
+  },
+  {
+   "seed": 1,
+   "source_test_acc": 0.9666666666666667,
+   "expA": {
+    "3": {
+     "chunk_readout": 0.9666666666666667,
+     "random_readout": 0.8333333333333334,
+     "full_mlp": 0.9666666666666667
+    },
+    "5": {
+     "chunk_readout": 0.9666666666666667,
+     "random_readout": 0.8,
+     "full_mlp": 0.9666666666666667
+    },
+    "8": {
+     "chunk_readout": 0.9666666666666667,
+     "random_readout": 0.9333333333333333,
+     "full_mlp": 0.9666666666666667
+    },
+    "12": {
+     "chunk_readout": 0.9666666666666667,
+     "random_readout": 0.9666666666666667,
+     "full_mlp": 0.9666666666666667
+    }
+   },
+   "expB": {
+    "chunk_readout": 0.8333333333333334,
+    "random_readout": 0.9333333333333333,
+    "raw_linear": 0.9333333333333333
+   }
+  },
+  {
+   "seed": 2,
+   "source_test_acc": 1.0,
+   "expA": {
+    "3": {
+     "chunk_readout": 0.9666666666666667,
+     "random_readout": 0.7666666666666667,
+     "full_mlp": 1.0
+    },
+    "5": {
+     "chunk_readout": 0.9666666666666667,
+     "random_readout": 0.8666666666666667,
+     "full_mlp": 0.9666666666666667
+    },
+    "8": {
+     "chunk_readout": 1.0,
+     "random_readout": 0.9666666666666667,
+     "full_mlp": 1.0
+    },
+    "12": {
+     "chunk_readout": 1.0,
+     "random_readout": 1.0,
+     "full_mlp": 1.0
+    }
+   },
+   "expB": {
+    "chunk_readout": 0.7666666666666667,
+    "random_readout": 0.8333333333333334,
+    "raw_linear": 0.8
+   }
+  }
+ ]
+}

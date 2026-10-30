@@ -1,0 +1,32 @@
+{
+ "iris": [
+  {
+   "frozen": 0.7666666666666667,
+   "random_frozen": 0.8333333333333334,
+   "finetune": 0.9333333333333333,
+   "random_trained": 0.9
+  },
+  {
+   "frozen": 0.8666666666666667,
+   "random_frozen": 0.8666666666666667,
+   "finetune": 1.0,
+   "random_trained": 0.9666666666666667
+  },
+  {
+   "frozen": 0.7666666666666667,
+   "random_frozen": 0.8333333333333334,
+   "finetune": 0.8333333333333334,
+   "random_trained": 0.8666666666666667
+  }
+ ],
+ "digits": [
+  {
+   "broad_frozen": 0.9472222222222222,
+   "broad_random_frozen": 0.8472222222222222
+  },
+  {
+   "broad_frozen": 0.9277777777777778,
+   "broad_random_frozen": 0.8083333333333333
+  }
+ ]
+}
