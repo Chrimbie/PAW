@@ -1,4 +1,4 @@
-"""Regression tests for optional TaskGate v2 integration (CPU only).
+"""Regression tests for default TaskGate v2 routing and safe fallback (CPU only).
 
 No benchmark accuracy claim: this checks compatibility, exact legacy behavior,
 saved-weight integrity, held-out input handling, and persist/reopen routing.
@@ -46,7 +46,7 @@ def fixture():
 
 
 class TaskGateIntegrationTests(unittest.TestCase):
-    def test_default_is_unchanged_and_optin_falls_back(self):
+    def test_missing_gate_uses_legacy_fallback(self):
         system, x = fixture()
         with warnings.catch_warnings():
             warnings.simplefilter("ignore", RuntimeWarning)
@@ -60,7 +60,7 @@ class TaskGateIntegrationTests(unittest.TestCase):
         self.assertEqual(old_info["source"], "ensemble")
         self.assertEqual(new_info["source"], "ensemble")
 
-    def test_saved_gate_is_optin_and_rejects_changed_experts(self):
+    def test_saved_gate_becomes_default_and_rejects_changed_experts(self):
         system, x = fixture()
         models, _ = system.load_all()
         gate = TaskGateV2()
@@ -69,20 +69,25 @@ class TaskGateIntegrationTests(unittest.TestCase):
                   validation_existing_joint=0.4,
                   diagnostic={}, expert_fingerprints=_fingerprints(models))
         expected = predict_gate(gate, x)
-        route, info = system.route_auto(x, return_info=True,
-                                      prefer_taskgate=True)
+        route, info = system.route_auto(x, return_info=True)
         np.testing.assert_array_equal(route, expected)
         self.assertEqual(info["source"], "taskgate_v2")
-        unchanged, old_info = system.route_auto(x, return_info=True)
+        self.assertEqual(system.router_status()["active"], "taskgate_v2")
+        # Previous behavior remains explicitly selectable for comparison.
+        unchanged, old_info = system.route_auto(
+            x, return_info=True, prefer_taskgate=False)
         self.assertEqual(old_info["source"], "ensemble")
+        np.testing.assert_array_equal(
+            system.predict_auto(x), system.predict_auto(x, prefer_taskgate=True))
         snap = system.store.get_task_snapshot("T2")
         snap["state"]["conv1.weight"][0, 0, 0, 0] += 1.0
         with warnings.catch_warnings():
             warnings.simplefilter("ignore", RuntimeWarning)
             fallback, fallback_info = system.route_auto(
-                x, return_info=True, prefer_taskgate=True)
-            baseline = system.route_auto(x)
+                x, return_info=True)
+            baseline = system.route_auto(x, prefer_taskgate=False)
         self.assertEqual(fallback_info["source"], "ensemble")
+        self.assertEqual(system.router_status()["active"], "ensemble")
         np.testing.assert_array_equal(fallback, baseline)
 
     def test_corrupt_gate_never_overrides_fallback(self):
@@ -97,8 +102,8 @@ class TaskGateIntegrationTests(unittest.TestCase):
         with warnings.catch_warnings():
             warnings.simplefilter("ignore", RuntimeWarning)
             routed, info = system.route_auto(
-                x, return_info=True, prefer_taskgate=True)
-            baseline = system.route_auto(x)
+                x, return_info=True)
+            baseline = system.route_auto(x, prefer_taskgate=False)
         self.assertEqual(info["source"], "ensemble")
         np.testing.assert_array_equal(routed, baseline)
 
