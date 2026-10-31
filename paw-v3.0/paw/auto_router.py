@@ -139,8 +139,8 @@ def learn_task_auto(system, task_id, Xtr, ytr, epochs=5, *,
     }
 
 
-def route_auto(system, X, *, return_info=False):
-    """Retrieve saved tasks and route; use ensemble until router is valid."""
+def route_auto(system, X, *, return_info=False, prefer_taskgate=False):
+    """Retrieve saved tasks; opt in to a compatible validated TaskGate."""
     from .engine import to_tensor_1ch
     from .learned_router import route
 
@@ -150,9 +150,12 @@ def route_auto(system, X, *, return_info=False):
         raise ValueError("no trained task CNNs in the store")
     models, _ = system.load_all()
     if len(ids) == len(TASKS):
-        # route() verifies the saved router's weight fingerprints and
-        # checksums and falls back if the router is invalid or absent.
-        routed, info = route(system, models, X, return_info=True)
+        if prefer_taskgate:
+            from .task_gate_integration import route_gate
+            routed, info = route_gate(system, models, X, return_info=True)
+        else:
+            # Preserve historical default and all existing stored models.
+            routed, info = route(system, models, X, return_info=True)
     else:
         routed = system.route_ensemble(
             models, to_tensor_1ch(X), mode="maxprob")
@@ -163,12 +166,13 @@ def route_auto(system, X, *, return_info=False):
     return (routed, info) if return_info else routed
 
 
-def predict_auto(system, X, *, return_info=False):
-    """Return GLOBAL CIFAR labels (0..9) without task IDs or test labels."""
+def predict_auto(system, X, *, return_info=False, prefer_taskgate=False):
+    """Return GLOBAL CIFAR labels (0..9), optionally with TaskGate v2."""
     from .engine import cnn_logits, to_tensor_1ch
 
     X = _matrix(X)
-    task_ids, info = route_auto(system, X, return_info=True)
+    task_ids, info = route_auto(
+        system, X, return_info=True, prefer_taskgate=prefer_taskgate)
     models, _ = system.load_all()
     result = np.empty(len(X), dtype=np.int64)
     tX = to_tensor_1ch(X)
