@@ -292,6 +292,26 @@ class PAWSystem:
             X = X.detach().cpu().numpy().reshape(-1, 256)
         return route(self, models, X, return_info=return_info)
 
+    def learn_task_auto(self, task_id, Xtr, ytr, epochs=5, **options):
+        """Opt-in sequential learning with automatic router fitting."""
+        from .auto_router import learn_task_auto
+        return learn_task_auto(self, task_id, Xtr, ytr, epochs, **options)
+
+    def route_auto(self, X, return_info=False):
+        """Return task indices with verified learned routing or ensemble fallback."""
+        from .auto_router import route_auto
+        return route_auto(self, X, return_info=return_info)
+
+    def predict_auto(self, X, return_info=False):
+        """Predict CIFAR-10 class indices without knowing task IDs."""
+        from .auto_router import predict_auto
+        return predict_auto(self, X, return_info=return_info)
+
+    def router_status(self):
+        """Inspect automatic task learning and current router state."""
+        from .auto_router import router_status
+        return router_status(self)
+
     def health(self, model, X, max_rows=500):
         """Dead conv2 channel fraction + mean |activation| on
         up to max_rows images. Health is diagnostic only: it
