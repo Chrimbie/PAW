@@ -274,6 +274,24 @@ class PAWSystem:
         or None."""
         return ungated_ce(logits_by_task, probe_y_onehot)
 
+    def save_router_examples(self, task_id, fit_x, validation_x, validation_global_labels):
+        """Persist labeled routing examples, held out from task CNN fitting."""
+        from .learned_router import save_examples
+        return save_examples(self, task_id, fit_x, validation_x,
+                             validation_global_labels)
+
+    def fit_learned_router(self, minimum_gain=0.02):
+        """Fit optional supervised router and select it using validation data."""
+        from .learned_router import fit_router
+        return fit_router(self, minimum_gain=minimum_gain)
+
+    def route_learned(self, models, X, return_info=False):
+        """Use optional learned task routing; fall back to maxprob if unavailable."""
+        from .learned_router import route
+        if isinstance(X, torch.Tensor):
+            X = X.detach().cpu().numpy().reshape(-1, 256)
+        return route(self, models, X, return_info=return_info)
+
     def health(self, model, X, max_rows=500):
         """Dead conv2 channel fraction + mean |activation| on
         up to max_rows images. Health is diagnostic only: it
