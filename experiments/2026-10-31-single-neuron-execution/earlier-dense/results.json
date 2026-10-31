@@ -1,0 +1,80 @@
+{
+  "real_data": "sklearn digits 8x8; 80/20 stratified, random_state 42",
+  "train_samples": 1437,
+  "test_samples": 360,
+  "weights_unchanged": true,
+  "source_deleted_before_replay": true,
+  "actual_reflex_store": true,
+  "experimental_receiver_kind": "one reusable computational dot product, sequential source topology",
+  "scaling": [
+    {
+      "source_architecture": "64-16-10",
+      "source_params": 1210,
+      "receiver_reusable_dot_product_units": 1,
+      "receiver_stored_params": 1210,
+      "receiver_stored_neuron_records": 26,
+      "source_accuracy": 0.9583333333333334,
+      "receiver_accuracy": 0.9583333333333334,
+      "pred_agreement": 1.0,
+      "max_abs_logit_error": 8.526512829121202e-14,
+      "train_seconds": 1.2456,
+      "receiver_seconds_360": 0.01027,
+      "source_vector_seconds_360": 4.7e-05,
+      "store_bytes_after": 10876
+    },
+    {
+      "source_architecture": "64-64-10",
+      "source_params": 4810,
+      "receiver_reusable_dot_product_units": 1,
+      "receiver_stored_params": 4810,
+      "receiver_stored_neuron_records": 74,
+      "source_accuracy": 0.9638888888888889,
+      "receiver_accuracy": 0.9638888888888889,
+      "pred_agreement": 1.0,
+      "max_abs_logit_error": 5.684341886080802e-14,
+      "train_seconds": 1.5468,
+      "receiver_seconds_360": 0.04809,
+      "source_vector_seconds_360": 0.003872,
+      "store_bytes_after": 52310
+    },
+    {
+      "source_architecture": "64-256-10",
+      "source_params": 19210,
+      "receiver_reusable_dot_product_units": 1,
+      "receiver_stored_params": 19210,
+      "receiver_stored_neuron_records": 266,
+      "source_accuracy": 0.9444444444444444,
+      "receiver_accuracy": 0.9444444444444444,
+      "pred_agreement": 1.0,
+      "max_abs_logit_error": 1.4210854715202004e-13,
+      "train_seconds": 8.1905,
+      "receiver_seconds_360": 0.1279,
+      "source_vector_seconds_360": 0.008058,
+      "store_bytes_after": 215884
+    },
+    {
+      "source_architecture": "64-32-16-10",
+      "source_params": 2778,
+      "receiver_reusable_dot_product_units": 1,
+      "receiver_stored_params": 2778,
+      "receiver_stored_neuron_records": 58,
+      "source_accuracy": 0.9527777777777777,
+      "receiver_accuracy": 0.9527777777777777,
+      "pred_agreement": 1.0,
+      "max_abs_logit_error": 7.105427357601002e-14,
+      "train_seconds": 2.0782,
+      "receiver_seconds_360": 0.01571,
+      "source_vector_seconds_360": 7.6e-05,
+      "store_bytes_after": 240460
+    }
+  ],
+  "single_fixed_neuron_control": {
+    "problem": "XOR with held-out input noise",
+    "ordinary_one_neuron_acc": 0.483,
+    "multi_neuron_acc": 1.0,
+    "ordinary_one_neuron_params": 3,
+    "multi_neuron_params": 65,
+    "literal_direct_weight_transfer_to_one_neuron": "rejected: Error(s) in loading state_dict for Linear:"
+  },
+  "caveat": "single reusable compute unit is NOT an ordinary single-neuron architecture; all source neuron values and graph retained"
+}
