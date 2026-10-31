@@ -140,38 +140,44 @@ class ChunkStore:
         return _safe_loads(raw)
 
     def backup(self):
-        """Copy the live store file to path + '.bak' (one generation).
+        """Atomically refresh a verified one-generation backup.
 
-        Guards against later corruption or loss of the live file.
-        Same disk, so this is not protection against disk failure —
-        it protects against a bad write, a bad compact, or an
-        accidental delete of the live file.
-
-        The backup is only replaced when the live store verifies:
-        manifest readable and every listed snapshot loads with a
-        matching checksum. A corrupt live file must never overwrite
-        a good backup, so verification failure skips the copy
-        silently; the corruption itself surfaces on the next read.
-        A manifest entry with no snapshot (phantom) does not block
-        the backup: there is nothing corrupt to preserve against.
+        PAW 3.0 uses 'paw_cnn_tasks' in its manifest. Verify every listed
+        snapshot (including checksum companions) before replacing the last
+        good backup. Missing snapshots and corrupt manifests block backup.
+        Existing legacy task families remain supported. Returns False
+        when there is no manifest yet (fresh unused store), True on copy.
         """
         import os
 
+        # Callers must flush buffered records before backing up.
         if not os.path.exists(self.path):
-            return
+            return False
+        manifest = self.get_manifest()
+        if manifest is None:
+            # An empty/new store has nothing to preserve yet.
+            return False
+        if not isinstance(manifest, dict):
+            raise ValueError("invalid task manifest: expected dict")
+        tasks = set()
+        for key in ("paw_cnn_tasks", "unified_tasks", "vessel_tasks"):
+            ids = manifest.get(key, [])
+            if not isinstance(ids, (list, tuple)):
+                raise ValueError(f"invalid manifest list: {key}")
+            tasks.update(ids)
+        for task in tasks:
+            if self.get_task_snapshot(task) is None:
+                raise ValueError(
+                    f"missing snapshot for listed task {task}; "
+                    "refusing to overwrite a valid backup")
+        tmp = self.path + ".bak.tmp"
         try:
-            manifest = self.get_manifest()
-            tasks = []
-            if manifest:
-                for key in ("unified_tasks", "vessel_tasks"):
-                    for t in manifest.get(key, []):
-                        if t not in tasks:
-                            tasks.append(t)
-            for t in tasks:
-                self.get_task_snapshot(t)  # raises on corrupt payload
-        except Exception:
-            return
-        shutil.copy(self.path, self.path + ".bak")
+            shutil.copyfile(self.path, tmp)
+            os.replace(tmp, self.path + ".bak")
+        finally:
+            if os.path.exists(tmp):
+                os.remove(tmp)
+        return True
 
     def flush(self):
         self.store.flush()
