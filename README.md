@@ -1,5 +1,7 @@
 # PAW — Punch Above Weight
 
+> **Latest verified PAW work (2026-10-31):** Start with [CURRENT_STATUS.md](CURRENT_STATUS.md). It records TaskGate v2's **68.03% CIFAR-10** result, separate sequential single-compute-unit experiments, and the still-unverified RGB candidate. These experiments are preserved in `main` but **are not yet wired into PAW's default runtime**. The older placeholder-core caveat below refers to earlier work, not a claim that all later trained CNN experiments were run on that placeholder.
+
 Christopher's tiny neural network system that works like an LLM: a 4-neuron
 2-gate core, GN invariant discovery, the Numerosity Mathematics foundation,
 LaGS append-only memory with the ReflexStore disk layer, and PAW health
