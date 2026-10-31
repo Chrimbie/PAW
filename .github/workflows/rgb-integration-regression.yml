@@ -1,7 +1,7 @@
 name: PAW RGB input and fallback integration regression
 on:
   push:
-    branches: [feature/rgb-gate-default-integration-20261031]
+    branches: [main, feature/rgb-gate-default-integration-20261031]
     paths:
       - "paw-v3.0/**"
       - ".github/workflows/rgb-integration-regression.yml"
