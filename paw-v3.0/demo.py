@@ -70,6 +70,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--quick", action="store_true",
                     help="smoke check: 1 epoch, subsampled tasks")
+    ap.add_argument("--prototypes", action="store_true",
+                    help="experimental raw-cosine class summaries; "
+                         "compare to original routes on the same stored CNNs")
     args = ap.parse_args()
     epochs = 1 if args.quick else EPOCHS
     print(f"epochs/model={epochs} quick={args.quick} "
@@ -77,11 +80,12 @@ def main():
           f"probes/draw={PROBES_PER_DRAW}", flush=True)
 
     ensure_data()
-    tasks = prepare()
+    tasks = prepare(include_raw=args.prototypes)
     if args.quick:
-        tasks = [(Xtr[:2000], Xte[:500], ytr[:2000], yte[:500],
-                  ytrg[:2000], yteg[:500])
-                 for (Xtr, Xte, ytr, yte, ytrg, yteg) in tasks]
+        # All arrays remain index-aligned, including optional raw views.
+        tasks = [tuple(a[:2000] if i % 2 == 0 else a[:500]
+                       for i, a in enumerate(task))
+                 for task in tasks]
     print(f"task sizes: {[(len(t[0]), len(t[1])) for t in tasks]}",
           flush=True)
 
@@ -90,11 +94,14 @@ def main():
             os.remove(STORE_PATH + suffix)
     paw = PAWSystem(STORE_PATH)
     t0 = time.perf_counter()
-    for ti, (Xtr, Xte, ytr, yte, ytrg, yteg) in enumerate(tasks):
+    for ti, task in enumerate(tasks):
+        Xtr, Xte, ytr, yte, ytrg, yteg = task[:6]
         print(f"=== task T{ti} arrives (sequential window) ===",
               flush=True)
-        fit = paw.learn_task(f"T{ti}", Xtr, ytr, Xte, yte, epochs,
-                             batch=BATCH, lr=LR)
+        fit = paw.learn_task(
+            f"T{ti}", Xtr, ytr, Xte, yte, epochs,
+            batch=BATCH, lr=LR,
+            router_raw_Xtr=task[6] if args.prototypes else None)
         paw.store.put_manifest({
             "paw_cnn_tasks": [f"T{k}" for k in range(ti + 1)]})
         paw.store.flush()
@@ -102,7 +109,9 @@ def main():
               flush=True)
         # Enforce the sequential rule: this task's TRAIN data is
         # dropped now. Test arrays stay for final scoring.
-        tasks[ti] = (None, Xte, None, yte, None, yteg)
+        tasks[ti] = ((None, Xte, None, yte, None, yteg,
+                      None, task[7]) if args.prototypes
+                     else (None, Xte, None, yte, None, yteg))
     train_time = time.perf_counter() - t0
     paw.close()
 
@@ -149,6 +158,22 @@ def main():
         }
         print(f"{name}: routing {arms[name]['routing_accuracy']:.4f} "
               f"joint {arms[name]['routed_joint']:.4f}", flush=True)
+    if args.prototypes:
+        profiles = paw.load_prototypes()  # reopening exercises persisted store
+        raw_test_all = np.vstack([t[7] for t in tasks])
+        task_pred = paw.route_prototypes(profiles, raw_test_all)
+        pred = joint_from_task_pred(models, task_pred, Xte_1ch, yte_glob_all)
+        arms["prototype_raw_cos_k12"] = {
+            "routing_accuracy": float((task_pred == yte_task_true).mean()),
+            "routed_joint": float((pred == yte_glob_all).mean()),
+            "routed_joint_per_task": per_task_accuracy(pred, yte_glob_all),
+            "prototype_bytes": int(sum(
+                p["centers"].nbytes for p in profiles.values())),
+        }
+        print("prototype_raw_cos_k12: routing "
+              f"{arms['prototype_raw_cos_k12']['routing_accuracy']:.4f} "
+              f"joint {arms['prototype_raw_cos_k12']['routed_joint']:.4f}",
+              flush=True)
     centroid_per_task = arms["centroid"]["routed_joint_per_task"]
 
     # Feedback mode: draws of labeled probes per true task.
@@ -229,7 +254,7 @@ def main():
                     "T2={4,5} T3={6,7} T4={8,9}; FULLY SEQUENTIAL; "
                     "final score is 10-CLASS accuracy with NO task ID",
         "seed": 0, "epochs_per_model": epochs, "batch": BATCH, "lr": LR,
-        "quick": args.quick,
+        "quick": args.quick, "prototype_router_enabled": args.prototypes,
         "draws_per_task": DRAWS_PER_TASK,
         "probes_per_draw": PROBES_PER_DRAW,
         "paw_cnn_params": sum(p.numel() for p in
@@ -260,7 +285,9 @@ def main():
         },
     }
     print(json.dumps(result, indent=2, default=float))
-    out = os.path.join(_HERE, "paw_v3_results.json")
+    out = os.path.join(
+        _HERE, "paw_v3_results_prototypes.json" if args.prototypes
+        else "paw_v3_results.json")
     with open(out, "w") as f:
         json.dump(result, f, indent=2, default=float)
     print("wrote", out)
