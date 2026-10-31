@@ -73,7 +73,22 @@ def main():
     ap.add_argument("--prototypes", action="store_true",
                     help="experimental raw-cosine class summaries; "
                          "compare to original routes on the same stored CNNs")
+    ap.add_argument("--store-path", default=STORE_PATH,
+                    help="path to the benchmark store (default: paw_v3_store.rflx)")
+    ap.add_argument("--reset-store", action="store_true",
+                    help="explicitly DELETE existing benchmark store and its "
+                         "backup before training (destructive)")
     args = ap.parse_args()
+    store_path = os.path.abspath(args.store_path)
+    existing = [store_path + suffix for suffix in ("", ".bak", ".compact")
+                if os.path.exists(store_path + suffix)]
+    if existing and not args.reset_store:
+        ap.error("existing PAW store found. Refusing to overwrite learned "
+                 "knowledge. Supply a new --store-path or explicitly use "
+                 "--reset-store (DELETES the existing store and backup).")
+    if args.reset_store:
+        for file_path in existing:
+            os.remove(file_path)
     epochs = 1 if args.quick else EPOCHS
     print(f"epochs/model={epochs} quick={args.quick} "
           f"draws/task={DRAWS_PER_TASK} "
@@ -89,10 +104,7 @@ def main():
     print(f"task sizes: {[(len(t[0]), len(t[1])) for t in tasks]}",
           flush=True)
 
-    for suffix in ("", ".bak", ".compact"):
-        if os.path.exists(STORE_PATH + suffix):
-            os.remove(STORE_PATH + suffix)
-    paw = PAWSystem(STORE_PATH)
+    paw = PAWSystem(store_path)
     t0 = time.perf_counter()
     for ti, task in enumerate(tasks):
         Xtr, Xte, ytr, yte, ytrg, yteg = task[:6]
@@ -116,7 +128,7 @@ def main():
     paw.close()
 
     # ---------- evaluation from REOPENED store models ----------
-    paw = PAWSystem(STORE_PATH)
+    paw = PAWSystem(store_path)
     print(f"manifest: {paw.store.get_manifest()}", flush=True)
     models, centroids = paw.load_all()
 
