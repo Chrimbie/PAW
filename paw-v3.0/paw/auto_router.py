@@ -139,18 +139,22 @@ def learn_task_auto(system, task_id, Xtr, ytr, epochs=5, *,
     }
 
 
-def route_auto(system, X, *, return_info=False, prefer_taskgate=True):
-    """Prefer a validated TaskGate by default; otherwise retain old routing."""
+def route_auto(system, X, *, return_info=False, prefer_taskgate=True, rgb=None):
+    """Prefer validated RGB gate on color input; grayscale gate otherwise."""
     from .engine import to_tensor_1ch
     from .learned_router import route
+    from .rgb_integration import resolve_inputs
 
-    X = _matrix(X)
+    X, raw_rgb = resolve_inputs(system, X, rgb=rgb)
     _, ids = _manifest(system)
     if not ids:
         raise ValueError("no trained task CNNs in the store")
     models, _ = system.load_all()
     if len(ids) == len(TASKS):
-        if prefer_taskgate:
+        if prefer_taskgate and raw_rgb is not None:
+            from .rgb_integration import route_rgb
+            routed, info = route_rgb(system, models, raw_rgb, return_info=True)
+        elif prefer_taskgate:
             from .task_gate_integration import route_gate
             routed, info = route_gate(system, models, X, return_info=True)
         else:
@@ -166,13 +170,15 @@ def route_auto(system, X, *, return_info=False, prefer_taskgate=True):
     return (routed, info) if return_info else routed
 
 
-def predict_auto(system, X, *, return_info=False, prefer_taskgate=True):
-    """Return GLOBAL CIFAR labels (0..9) using the validated gate by default."""
+def predict_auto(system, X, *, return_info=False, prefer_taskgate=True, rgb=None):
+    """Predict from either raw RGB or legacy normalized grayscale input."""
     from .engine import cnn_logits, to_tensor_1ch
+    from .rgb_integration import resolve_inputs
 
-    X = _matrix(X)
+    gray, raw_rgb = resolve_inputs(system, X, rgb=rgb)
     task_ids, info = route_auto(
-        system, X, return_info=True, prefer_taskgate=prefer_taskgate)
+        system, gray, return_info=True, prefer_taskgate=prefer_taskgate, rgb=raw_rgb)
+    X = gray
     models, _ = system.load_all()
     result = np.empty(len(X), dtype=np.int64)
     tX = to_tensor_1ch(X)
@@ -201,7 +207,14 @@ def router_status(system):
             "validation_taskgate_joint": gate["validation_taskgate_joint"],
             "validation_previous_joint": gate["validation_previous_joint"],
         })
+        from .rgb_integration import rgb_status
+        status["rgb"] = rgb_status(system)
+        status["active_with_rgb"] = (
+            "taskgate_rgb" if status["rgb"]["available"] else "taskgate_v2")
         return status
+    from .rgb_integration import rgb_status
+    status["rgb"] = rgb_status(system)
+    status["active_with_rgb"] = "taskgate_rgb" if status["rgb"]["available"] else status["active"]
     try:
         state = system.store.get_task_snapshot("feature-router-v1")
         if state is None:
