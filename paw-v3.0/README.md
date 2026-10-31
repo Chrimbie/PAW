@@ -133,3 +133,53 @@ before.
   (Christopher's, byte-identical), `select.py` (proven CE
   selection rules).
 - `README.md` — this file.
+
+## Experimental prototype router (paw-experimental branch only)
+
+**Opt-in.** The default `python demo.py` remains unchanged. With an
+existing local CIFAR-10 dataset (or automatic download on your machine),
+run:
+
+```sh
+python -m pip install scikit-learn
+python demo.py --prototypes
+```
+
+Use `python demo.py --quick --prototypes` for a non-comparable smoke
+check (one training epoch, fewer examples). The demo writes
+`paw_v3_results_prototypes.json` and reports the new
+`paw_no_feedback_arms.prototype_raw_cos_k12.routed_joint` alongside the
+original centroid, max-probability and energy arms. The original result
+filename is not overwritten.
+
+This branch-only option uses 12 KMeans centers for **each** of the two
+classes in each task, drawn exclusively from that task's training images.
+They are stored as float32 vectors in the same per-task ChunkStore snapshot.
+The model weights and SmallCNN architecture are unchanged, and loading an
+old snapshot through `load_all()` remains supported.
+
+**Input contract:** the optional `router_raw_Xtr` argument and
+`route_prototypes(..., raw_X)` query input must be *unstandardized*
+16x16 grayscale float32 pixel vectors in the same scale. Feed the
+**standardized** vectors to the CNN as before. The demo uses
+`prepare(include_raw=True)` to supply both aligned views. The prototype
+route uses no task label or query label.
+
+This method improved held-out scikit-learn **digits** accuracy from
+73.11% to 97.06% on five seeds in an earlier 1,800-prediction study,
+with fixed CNN architectures. It **has not yet demonstrated improvement
+on CIFAR-10**. These numbers should not be extrapolated to other data.
+
+Tests, without requiring CIFAR-10:
+
+```sh
+python -m unittest discover -s tests -v
+python tests/benchmark_prototype_digits.py
+```
+
+The second command retrains the unchanged PAW SmallCNN architecture on
+the bundled scikit-learn digits dataset and prints actual baseline,
+prototype and correct-task accuracy (held-out seeds 3–7). It does
+not perform the full disk-store reopening protocol; the unit tests
+separately exercise persistence. Keep this prototype route experimental
+until the full CIFAR-10 benchmark passes the accuracy-improvement gate.
