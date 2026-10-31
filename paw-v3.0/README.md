@@ -66,6 +66,57 @@ automatic router; the oracle with the correct task was 85.82%. This was
 the 16×16 grayscale five-binary-task benchmark, not full-color CIFAR-10.
 A separate benchmark validates the new no-flag default.
 
+## RGB TaskGate input extension (validated integration candidate)
+
+PAW now accepts original 32x32 RGB uint8 images on the automatic inference
+interface when a validated RGB gate and its TRAIN-derived grayscale
+normalization are stored. **RGB input is preferred for routing by default.**
+The already trained grayscale SmallCNN experts still receive their same
+standardized grayscale 16x16 arrays. No expert architecture or weights
+change.
+
+```python
+# After saving five task experts and their separate validation examples:
+report = paw.fit_rgb_task_gate(
+    {"T0": rgb_train0, "T1": rgb_train1, "T2": rgb_train2,
+     "T3": rgb_train3, "T4": rgb_train4},
+    gray_mean=training_gray_mean, gray_scale=training_gray_std,
+    epochs=32, crop=True, smoothing=0.05)
+paw.close()
+paw = PAWSystem("my_store.rflx")
+
+# Raw RGB in CIFAR's (N,3072) uint8 channel-first shape or (N,3,32,32):
+labels, info = paw.predict_auto(rgb_images, return_info=True)
+# info["source"] == "taskgate_rgb" when the validated RGB router is active.
+# Existing grayscale callers continue to work without modification:
+old_labels = paw.predict_auto(standardized_gray16_images)
+# Supplying both explicitly verifies RGB and grayscale alignment:
+verified_labels = paw.predict_auto(standardized_gray16_images,
+                                   rgb=rgb_images)
+```
+
+The `gray_mean` and `gray_scale` must be the exact vectors used when
+standardizing the original grayscale expert inputs, computed from TRAIN
+images only. The fitter checks the supplied RGB training images against
+previously saved training-derived grayscale fit/holdout fingerprints. It
+excludes the holdouts from router fitting, and selects the RGB router only
+if it improves joint validation accuracy by at least 2 percentage points
+against the current compatible grayscale router. It persists a gate only
+when validation accepts it.
+
+A missing, incompatible, corrupted, or unselected RGB router falls back to
+the existing validated grayscale TaskGate v2, and then learned/ensemble
+fallback. Grayscale inputs remain directly supported. If a store has not
+had valid RGB normalization persisted, raw RGB inputs are rejected rather
+than guessed. The `prefer_taskgate=False` override still bypasses all
+TaskGate models. Paired inputs are rejected when their grayscale projections
+do not match, avoiding silent sample alignment errors.
+
+Research baselines on held-out CIFAR-10: RGB SmallCNN route 76.78% vs
+matched grayscale v2 66.66%; ResNet18 RGB 77.46% vs gray 68.24%.
+These are **matched experimental** results, not performance claims for
+this new integration until the integrated GPU regression succeeds.
+
 ## What v3.0 is not
 
 v3.0 does **not** claim no-feedback routing is solved. The
