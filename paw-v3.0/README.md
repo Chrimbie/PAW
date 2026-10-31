@@ -27,6 +27,45 @@ helpers architectural:
   |activation| per task. Diagnostic only: it reports, it
   does not fix dead neurons.
 
+## Automatic prediction default (TaskGate v2)
+
+When a **trained, validation-selected, compatible TaskGate v2** is present in the
+PAW store, `PAWSystem.predict_auto(X)` and `route_auto(X)` now use it **by
+default**. The previous supervised learned-feature router remains available
+as a fallback (with ensemble fallback behind it); an absent, unselected,
+corrupt, or expert-incompatible TaskGate is never used.
+
+```python
+paw = PAWSystem("my_store.rflx")
+predictions = paw.predict_auto(X)                       # new default
+legacy_predictions = paw.predict_auto(X, prefer_taskgate=False)
+status = paw.router_status()                            # active: taskgate_v2 if valid
+paw.close()
+```
+
+**The default does not create a trained TaskGate automatically.** Once five
+experts and the train-derived feature-router validation examples are stored,
+train the TaskGate using the same five *original TRAIN matrices* (standardized
+grayscale 16×16, shape N×256):
+
+```python
+paw.fit_task_gate_v2({"T0": Xtrain0, "T1": Xtrain1, "T2": Xtrain2,
+                      "T3": Xtrain3, "T4": Xtrain4})
+```
+
+This selects and persists TaskGate only if its held-out joint accuracy
+improves by at least 2 percentage points over the existing router. No
+official test image/label enters fitting or selection. The standard
+`learn_task_auto()` pathway does not preserve all five original TRAIN
+matrices and therefore cannot automatically retrofit a full-data TaskGate.
+The older router remains the default for stores without an eligible gate.
+
+**Evidence:** the integrated full CIFAR-10 GPU benchmark on 10,000 held-out
+examples gave 67.40% with the TaskGate versus 43.64% for the legacy
+automatic router; the oracle with the correct task was 85.82%. This was
+the 16×16 grayscale five-binary-task benchmark, not full-color CIFAR-10.
+A separate benchmark validates the new no-flag default.
+
 ## What v3.0 is not
 
 v3.0 does **not** claim no-feedback routing is solved. The
