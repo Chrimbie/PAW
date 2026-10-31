@@ -45,6 +45,8 @@ from .data import TASKS
 from .models import SmallCNN
 from .select import select_cnn_ce, ungated_ce
 from .store import ChunkStore
+from .prototypes import (build_task_prototypes,
+                         route_prototypes as select_by_prototype)
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 torch.manual_seed(0)
@@ -175,10 +177,16 @@ class PAWSystem:
         self.store.close()
 
     def learn_task(self, task_id, Xtr, ytr, Xte, yte, epochs,
-                   batch=128, lr=0.001):
+                   batch=128, lr=0.001, *, router_raw_Xtr=None,
+                   router_centers_per_class=12, router_seed=0):
         """Train a fresh SmallCNN on this task ONLY, store its
         snapshot + centroid statistics, flush. Returns the
         torch fit accuracy (binary, on this task's test set).
+
+        Optional router_raw_Xtr supplies unstandardized grayscale 16x16
+        training features aligned with Xtr/ytr. When provided, compact
+        per-class KMeans centers are saved in the existing task snapshot;
+        without it, training and storage behavior are unchanged.
         """
         net = SmallCNN(2).to(DEVICE)
         fit = train_torch(
@@ -190,13 +198,19 @@ class PAWSystem:
         feats = net_features(net, to_tensor_1ch(Xtr))
         centroid = feats.mean(axis=0)
         dists = np.linalg.norm(feats - centroid, axis=1)
-        self.store.put_task_snapshot(task_id, {
+        snapshot = {
             "format": "paw-cnn-v1",
             "state": numpy_state(net),
             "centroid": centroid,
             "dist_mean": float(dists.mean()),
             "dist_std": float(dists.std() + 1e-8),
-        })
+        }
+        if router_raw_Xtr is not None:
+            snapshot["router_prototypes"] = build_task_prototypes(
+                router_raw_Xtr, ytr,
+                centers_per_class=router_centers_per_class,
+                seed=router_seed)
+        self.store.put_task_snapshot(task_id, snapshot)
         self.store.flush()
         return fit
 
@@ -221,6 +235,38 @@ class PAWSystem:
             centroids[ti] = (snap["centroid"], snap["dist_mean"],
                              snap["dist_std"])
         return models, centroids
+
+    def load_prototypes(self):
+        """Load opt-in prototype summaries from verified stored snapshots.
+
+        This does not alter load_all() or the existing model/centroid
+        interface. Legacy snapshots lack this field and remain readable
+        through all original routes; requesting this optional route
+        on them raises a clear error rather than silently guessing.
+        """
+        manifest = self.store.get_manifest() or {}
+        profiles = {}
+        for tid in manifest.get("paw_cnn_tasks", []):
+            snap = self.store.get_task_snapshot(tid)
+            if snap is None:
+                raise KeyError(f"missing stored {tid}")
+            profile = snap.get("router_prototypes")
+            if profile is None:
+                raise ValueError(
+                    f"task {tid} has no prototype profile; retrain that "
+                    "task with router_raw_Xtr or use the original routes")
+            ti = int(tid[1:]) if tid.startswith("T") else tid
+            profiles[ti] = profile
+        return profiles
+
+    def route_prototypes(self, profiles, raw_X):
+        """Opt-in, task-ID-free routing from saved raw-image summaries.
+
+        The query raw_X must be the SAME unstandardized grayscale 16x16
+        pixel representation used when fitting the prototype summaries.
+        CNN predictions still consume the separately standardized X.
+        """
+        return select_by_prototype(profiles, raw_X)
 
     def logits_all(self, models, X):
         """(N, 10) concatenated logits from all stored nets."""
