@@ -1,9 +1,10 @@
-name: PAW TaskGate v2 opt-in regression
+name: PAW TaskGate v2 default-route regression
 
 on:
   push:
     branches:
       - feature/taskgate-v2-optin-integration
+      - main
     paths:
       - "paw-v3.0/**"
       - ".github/workflows/taskgate-v2-optin-regression.yml"
