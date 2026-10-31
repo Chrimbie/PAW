@@ -64,18 +64,21 @@ def to_gray16(X):
     return small.reshape(len(X), -1)
 
 
-def prepare():
+def prepare(include_raw=False):
     Xtr_raw, ytr, Xte_raw, yte = load_cifar()
-    Xtr, Xte = to_gray16(Xtr_raw), to_gray16(Xte_raw)
-    mu, sd = Xtr.mean(axis=0), Xtr.std(axis=0) + 1e-8
-    Xtr, Xte = (Xtr - mu) / sd, (Xte - mu) / sd
+    raw_train, raw_test = to_gray16(Xtr_raw), to_gray16(Xte_raw)
+    mu, sd = raw_train.mean(axis=0), raw_train.std(axis=0) + 1e-8
+    Xtr, Xte = (raw_train - mu) / sd, (raw_test - mu) / sd
     tasks = []
     for classes in TASKS:
         remap = {c: i for i, c in enumerate(classes)}
         mtr = np.isin(ytr, classes)
         mte = np.isin(yte, classes)
-        tasks.append((Xtr[mtr], Xte[mte],
-                      np.array([remap[v] for v in ytr[mtr]]),
-                      np.array([remap[v] for v in yte[mte]]),
-                      ytr[mtr], yte[mte]))
+        task = (Xtr[mtr], Xte[mte],
+                np.array([remap[v] for v in ytr[mtr]]),
+                np.array([remap[v] for v in yte[mte]]),
+                ytr[mtr], yte[mte])
+        if include_raw:
+            task += (raw_train[mtr], raw_test[mte])
+        tasks.append(task)
     return tasks
