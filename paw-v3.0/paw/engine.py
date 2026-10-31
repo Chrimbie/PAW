@@ -174,7 +174,16 @@ class PAWSystem:
         self.store = ChunkStore(store_path)
 
     def close(self):
-        self.store.close()
+        """Flush and back up verified snapshots before closing the store.
+
+        A new empty store has no manifest to back up. Always close file
+        handles, including when verification detects corruption.
+        """
+        try:
+            self.store.flush()
+            self.store.backup()
+        finally:
+            self.store.close()
 
     def learn_task(self, task_id, Xtr, ytr, Xte, yte, epochs,
                    batch=128, lr=0.001, *, router_raw_Xtr=None,
