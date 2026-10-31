@@ -1,4 +1,4 @@
-"""Opt-in, restartable automatic training and routing for PAW v3.0.
+"""Restartable automatic training and routing for PAW v3.0.
 
 This module does not change legacy learn_task or route_ensemble. It accepts
 one task's TRAIN arrays at a time, holds validation examples out of its CNN,
@@ -139,8 +139,8 @@ def learn_task_auto(system, task_id, Xtr, ytr, epochs=5, *,
     }
 
 
-def route_auto(system, X, *, return_info=False, prefer_taskgate=False):
-    """Retrieve saved tasks; opt in to a compatible validated TaskGate."""
+def route_auto(system, X, *, return_info=False, prefer_taskgate=True):
+    """Prefer a validated TaskGate by default; otherwise retain old routing."""
     from .engine import to_tensor_1ch
     from .learned_router import route
 
@@ -154,7 +154,7 @@ def route_auto(system, X, *, return_info=False, prefer_taskgate=False):
             from .task_gate_integration import route_gate
             routed, info = route_gate(system, models, X, return_info=True)
         else:
-            # Preserve historical default and all existing stored models.
+            # Explicit legacy override: preserve the learned/ensemble route.
             routed, info = route(system, models, X, return_info=True)
     else:
         routed = system.route_ensemble(
@@ -166,8 +166,8 @@ def route_auto(system, X, *, return_info=False, prefer_taskgate=False):
     return (routed, info) if return_info else routed
 
 
-def predict_auto(system, X, *, return_info=False, prefer_taskgate=False):
-    """Return GLOBAL CIFAR labels (0..9), optionally with TaskGate v2."""
+def predict_auto(system, X, *, return_info=False, prefer_taskgate=True):
+    """Return GLOBAL CIFAR labels (0..9) using the validated gate by default."""
     from .engine import cnn_logits, to_tensor_1ch
 
     X = _matrix(X)
@@ -191,6 +191,16 @@ def router_status(system):
               "active": "ensemble", "reason": "router not trained"}
     if len(ids) != len(TASKS):
         status["reason"] = f"awaiting remaining tasks ({len(ids)}/5)"
+        return status
+    # Report the actual default decision, including validated gate activation.
+    from .task_gate_integration import gate_status
+    gate = gate_status(system)
+    if gate.get("available"):
+        status.update({
+            "active": "taskgate_v2", "reason": None,
+            "validation_taskgate_joint": gate["validation_taskgate_joint"],
+            "validation_previous_joint": gate["validation_previous_joint"],
+        })
         return status
     try:
         state = system.store.get_task_snapshot("feature-router-v1")
