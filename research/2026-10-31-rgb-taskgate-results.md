@@ -1,5 +1,31 @@
 # PAW RGB TaskGate: held-out CIFAR-10 matched comparisons (2026-10-31)
 
+## End-to-end PAW v3 RGB-default integration: verified
+
+The **actual PAWSystem.predict_auto()** on original uint8 RGB now
+automatically selects the validated persisted RGB gate when available.
+Grayscale automatic inference still uses the compatible grayscale TaskGate v2.
+The full integrated test used the same five SmallCNN experts and all
+10,000 official held-out CIFAR-10 images:
+
+- **RGB default: 77.46%** overall, 88.16% task routing.
+- **Gray TaskGate v2: 67.23%** overall, 74.86% task routing.
+- **Gain: +10.23 percentage points** in joint accuracy.
+- **Oracle correct-task experts: 85.82%**.
+- Train-derived validation joint: RGB 77.833%, grayscale 69.50%.
+- Reopened gate predictions identical, expert weights unchanged,
+  paired grayscale/RGB inference equivalent, misaligned inputs rejected.
+- RGB architecture: 318,629 parameters, 32 epochs, random crop and
+  label smoothing 0.05, selected on 600 train-derived holdouts.
+- Eight CPU regressions passed.
+
+[Completed integrated GPU run](https://github.com/Chrimbie/PAW-Runner/actions/runs/41234472882) · [Merged integration PR #5](https://github.com/Chrimbie/PAW/pull/5)
+
+The **code** is merged into main; existing stores without trained, validated
+RGB gate weights remain on grayscale routing. The new RGB input pathway does
+not create or distribute a trained RGB gate on its own. These accuracy figures
+are for the specific CIFAR-10 benchmark, not all possible datasets.
+
 ## Status
 
 **Research results, not a production default.** The existing PAW v3 default
