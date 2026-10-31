@@ -297,14 +297,14 @@ class PAWSystem:
         from .auto_router import learn_task_auto
         return learn_task_auto(self, task_id, Xtr, ytr, epochs, **options)
 
-    def route_auto(self, X, return_info=False, *, prefer_taskgate=False):
-        """Route automatically; opt in to a validated TaskGate if available."""
+    def route_auto(self, X, return_info=False, *, prefer_taskgate=True):
+        """Use validated TaskGate by default; set False for legacy routing."""
         from .auto_router import route_auto
         return route_auto(self, X, return_info=return_info,
                           prefer_taskgate=prefer_taskgate)
 
-    def predict_auto(self, X, return_info=False, *, prefer_taskgate=False):
-        """Predict global CIFAR class labels, optionally using TaskGate v2."""
+    def predict_auto(self, X, return_info=False, *, prefer_taskgate=True):
+        """Predict CIFAR classes with validated TaskGate; False opts out."""
         from .auto_router import predict_auto
         return predict_auto(self, X, return_info=return_info,
                             prefer_taskgate=prefer_taskgate)
@@ -315,7 +315,7 @@ class PAWSystem:
         return fit_gate(self, training_by_task, **options)
 
     def task_gate_status(self):
-        """Show whether a saved, compatible opt-in TaskGate is available."""
+        """Show whether a validated, compatible TaskGate can be used by default."""
         from .task_gate_integration import gate_status
         return gate_status(self)
 
