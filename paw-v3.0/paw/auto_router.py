@@ -1,4 +1,4 @@
-"""Opt-in, restartable automatic training and routing for PAW v3.0.
+"""Restartable automatic training and routing for PAW v3.0.
 
 This module does not change legacy learn_task or route_ensemble. It accepts
 one task's TRAIN arrays at a time, holds validation examples out of its CNN,
@@ -139,8 +139,8 @@ def learn_task_auto(system, task_id, Xtr, ytr, epochs=5, *,
     }
 
 
-def route_auto(system, X, *, return_info=False):
-    """Retrieve saved tasks and route; use ensemble until router is valid."""
+def route_auto(system, X, *, return_info=False, prefer_taskgate=True):
+    """Prefer a validated TaskGate by default; otherwise retain old routing."""
     from .engine import to_tensor_1ch
     from .learned_router import route
 
@@ -150,9 +150,12 @@ def route_auto(system, X, *, return_info=False):
         raise ValueError("no trained task CNNs in the store")
     models, _ = system.load_all()
     if len(ids) == len(TASKS):
-        # route() verifies the saved router's weight fingerprints and
-        # checksums and falls back if the router is invalid or absent.
-        routed, info = route(system, models, X, return_info=True)
+        if prefer_taskgate:
+            from .task_gate_integration import route_gate
+            routed, info = route_gate(system, models, X, return_info=True)
+        else:
+            # Explicit legacy override: preserve the learned/ensemble route.
+            routed, info = route(system, models, X, return_info=True)
     else:
         routed = system.route_ensemble(
             models, to_tensor_1ch(X), mode="maxprob")
@@ -163,12 +166,13 @@ def route_auto(system, X, *, return_info=False):
     return (routed, info) if return_info else routed
 
 
-def predict_auto(system, X, *, return_info=False):
-    """Return GLOBAL CIFAR labels (0..9) without task IDs or test labels."""
+def predict_auto(system, X, *, return_info=False, prefer_taskgate=True):
+    """Return GLOBAL CIFAR labels (0..9) using the validated gate by default."""
     from .engine import cnn_logits, to_tensor_1ch
 
     X = _matrix(X)
-    task_ids, info = route_auto(system, X, return_info=True)
+    task_ids, info = route_auto(
+        system, X, return_info=True, prefer_taskgate=prefer_taskgate)
     models, _ = system.load_all()
     result = np.empty(len(X), dtype=np.int64)
     tX = to_tensor_1ch(X)
@@ -187,6 +191,16 @@ def router_status(system):
               "active": "ensemble", "reason": "router not trained"}
     if len(ids) != len(TASKS):
         status["reason"] = f"awaiting remaining tasks ({len(ids)}/5)"
+        return status
+    # Report the actual default decision, including validated gate activation.
+    from .task_gate_integration import gate_status
+    gate = gate_status(system)
+    if gate.get("available"):
+        status.update({
+            "active": "taskgate_v2", "reason": None,
+            "validation_taskgate_joint": gate["validation_taskgate_joint"],
+            "validation_previous_joint": gate["validation_previous_joint"],
+        })
         return status
     try:
         state = system.store.get_task_snapshot("feature-router-v1")

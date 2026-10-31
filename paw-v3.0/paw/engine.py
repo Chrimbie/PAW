@@ -297,15 +297,27 @@ class PAWSystem:
         from .auto_router import learn_task_auto
         return learn_task_auto(self, task_id, Xtr, ytr, epochs, **options)
 
-    def route_auto(self, X, return_info=False):
-        """Return task indices with verified learned routing or ensemble fallback."""
+    def route_auto(self, X, return_info=False, *, prefer_taskgate=True):
+        """Use validated TaskGate by default; set False for legacy routing."""
         from .auto_router import route_auto
-        return route_auto(self, X, return_info=return_info)
+        return route_auto(self, X, return_info=return_info,
+                          prefer_taskgate=prefer_taskgate)
 
-    def predict_auto(self, X, return_info=False):
-        """Predict CIFAR-10 class indices without knowing task IDs."""
+    def predict_auto(self, X, return_info=False, *, prefer_taskgate=True):
+        """Predict CIFAR classes with validated TaskGate; False opts out."""
         from .auto_router import predict_auto
-        return predict_auto(self, X, return_info=return_info)
+        return predict_auto(self, X, return_info=return_info,
+                            prefer_taskgate=prefer_taskgate)
+
+    def fit_task_gate_v2(self, training_by_task, **options):
+        """Fit optional supervised TaskGate v2 using TRAIN images only."""
+        from .task_gate_integration import fit_gate
+        return fit_gate(self, training_by_task, **options)
+
+    def task_gate_status(self):
+        """Show whether a validated, compatible TaskGate can be used by default."""
+        from .task_gate_integration import gate_status
+        return gate_status(self)
 
     def router_status(self):
         """Inspect automatic task learning and current router state."""
