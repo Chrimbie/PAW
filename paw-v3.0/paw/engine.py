@@ -230,38 +230,52 @@ class PAWSystem:
         return out
 
     def route_centroid(self, models, centroids, X):
-        """No-feedback routing: least surprising net wins."""
-        zmat = np.zeros((len(X), len(models)))
-        for ti, model in models.items():
+        """No-feedback routing: least surprising stored task wins.
+
+        Task IDs need not be consecutive; columns are mapped back to
+        the actual keys instead of being mistaken for task IDs.
+        """
+        task_ids = list(models)
+        if not task_ids:
+            raise ValueError("cannot route without stored models")
+        zmat = np.empty((len(X), len(task_ids)), dtype=np.float64)
+        for col, ti in enumerate(task_ids):
             centroid, m, sd = centroids[ti]
-            feats = net_features(model, X)
+            if not np.isfinite(sd) or sd <= 0:
+                raise ValueError(
+                    f"invalid distance standard deviation for task {ti}")
+            feats = net_features(models[ti], X)
             d = np.linalg.norm(feats - centroid, axis=1)
-            zmat[:, ti] = (d - m) / sd
-        return zmat.argmin(axis=1)
+            zmat[:, col] = (d - m) / sd
+        return np.asarray(task_ids)[zmat.argmin(axis=1)]
 
     def route_ensemble(self, models, X, mode="maxprob"):
-        """No-feedback routing from concatenated logits.
+        """No-feedback routing using stable scores from each stored CNN.
 
-        maxprob: route to the net whose max softmax probability
-        (over its own 2 classes) is highest. energy: route to
-        the net with the lowest -logsumexp over its 2 logits.
+        maxprob: highest within-model softmax probability.
+        energy: lowest negative logsumexp. logaddexp prevents
+        overflow/underflow with extreme logits. Neither method
+        assumes stored task IDs are consecutive.
         """
-        logits = self.logits_all(models, X)
-        scores = np.zeros((len(X), len(models)))
-        for ti in models:
-            pair = logits[:, 2 * ti:2 * ti + 2]
+        if mode not in ("maxprob", "energy"):
+            raise ValueError(f"unknown ensemble mode {mode}")
+        task_ids = list(models)
+        if not task_ids:
+            raise ValueError("cannot route without stored models")
+        scores = np.empty((len(X), len(task_ids)), dtype=np.float64)
+        for col, ti in enumerate(task_ids):
+            pair = cnn_logits(models[ti], X)
+            if pair.shape != (len(X), 2) or not np.isfinite(pair).all():
+                raise ValueError(f"invalid logits for task {ti}")
+            log_denom = np.logaddexp(pair[:, 0], pair[:, 1])
             if mode == "maxprob":
-                mx = pair.max(axis=1, keepdims=True)
-                logp = pair - mx - np.log(np.exp(pair - mx).sum(
-                    axis=1, keepdims=True))
-                scores[:, ti] = np.exp(logp).max(axis=1)
-            elif mode == "energy":
-                scores[:, ti] = -np.log(np.exp(pair).sum(axis=1))
+                # log is monotonic: no exp needed just to compare models.
+                scores[:, col] = pair.max(axis=1) - log_denom
             else:
-                raise ValueError(f"unknown ensemble mode {mode}")
-        if mode == "maxprob":
-            return scores.argmax(axis=1)
-        return scores.argmin(axis=1)
+                scores[:, col] = -log_denom
+        selected = (scores.argmax(axis=1) if mode == "maxprob"
+                    else scores.argmin(axis=1))
+        return np.asarray(task_ids)[selected]
 
     def feedback_gated(self, logits_by_task, probe_y_onehot,
                        max_ce=float("inf")):
