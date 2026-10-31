@@ -297,17 +297,27 @@ class PAWSystem:
         from .auto_router import learn_task_auto
         return learn_task_auto(self, task_id, Xtr, ytr, epochs, **options)
 
-    def route_auto(self, X, return_info=False, *, prefer_taskgate=True):
-        """Use validated TaskGate by default; set False for legacy routing."""
+    def route_auto(self, X, return_info=False, *, prefer_taskgate=True, rgb=None):
+        """Use RGB gate when available; otherwise grayscale gate or legacy."""
         from .auto_router import route_auto
         return route_auto(self, X, return_info=return_info,
-                          prefer_taskgate=prefer_taskgate)
+                          prefer_taskgate=prefer_taskgate, rgb=rgb)
 
-    def predict_auto(self, X, return_info=False, *, prefer_taskgate=True):
-        """Predict CIFAR classes with validated TaskGate; False opts out."""
+    def predict_auto(self, X, return_info=False, *, prefer_taskgate=True, rgb=None):
+        """Accept uint8 RGB or legacy grayscale with preserved expert weights."""
         from .auto_router import predict_auto
         return predict_auto(self, X, return_info=return_info,
-                            prefer_taskgate=prefer_taskgate)
+                            prefer_taskgate=prefer_taskgate, rgb=rgb)
+
+    def fit_rgb_task_gate(self, raw_training_by_task, **options):
+        """Train RGB gate on original RGB training images and saved holdouts."""
+        from .rgb_integration import fit_rgb_gate
+        return fit_rgb_gate(self, raw_training_by_task, **options)
+
+    def rgb_gate_status(self):
+        """Inspect whether a compatible saved RGB gate can be used."""
+        from .rgb_integration import rgb_status
+        return rgb_status(self)
 
     def fit_task_gate_v2(self, training_by_task, **options):
         """Fit optional supervised TaskGate v2 using TRAIN images only."""
